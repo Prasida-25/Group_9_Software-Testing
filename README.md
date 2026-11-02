@@ -42,7 +42,8 @@ Mục tiêu là xác định kết quả mong đợi từ yêu cầu, thiết k�
 
 
 
-| Nhóm | Nội dung kiểm thử sâu |
+| **Nhóm** | **Nội dung kiểm thử sâu** |
+| --- | --- |
 | Tài khoản | Đăng ký; đăng nhập bằng điện thoại và mật khẩu; đăng xuất |
 | Sản phẩm | Danh sách; tìm kiếm; lọc; chi tiết và chọn biến thể |
 | Giỏ hàng | Xem, thêm, gộp biến thể, cập nhật và xóa dòng của mình |
@@ -82,7 +83,8 @@ Không kiểm thử sâu voucher, chuyển khoản, trả hàng, hoàn tiền, �
 
 
 
-| Phương pháp | Áp dụng | Hồ sơ |
+| **Phương pháp** | **Áp dụng** | **Hồ sơ** |
+| --- | --- |
 | Hộp đen | Phân vùng tương đương, giá trị biên, bảng quyết định, chuyển trạng thái | [Thiết kế hộp đen](Tai-lieu-kiem-thu/01%20-%20Thi%E1%BA%BFt%20k%E1%BA%BF%20ki%E1%BB%83m%20th%E1%BB%AD%20h%E1%BB%99p%20%C4%91en.md) |
 | Hộp trắng | CFG, đường cơ sở, độ phức tạp chu trình và coverage ở phần mã được chọn | [Thiết kế hộp trắng](Tai-lieu-kiem-thu/02%20-%20Thi%E1%BA%BFt%20k%E1%BA%BF%20ki%E1%BB%83m%20th%E1%BB%AD%20h%E1%BB%99p%20tr%E1%BA%AFng.md) |
 | Unit và tích hợp | `node:test`, repository giả lập, HTTP và MySQL/InnoDB riêng | [Kết quả đợt 2](Tai-lieu-kiem-thu/05%20-%20Ki%E1%BB%83m%20th%E1%BB%AD%20%C4%91%C6%A1n%20v%E1%BB%8B%20v%C3%A0%20t%C3%ADch%20h%E1%BB%A3p.md) |
@@ -104,7 +106,8 @@ Các công cụ được chọn theo backend JavaScript. Bài sử dụng `node:
 
 
 
-| Bộ kiểm thử | Kết quả | Phạm vi cần phân biệt |
+| **Bộ kiểm thử** | **Kết quả** | **Phạm vi cần phân biệt** |
+| --- | --- | --- |
 | Chín file unit/mock/HTTP có sẵn | **92/93 đạt, 1 Fail** | Một test quản trị dừng ở assertion câu đếm số đơn |
 | Khóa 1 chạy riêng | **10/10 đạt** | 7 unit và 3 tích hợp mock; đã nằm trong bộ 93, không cộng thêm |
 | Tích hợp MySQL/HTTP | **28/28 đạt** | Instance test riêng, cleanup PASS theo từng kịch bản |
@@ -127,7 +130,8 @@ Không cộng các hàng thành một tỷ lệ Pass chung: số test, scenario,
 
 
 
-| File | Line % | Branch % | Function % |
+| **File** | **Line %** | **Branch %** | **Function %** |
+| --- | --- | --- | --- |
 | `cart-service.js` | 24.56 | 100.00 | 50.00 |
 | `cart-validation.js` | 100.00 | 93.33 | 100.00 |
 | `checkout.js` | 50.88 | 85.71 | 42.86 |
@@ -147,7 +151,8 @@ Ba request GET gồm danh sách, tìm kiếm và chi tiết sản phẩm; nghỉ
 
 
 
-| Chỉ số | 1 thread | 5 threads |
+| **Chỉ số** | **1 thread** | **5 threads** |
+| --- | --- | --- |
 | Samples | 30 | 150 |
 | Lỗi | 0 | 0 |
 | Average | 22,67 ms | 22,93 ms |
@@ -165,7 +170,8 @@ Kết quả mô tả tải HTTP nhẹ trên localhost với fixture nhỏ, khôn
 
 
 
-| Nội dung | Kết luận hiện tại |
+| **Nội dung** | **Kết luận hiện tại** |
+| --- | --- |
 | Hiển thị giá “từ” | TC-CAT-01/use case mô tả chữ “từ” nhưng card chỉ có giá thấp nhất. Bảng REQ-PROD-04 chỉ quy định giá đại diện; cần thống nhất câu chữ trước khi phân loại/sửa. Không phải lỗi tính giá đã xác nhận. |
 | Test quản trị Fail | Kỳ vọng câu “2 đơn hàng phù hợp” khác template; chưa sửa test. Assertion sau vị trí Fail chưa chạy. |
 | ESLint khi chạy lại | Run `05-05-49` bỏ qua cả năm file vì `outside of base path`; không gọi lượt này là lint thành công. Run trước `04-59-11` có 0 error và 3 cảnh báo regex với vị trí cụ thể. Sinh dữ liệu vẫn 10/10 đạt. |
