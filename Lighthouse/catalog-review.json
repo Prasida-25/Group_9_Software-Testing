@@ -1,0 +1,254 @@
+[
+  {
+    "file": "LH-CAT-D-01.html",
+    "sha256": "a9c829fb64f27b18a19784fa957f6890e1583d2fdd04a891cc062a2f12027826",
+    "lighthouseVersion": "13.5.0",
+    "fetchTimeUTC": "2026-11-02T10:41:27.321Z",
+    "fetchTimeUTC7": "2026-11-02T17:41:27.321000+07:00",
+    "url": "http://127.0.0.1:56327/products?category_id=462",
+    "formFactor": "desktop",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": true
+    },
+    "throttlingMethod": "simulate",
+    "throttling": {
+      "rttMs": 40,
+      "throughputKbps": 10240,
+      "requestLatencyMs": 0,
+      "downloadThroughputKbps": 0,
+      "uploadThroughputKbps": 0,
+      "cpuSlowdownMultiplier": 1
+    },
+    "disableStorageReset": false,
+    "scores": {
+      "performance": 89,
+      "accessibility": 91,
+      "best-practices": 100,
+      "seo": 91
+    },
+    "metrics": {
+      "first-contentful-paint": 1454.1056402102236,
+      "largest-contentful-paint": 1534.1056402102236,
+      "speed-index": 1454.1056402102236,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0.002049845886951185
+    },
+    "runtimeError": null,
+    "warnings": [],
+    "useInGuestThreeRunGroup": true
+  },
+  {
+    "file": "LH-CAT-D-02.html",
+    "sha256": "bd87152d50ff78870c5739ec5215f7ccf03768b4465c7ab3fe7027e0e15432c2",
+    "lighthouseVersion": "13.5.0",
+    "fetchTimeUTC": "2026-11-02T10:42:05.048Z",
+    "fetchTimeUTC7": "2026-11-02T17:42:05.048000+07:00",
+    "url": "http://127.0.0.1:56327/products?category_id=462",
+    "formFactor": "desktop",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": true
+    },
+    "throttlingMethod": "simulate",
+    "throttling": {
+      "rttMs": 40,
+      "throughputKbps": 10240,
+      "requestLatencyMs": 0,
+      "downloadThroughputKbps": 0,
+      "uploadThroughputKbps": 0,
+      "cpuSlowdownMultiplier": 1
+    },
+    "disableStorageReset": false,
+    "scores": {
+      "performance": 89,
+      "accessibility": 91,
+      "best-practices": 100,
+      "seo": 91
+    },
+    "metrics": {
+      "first-contentful-paint": 1452.2846882667395,
+      "largest-contentful-paint": 1532.2846882667395,
+      "speed-index": 1452.2846882667395,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0.002049845886951185
+    },
+    "runtimeError": null,
+    "warnings": [],
+    "useInGuestThreeRunGroup": true
+  },
+  {
+    "file": "LH-CAT-D-03.html",
+    "sha256": "4322833ed6c06d14dd2d6032dfc6e3df9954362bfef88d44daf496f72a4ed08f",
+    "lighthouseVersion": "13.5.0",
+    "fetchTimeUTC": "2026-11-02T10:42:25.785Z",
+    "fetchTimeUTC7": "2026-11-02T17:42:25.785000+07:00",
+    "url": "http://127.0.0.1:56327/products?category_id=462",
+    "formFactor": "desktop",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": true
+    },
+    "throttlingMethod": "simulate",
+    "throttling": {
+      "rttMs": 40,
+      "throughputKbps": 10240,
+      "requestLatencyMs": 0,
+      "downloadThroughputKbps": 0,
+      "uploadThroughputKbps": 0,
+      "cpuSlowdownMultiplier": 1
+    },
+    "disableStorageReset": false,
+    "scores": {
+      "performance": 89,
+      "accessibility": 91,
+      "best-practices": 100,
+      "seo": 91
+    },
+    "metrics": {
+      "first-contentful-paint": 1452.4679999999998,
+      "largest-contentful-paint": 1532.4679999999998,
+      "speed-index": 1452.4679999999998,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0.002049845886951185
+    },
+    "runtimeError": null,
+    "warnings": [],
+    "useInGuestThreeRunGroup": true
+  },
+  {
+    "file": "LH-CAT-M-01.html",
+    "sha256": "66a02cac6771680ea5dea0ecbb3441ac64a4e0a4801a6a19edc1674aa845fc77",
+    "lighthouseVersion": "13.5.0",
+    "fetchTimeUTC": "2026-11-02T10:29:30.807Z",
+    "fetchTimeUTC7": "2026-11-02T17:29:30.807000+07:00",
+    "url": "http://127.0.0.1:56327/products?category_id=462",
+    "formFactor": "mobile",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": true
+    },
+    "throttlingMethod": "simulate",
+    "throttling": {
+      "rttMs": 150,
+      "throughputKbps": 1638.4,
+      "requestLatencyMs": 562.5,
+      "downloadThroughputKbps": 1474.5600000000002,
+      "uploadThroughputKbps": 675,
+      "cpuSlowdownMultiplier": 4
+    },
+    "disableStorageReset": false,
+    "scores": {
+      "performance": 58,
+      "accessibility": 91,
+      "best-practices": 100,
+      "seo": 91
+    },
+    "metrics": {
+      "first-contentful-paint": 7959.552006527316,
+      "largest-contentful-paint": 8259.552006527316,
+      "speed-index": 7959.552006527316,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0.0002943797458712256
+    },
+    "runtimeError": null,
+    "warnings": [],
+    "useInGuestThreeRunGroup": false
+  },
+  {
+    "file": "LH-CAT-M-02.html",
+    "sha256": "9d43e7d57756dde114680f7b634acc455d59dde47d327cf9ce905f0e3bc1e5ab",
+    "lighthouseVersion": "13.5.0",
+    "fetchTimeUTC": "2026-11-02T10:35:22.411Z",
+    "fetchTimeUTC7": "2026-11-02T17:35:22.411000+07:00",
+    "url": "http://127.0.0.1:56327/products?category_id=462",
+    "formFactor": "mobile",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": true
+    },
+    "throttlingMethod": "simulate",
+    "throttling": {
+      "rttMs": 150,
+      "throughputKbps": 1638.4,
+      "requestLatencyMs": 562.5,
+      "downloadThroughputKbps": 1474.5600000000002,
+      "uploadThroughputKbps": 675,
+      "cpuSlowdownMultiplier": 4
+    },
+    "disableStorageReset": false,
+    "scores": {
+      "performance": 58,
+      "accessibility": 91,
+      "best-practices": 100,
+      "seo": 91
+    },
+    "metrics": {
+      "first-contentful-paint": 7958.13,
+      "largest-contentful-paint": 8258.130000000001,
+      "speed-index": 7958.13,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0.0003271208002840686
+    },
+    "runtimeError": null,
+    "warnings": [],
+    "useInGuestThreeRunGroup": true
+  },
+  {
+    "file": "LH-CAT-M-03.html",
+    "sha256": "e3aa00706f5cf6e2a4b87d251515827af337ea61d6d25aa0ca587c1264eb1aec",
+    "lighthouseVersion": "13.5.0",
+    "fetchTimeUTC": "2026-11-02T10:38:39.999Z",
+    "fetchTimeUTC7": "2026-11-02T17:38:39.999000+07:00",
+    "url": "http://127.0.0.1:56327/products?category_id=462",
+    "formFactor": "mobile",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": true
+    },
+    "throttlingMethod": "simulate",
+    "throttling": {
+      "rttMs": 150,
+      "throughputKbps": 1638.4,
+      "requestLatencyMs": 562.5,
+      "downloadThroughputKbps": 1474.5600000000002,
+      "uploadThroughputKbps": 675,
+      "cpuSlowdownMultiplier": 4
+    },
+    "disableStorageReset": false,
+    "scores": {
+      "performance": 58,
+      "accessibility": 91,
+      "best-practices": 100,
+      "seo": 91
+    },
+    "metrics": {
+      "first-contentful-paint": 7959.696676233518,
+      "largest-contentful-paint": 8259.696676233518,
+      "speed-index": 7959.696676233518,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0.0003271208002840686
+    },
+    "runtimeError": null,
+    "warnings": [],
+    "useInGuestThreeRunGroup": true
+  }
+]

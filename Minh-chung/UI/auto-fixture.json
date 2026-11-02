@@ -1,0 +1,17 @@
+{
+  "userId": 875,
+  "variantId": 1014,
+  "stockBefore": 4,
+  "orders": [
+    {
+      "orderId": 411,
+      "ageHours": 73
+    },
+    {
+      "orderId": 412,
+      "ageHours": 71
+    }
+  ],
+  "scope": "Only tracked order IDs, not other expired test orders",
+  "preparationComplete": true
+}

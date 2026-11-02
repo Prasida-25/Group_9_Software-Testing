@@ -1,0 +1,7 @@
+{
+  "name": "techzone-selenium-tests",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": { "test": "node run.cjs" },
+  "devDependencies": { "selenium-webdriver": "4.38.0" }
+}

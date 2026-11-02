@@ -1,0 +1,11 @@
+Error: Could not parse "html:D:\Duong\Kiểm thử phần mềm\Cuối Kỳ\Minh-chung\Cucumber\run-2026-11-02T04-47-46-229Z\report.html"; wrap each part in double quotes if it contains a colon
+    at splitFormatDescriptor (D:\Duong\Kiểm thử phần mềm\Cuối Kỳ\Cong-cu\cucumber\node_modules\@cucumber\cucumber\lib\configuration\split_format_descriptor.js:10:15)
+    at D:\Duong\Kiểm thử phần mềm\Cuối Kỳ\Cong-cu\cucumber\node_modules\@cucumber\cucumber\lib\api\convert_configuration.js:40:136
+    at Array.map (<anonymous>)
+    at convertFormats (D:\Duong\Kiểm thử phần mềm\Cuối Kỳ\Cong-cu\cucumber\node_modules\@cucumber\cucumber\lib\api\convert_configuration.js:40:51)
+    at convertConfiguration (D:\Duong\Kiểm thử phần mềm\Cuối Kỳ\Cong-cu\cucumber\node_modules\@cucumber\cucumber\lib\api\convert_configuration.js:32:18)
+    at loadConfiguration (D:\Duong\Kiểm thử phần mềm\Cuối Kỳ\Cong-cu\cucumber\node_modules\@cucumber\cucumber\lib\api\load_configuration.js:44:77)
+    at Cli.run (D:\Duong\Kiểm thử phần mềm\Cuối Kỳ\Cong-cu\cucumber\node_modules\@cucumber\cucumber\lib\cli\index.js:51:105)
+    at Object.run [as default] (D:\Duong\Kiểm thử phần mềm\Cuối Kỳ\Cong-cu\cucumber\node_modules\@cucumber\cucumber\lib\cli\run.js:31:28)
+    at Object.<anonymous> (D:\Duong\Kiểm thử phần mềm\Cuối Kỳ\Cong-cu\cucumber\node_modules\@cucumber\cucumber\bin\cucumber.js:4:37)
+    at Module._compile (node:internal/modules/cjs/loader:1854:14)

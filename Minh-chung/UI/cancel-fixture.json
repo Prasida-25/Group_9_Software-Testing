@@ -1,0 +1,16 @@
+{
+  "purpose": "Admin manual cancellation UI fixture",
+  "userId": 875,
+  "variantId": 1014,
+  "quantity": 2,
+  "stockBeforePlacement": 4,
+  "stockAfterPlacement": 2,
+  "expectedStockAfterCancellation": 4,
+  "order": {
+    "order_id": 410,
+    "status": "pending",
+    "payment_status": "unpaid",
+    "total_amount": "130000.00"
+  },
+  "createdVia": "cart/checkout services on isolated test pool; not manual order insertion"
+}

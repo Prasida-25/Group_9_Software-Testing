@@ -1,0 +1,73 @@
+{
+  "started": "2026-11-02T06:03:06.766Z",
+  "base": "http://127.0.0.1:56327",
+  "node": "v24.16.0",
+  "selenium": "4.38.0",
+  "headless": true,
+  "results": [
+    {
+      "id": "SEL-01",
+      "name": "Đăng nhập đúng và mở giỏ trống",
+      "status": "PASS",
+      "cleanup": "PASS",
+      "fixtureUserId": 887,
+      "url": "http://127.0.0.1:56327/cart",
+      "screenshot": "SEL-01.png"
+    },
+    {
+      "id": "SEL-02",
+      "name": "Đăng nhập sai hiển thị lỗi chung",
+      "status": "PASS",
+      "cleanup": "PASS",
+      "fixtureUserId": 888,
+      "url": "http://127.0.0.1:56327/login",
+      "screenshot": "SEL-02.png"
+    },
+    {
+      "id": "SEL-03",
+      "name": "Tìm kiếm bằng ô tìm trên giao diện",
+      "status": "PASS",
+      "cleanup": "NOT_APPLICABLE",
+      "url": "http://127.0.0.1:56327/products/search?q=Tai+nghe+UI+Test&category_id=462&sort=newest&limit=10",
+      "screenshot": "SEL-03.png"
+    },
+    {
+      "id": "SEL-04",
+      "name": "Thêm sản phẩm vào giỏ",
+      "status": "PASS",
+      "cleanup": "PASS",
+      "fixtureUserId": 889,
+      "url": "http://127.0.0.1:56327/cart?updated=1",
+      "screenshot": "SEL-04.png"
+    },
+    {
+      "id": "SEL-05",
+      "name": "Cập nhật số lượng và giữ sau tải lại",
+      "status": "PASS",
+      "cleanup": "PASS",
+      "fixtureUserId": 890,
+      "url": "http://127.0.0.1:56327/cart?updated=1",
+      "screenshot": "SEL-05.png"
+    },
+    {
+      "id": "SEL-06",
+      "name": "Đăng xuất và không truy cập được giỏ",
+      "status": "PASS",
+      "cleanup": "PASS",
+      "fixtureUserId": 891,
+      "url": "http://127.0.0.1:56327/login?returnTo=%2Fcart",
+      "screenshot": "SEL-06.png"
+    }
+  ],
+  "browser": {
+    "name": "chrome",
+    "version": "156.0.8078.74",
+    "chromeDriver": "156.0.8078.47 (1d17a2e2ee147bb7d6ae2ab6abdb3a2510c17775-refs/branch-heads/8078@{#1313})"
+  },
+  "stockBefore": 5,
+  "stockAfter": 5,
+  "stockUnchanged": true,
+  "passed": 6,
+  "total": 6,
+  "finished": "2026-11-02T06:03:13.591Z"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "techzone-cucumber-tests",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": { "test": "node run.cjs" },
+  "devDependencies": { "@cucumber/cucumber": "13.3.0" }
+}

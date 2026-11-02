@@ -1,0 +1,13 @@
+{
+  "adminUserId": 876,
+  "role": "admin",
+  "order": {
+    "order_id": 409,
+    "status": "pending",
+    "payment_status": "unpaid",
+    "payment_method": "cod",
+    "total_amount": "80000.00",
+    "expired": 0
+  },
+  "database": "techshop_test"
+}

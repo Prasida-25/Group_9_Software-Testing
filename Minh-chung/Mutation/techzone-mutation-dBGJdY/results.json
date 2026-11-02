@@ -1,0 +1,164 @@
+{
+  "runId": "techzone-mutation-dBGJdY",
+  "node": "v24.16.0",
+  "started": "2026-11-01T20:08:49.398Z",
+  "scope": "9 manually selected single edits, isolated src copies, same 28 whitebox tests",
+  "baseline": {
+    "exit": 0,
+    "tests": 28,
+    "failed": 0,
+    "failedTests": [],
+    "timeout": false
+  },
+  "results": [
+    {
+      "id": "M01",
+      "file": "src/utils/cart-validation.js",
+      "from": "Number(value) > max",
+      "to": "Number(value) >= max",
+      "description": "Từ chối nhầm giá trị đúng max",
+      "exit": 1,
+      "tests": 28,
+      "failed": 2,
+      "failedTests": [
+        "WB-INT-06",
+        "WB-INT-07"
+      ],
+      "timeout": false,
+      "status": "KILLED"
+    },
+    {
+      "id": "M02",
+      "file": "src/utils/cart-validation.js",
+      "from": "/^[1-9]\\d*$/",
+      "to": "/^[0-9]\\d*$/",
+      "description": "Cho phép quantity0 qua regex",
+      "exit": 1,
+      "tests": 28,
+      "failed": 1,
+      "failedTests": [
+        "WB-INT-02"
+      ],
+      "timeout": false,
+      "status": "KILLED"
+    },
+    {
+      "id": "M03",
+      "file": "src/services/cart-service.js",
+      "from": "price <= 0n",
+      "to": "price < 0n",
+      "description": "Cho phép giá0",
+      "exit": 1,
+      "tests": 28,
+      "failed": 1,
+      "failedTests": [
+        "WB-VAR-02"
+      ],
+      "timeout": false,
+      "status": "KILLED"
+    },
+    {
+      "id": "M04",
+      "file": "src/services/cart-service.js",
+      "from": "quantity > Number(variant.stock)",
+      "to": "quantity >= Number(variant.stock)",
+      "description": "Từ chối nhầm quantity bằng kho",
+      "exit": 1,
+      "tests": 28,
+      "failed": 1,
+      "failedTests": [
+        "WB-VAR-12"
+      ],
+      "timeout": false,
+      "status": "KILLED"
+    },
+    {
+      "id": "M05",
+      "file": "src/utils/checkout.js",
+      "from": "subtotal >= 30000000n",
+      "to": "subtotal > 30000000n",
+      "description": "Sai biên miễn phí300.000đ",
+      "exit": 1,
+      "tests": 28,
+      "failed": 1,
+      "failedTests": [
+        "WB-QUOTE-03"
+      ],
+      "timeout": false,
+      "status": "KILLED"
+    },
+    {
+      "id": "M06",
+      "file": "src/utils/checkout.js",
+      "from": "? 0n : 3000000n",
+      "to": "? 0n : 0n",
+      "description": "Bỏ phí vận chuyển dưới ngưỡng",
+      "exit": 1,
+      "tests": 28,
+      "failed": 1,
+      "failedTests": [
+        "WB-QUOTE-02"
+      ],
+      "timeout": false,
+      "status": "KILLED"
+    },
+    {
+      "id": "M07",
+      "file": "src/utils/checkout.js",
+      "from": "unitPrice * BigInt(item.quantity)",
+      "to": "unitPrice + BigInt(item.quantity)",
+      "description": "Cộng thay vì nhân đơn giá với quantity",
+      "exit": 1,
+      "tests": 28,
+      "failed": 4,
+      "failedTests": [
+        "WB-QUOTE-02",
+        "WB-QUOTE-03",
+        "WB-QUOTE-05",
+        "WB-QUOTE-06"
+      ],
+      "timeout": false,
+      "status": "KILLED"
+    },
+    {
+      "id": "M08",
+      "file": "src/utils/checkout.js",
+      "from": "total > 999999999999n",
+      "to": "total >= 999999999999n",
+      "description": "Từ chối nhầm tổng đúng giới hạn",
+      "exit": 1,
+      "tests": 28,
+      "failed": 1,
+      "failedTests": [
+        "WB-QUOTE-06"
+      ],
+      "timeout": false,
+      "status": "KILLED"
+    },
+    {
+      "id": "M09",
+      "file": "src/services/cart-service.js",
+      "from": "quantity < 1",
+      "to": "quantity === 0",
+      "description": "Bỏ chặn quantity âm tại variantProblem",
+      "exit": 0,
+      "tests": 28,
+      "failed": 0,
+      "failedTests": [],
+      "timeout": false,
+      "status": "SURVIVED",
+      "counterexample": {
+        "quantity": -1,
+        "original": "Số lượng phải từ 1 đến 99.",
+        "mutant": ""
+      }
+    }
+  ],
+  "originalSourceUnchanged": true,
+  "killed": 8,
+  "survived": 1,
+  "other": 0,
+  "score": 88.88888888888889,
+  "finished": "2026-11-01T20:08:52.462Z",
+  "sandbox": "C:\\Users\\Admin\\AppData\\Local\\Temp\\techzone-mutation-dBGJdY"
+}

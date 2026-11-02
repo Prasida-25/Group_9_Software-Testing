@@ -1,0 +1,15 @@
+﻿id,method,path,expected_status,observed_status,assertions_passed,assertions_total,result,uc,evidence
+PM-01,GET,/cart,303,303,2,2,Pass,UC-08,Minh-chung/Postman/PM-01-khach-redirect.png
+PM-02,GET,/cart/preview,401,401,2,2,Pass,"UC-08, endpoint bổ trợ",Minh-chung/Postman/PM-02-preview-401.png
+PM-03,GET,/products?category_id=462,200,200,2,2,Pass,UC-04,Minh-chung/Postman/PM-03-catalog-200.png
+PM-04,GET,/products?min_price=200000&max_price=100000,400,400,1,1,Pass,UC-06,Minh-chung/Postman/PM-04-khoang-gia-sai-400.png
+PM-05,GET,/login,200,200,2,2,Pass,UC-02,Minh-chung/Postman/PM-05-login-co-CSRF.png
+PM-06,POST,/login,401,401,3,3,Pass,UC-02,Minh-chung/Postman/PM-06-dang-nhap-sai.png
+PM-07,POST,/login,303,303,2,2,Pass,UC-02,Minh-chung/Postman/PM-07-dang-nhap-dung.png
+PM-08,GET,/cart,200,200,2,2,Pass,UC-08,Minh-chung/Postman/PM-08-gio-sau-login.png
+PM-09,GET,/products/545,200,200,2,2,Pass,"UC-07, hỗ trợ luồng CSRF",Minh-chung/Postman/PM-09-CSRF-phien-moi.png
+PM-10,POST,/cart/items,422,422,1,1,Pass,UC-09,Minh-chung/Postman/PM-10-quantity-0.png
+PM-11,POST,/cart/items,403,403,1,1,Pass,UC-09,Minh-chung/Postman/PM-11-thieu-CSRF.png
+PM-12,GET,/admin/orders,403,403,2,2,Pass,UC-16,Minh-chung/Postman/PM-12-tu-choi-admin.png
+PM-13,POST,/logout,303,303,2,2,Pass,UC-03,Minh-chung/Postman/PM-13-dang-xuat.png
+PM-14,GET,/cart,303,303,2,2,Pass,"UC-03, UC-08",Minh-chung/Postman/PM-14-gio-sau-logout.png

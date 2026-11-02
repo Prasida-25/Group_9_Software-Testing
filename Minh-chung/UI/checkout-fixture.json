@@ -1,0 +1,12 @@
+{
+  "userId": 875,
+  "addressIds": [
+    886,
+    887
+  ],
+  "cartItemId": 685,
+  "variantId": 1014,
+  "stockBefore": 5,
+  "unitPrice": "50000.00",
+  "fixtureOnly": true
+}

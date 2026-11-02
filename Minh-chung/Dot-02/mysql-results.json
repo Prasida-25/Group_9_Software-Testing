@@ -1,0 +1,5070 @@
+{
+  "runId": "2026-11-01T18-10-19-295Z-36f06107",
+  "started": "2026-11-01T18:10:19.296Z",
+  "results": [
+    {
+      "name": "isolation-and-InnoDB",
+      "status": "PASS",
+      "fixtures": [],
+      "observations": {},
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "cart-CRUD-and-owner",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 719
+            },
+            {
+              "id": 720
+            }
+          ],
+          "addresses": [
+            728,
+            729
+          ],
+          "variants": [
+            856,
+            857
+          ],
+          "category": 384,
+          "product": 467,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 856,
+                "stock": 5
+              },
+              {
+                "variant_id": 857,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 856,
+                "stock": 5
+              },
+              {
+                "variant_id": 857,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "cleanedOrderIds": [],
+          "cleanedAddressIds": [
+            728,
+            729
+          ],
+          "cleanedCartItemIds": []
+        }
+      ],
+      "observations": {},
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "cart-concurrent-add-unique",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 721
+            },
+            {
+              "id": 722
+            }
+          ],
+          "addresses": [
+            730,
+            731
+          ],
+          "variants": [
+            858,
+            859
+          ],
+          "category": 385,
+          "product": 468,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 858,
+                "stock": 5
+              },
+              {
+                "variant_id": 859,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 858,
+                "stock": 5
+              },
+              {
+                "variant_id": 859,
+                "stock": 5
+              }
+            ],
+            "items": [
+              {
+                "cart_item_id": 580,
+                "user_id": 721,
+                "variant_id": 858,
+                "quantity": 5
+              }
+            ],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "cleanedOrderIds": [],
+          "cleanedAddressIds": [
+            730,
+            731
+          ],
+          "cleanedCartItemIds": [
+            580
+          ]
+        }
+      ],
+      "observations": {},
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "shipping-price-and-snapshot",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 723
+            },
+            {
+              "id": 724
+            }
+          ],
+          "addresses": [
+            732,
+            733
+          ],
+          "variants": [
+            860,
+            861
+          ],
+          "category": 386,
+          "product": 469,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 860,
+                "stock": 5
+              },
+              {
+                "variant_id": 861,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 860,
+                "stock": 4
+              },
+              {
+                "variant_id": 861,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 349,
+                "user_id": 723,
+                "total_amount": "329999.99",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 383,
+                "order_id": 349,
+                "product_id": 469,
+                "variant_id": 860,
+                "product_name": "Sản phẩm TEST 9fad755991e8",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-9fad755991e8-0",
+                "quantity": 1,
+                "unit_price": "299999.99"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            349
+          ],
+          "cleanedAddressIds": [
+            732,
+            733
+          ],
+          "cleanedCartItemIds": []
+        },
+        {
+          "users": [
+            {
+              "id": 725
+            },
+            {
+              "id": 726
+            }
+          ],
+          "addresses": [
+            734,
+            735
+          ],
+          "variants": [
+            862,
+            863
+          ],
+          "category": 387,
+          "product": 470,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 862,
+                "stock": 5
+              },
+              {
+                "variant_id": 863,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 862,
+                "stock": 4
+              },
+              {
+                "variant_id": 863,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 350,
+                "user_id": 725,
+                "total_amount": "300000.00",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 384,
+                "order_id": 350,
+                "product_id": 470,
+                "variant_id": 862,
+                "product_name": "Sản phẩm TEST 8cdfa45043b7",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-8cdfa45043b7-0",
+                "quantity": 1,
+                "unit_price": "300000.00"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            350
+          ],
+          "cleanedAddressIds": [
+            734,
+            735
+          ],
+          "cleanedCartItemIds": []
+        }
+      ],
+      "observations": {},
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "price-change-foreign-address-and-empty",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 727
+            },
+            {
+              "id": 728
+            }
+          ],
+          "addresses": [
+            736,
+            737
+          ],
+          "variants": [
+            864,
+            865
+          ],
+          "category": 388,
+          "product": 471,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 864,
+                "stock": 5
+              },
+              {
+                "variant_id": 865,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 864,
+                "stock": 4
+              },
+              {
+                "variant_id": 865,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 351,
+                "user_id": 727,
+                "total_amount": "180000.00",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 385,
+                "order_id": 351,
+                "product_id": 471,
+                "variant_id": 864,
+                "product_name": "Sản phẩm TEST 203b712d4dd4",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-203b712d4dd4-0",
+                "quantity": 1,
+                "unit_price": "150000.00"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            351
+          ],
+          "cleanedAddressIds": [
+            736,
+            737
+          ],
+          "cleanedCartItemIds": []
+        }
+      ],
+      "observations": {},
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "real-rollback-stock-second",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 729
+            },
+            {
+              "id": 730
+            }
+          ],
+          "addresses": [
+            738,
+            739
+          ],
+          "variants": [
+            866,
+            867
+          ],
+          "category": 389,
+          "product": 472,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 866,
+                "stock": 5
+              },
+              {
+                "variant_id": 867,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 866,
+                "stock": 5
+              },
+              {
+                "variant_id": 867,
+                "stock": 5
+              }
+            ],
+            "items": [
+              {
+                "cart_item_id": 584,
+                "user_id": 729,
+                "variant_id": 866,
+                "quantity": 1
+              },
+              {
+                "cart_item_id": 585,
+                "user_id": 729,
+                "variant_id": 867,
+                "quantity": 1
+              }
+            ],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "cleanedOrderIds": [],
+          "cleanedAddressIds": [
+            738,
+            739
+          ],
+          "cleanedCartItemIds": [
+            584,
+            585
+          ]
+        }
+      ],
+      "observations": {
+        "error": "Error",
+        "before": {
+          "stock": [
+            {
+              "variant_id": 866,
+              "stock": 5
+            },
+            {
+              "variant_id": 867,
+              "stock": 5
+            }
+          ],
+          "items": [
+            {
+              "cart_item_id": 584,
+              "user_id": 729,
+              "variant_id": 866,
+              "quantity": 1
+            },
+            {
+              "cart_item_id": 585,
+              "user_id": 729,
+              "variant_id": 867,
+              "quantity": 1
+            }
+          ],
+          "orders": 0,
+          "orderRows": [],
+          "orderItems": []
+        },
+        "after": {
+          "stock": [
+            {
+              "variant_id": 866,
+              "stock": 5
+            },
+            {
+              "variant_id": 867,
+              "stock": 5
+            }
+          ],
+          "items": [
+            {
+              "cart_item_id": 584,
+              "user_id": 729,
+              "variant_id": 866,
+              "quantity": 1
+            },
+            {
+              "cart_item_id": 585,
+              "user_id": 729,
+              "variant_id": 867,
+              "quantity": 1
+            }
+          ],
+          "orders": 0,
+          "orderRows": [],
+          "orderItems": []
+        }
+      },
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "real-rollback-order",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 731
+            },
+            {
+              "id": 732
+            }
+          ],
+          "addresses": [
+            740,
+            741
+          ],
+          "variants": [
+            868,
+            869
+          ],
+          "category": 390,
+          "product": 473,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 868,
+                "stock": 5
+              },
+              {
+                "variant_id": 869,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 868,
+                "stock": 5
+              },
+              {
+                "variant_id": 869,
+                "stock": 5
+              }
+            ],
+            "items": [
+              {
+                "cart_item_id": 586,
+                "user_id": 731,
+                "variant_id": 868,
+                "quantity": 1
+              },
+              {
+                "cart_item_id": 587,
+                "user_id": 731,
+                "variant_id": 869,
+                "quantity": 1
+              }
+            ],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "cleanedOrderIds": [],
+          "cleanedAddressIds": [
+            740,
+            741
+          ],
+          "cleanedCartItemIds": [
+            586,
+            587
+          ]
+        }
+      ],
+      "observations": {
+        "error": "ER_BAD_NULL_ERROR",
+        "before": {
+          "stock": [
+            {
+              "variant_id": 868,
+              "stock": 5
+            },
+            {
+              "variant_id": 869,
+              "stock": 5
+            }
+          ],
+          "items": [
+            {
+              "cart_item_id": 586,
+              "user_id": 731,
+              "variant_id": 868,
+              "quantity": 1
+            },
+            {
+              "cart_item_id": 587,
+              "user_id": 731,
+              "variant_id": 869,
+              "quantity": 1
+            }
+          ],
+          "orders": 0,
+          "orderRows": [],
+          "orderItems": []
+        },
+        "after": {
+          "stock": [
+            {
+              "variant_id": 868,
+              "stock": 5
+            },
+            {
+              "variant_id": 869,
+              "stock": 5
+            }
+          ],
+          "items": [
+            {
+              "cart_item_id": 586,
+              "user_id": 731,
+              "variant_id": 868,
+              "quantity": 1
+            },
+            {
+              "cart_item_id": 587,
+              "user_id": 731,
+              "variant_id": 869,
+              "quantity": 1
+            }
+          ],
+          "orders": 0,
+          "orderRows": [],
+          "orderItems": []
+        }
+      },
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "real-rollback-item-second",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 733
+            },
+            {
+              "id": 734
+            }
+          ],
+          "addresses": [
+            742,
+            743
+          ],
+          "variants": [
+            870,
+            871
+          ],
+          "category": 391,
+          "product": 474,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 870,
+                "stock": 5
+              },
+              {
+                "variant_id": 871,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 870,
+                "stock": 5
+              },
+              {
+                "variant_id": 871,
+                "stock": 5
+              }
+            ],
+            "items": [
+              {
+                "cart_item_id": 588,
+                "user_id": 733,
+                "variant_id": 870,
+                "quantity": 1
+              },
+              {
+                "cart_item_id": 589,
+                "user_id": 733,
+                "variant_id": 871,
+                "quantity": 1
+              }
+            ],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "cleanedOrderIds": [],
+          "cleanedAddressIds": [
+            742,
+            743
+          ],
+          "cleanedCartItemIds": [
+            588,
+            589
+          ]
+        }
+      ],
+      "observations": {
+        "error": "ER_CHECK_CONSTRAINT_VIOLATED",
+        "before": {
+          "stock": [
+            {
+              "variant_id": 870,
+              "stock": 5
+            },
+            {
+              "variant_id": 871,
+              "stock": 5
+            }
+          ],
+          "items": [
+            {
+              "cart_item_id": 588,
+              "user_id": 733,
+              "variant_id": 870,
+              "quantity": 1
+            },
+            {
+              "cart_item_id": 589,
+              "user_id": 733,
+              "variant_id": 871,
+              "quantity": 1
+            }
+          ],
+          "orders": 0,
+          "orderRows": [],
+          "orderItems": []
+        },
+        "after": {
+          "stock": [
+            {
+              "variant_id": 870,
+              "stock": 5
+            },
+            {
+              "variant_id": 871,
+              "stock": 5
+            }
+          ],
+          "items": [
+            {
+              "cart_item_id": 588,
+              "user_id": 733,
+              "variant_id": 870,
+              "quantity": 1
+            },
+            {
+              "cart_item_id": 589,
+              "user_id": 733,
+              "variant_id": 871,
+              "quantity": 1
+            }
+          ],
+          "orders": 0,
+          "orderRows": [],
+          "orderItems": []
+        }
+      },
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "real-rollback-clear",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 735
+            },
+            {
+              "id": 736
+            }
+          ],
+          "addresses": [
+            744,
+            745
+          ],
+          "variants": [
+            872,
+            873
+          ],
+          "category": 392,
+          "product": 475,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 872,
+                "stock": 5
+              },
+              {
+                "variant_id": 873,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 872,
+                "stock": 5
+              },
+              {
+                "variant_id": 873,
+                "stock": 5
+              }
+            ],
+            "items": [
+              {
+                "cart_item_id": 590,
+                "user_id": 735,
+                "variant_id": 872,
+                "quantity": 1
+              },
+              {
+                "cart_item_id": 591,
+                "user_id": 735,
+                "variant_id": 873,
+                "quantity": 1
+              }
+            ],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "cleanedOrderIds": [],
+          "cleanedAddressIds": [
+            744,
+            745
+          ],
+          "cleanedCartItemIds": [
+            590,
+            591
+          ]
+        }
+      ],
+      "observations": {
+        "error": "Error",
+        "before": {
+          "stock": [
+            {
+              "variant_id": 872,
+              "stock": 5
+            },
+            {
+              "variant_id": 873,
+              "stock": 5
+            }
+          ],
+          "items": [
+            {
+              "cart_item_id": 590,
+              "user_id": 735,
+              "variant_id": 872,
+              "quantity": 1
+            },
+            {
+              "cart_item_id": 591,
+              "user_id": 735,
+              "variant_id": 873,
+              "quantity": 1
+            }
+          ],
+          "orders": 0,
+          "orderRows": [],
+          "orderItems": []
+        },
+        "after": {
+          "stock": [
+            {
+              "variant_id": 872,
+              "stock": 5
+            },
+            {
+              "variant_id": 873,
+              "stock": 5
+            }
+          ],
+          "items": [
+            {
+              "cart_item_id": 590,
+              "user_id": 735,
+              "variant_id": 872,
+              "quantity": 1
+            },
+            {
+              "cart_item_id": 591,
+              "user_id": 735,
+              "variant_id": 873,
+              "quantity": 1
+            }
+          ],
+          "orders": 0,
+          "orderRows": [],
+          "orderItems": []
+        }
+      },
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "real-rollback-before-commit",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 737
+            },
+            {
+              "id": 738
+            }
+          ],
+          "addresses": [
+            746,
+            747
+          ],
+          "variants": [
+            874,
+            875
+          ],
+          "category": 393,
+          "product": 476,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 874,
+                "stock": 5
+              },
+              {
+                "variant_id": 875,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 874,
+                "stock": 5
+              },
+              {
+                "variant_id": 875,
+                "stock": 5
+              }
+            ],
+            "items": [
+              {
+                "cart_item_id": 592,
+                "user_id": 737,
+                "variant_id": 874,
+                "quantity": 1
+              },
+              {
+                "cart_item_id": 593,
+                "user_id": 737,
+                "variant_id": 875,
+                "quantity": 1
+              }
+            ],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "cleanedOrderIds": [],
+          "cleanedAddressIds": [
+            746,
+            747
+          ],
+          "cleanedCartItemIds": [
+            592,
+            593
+          ]
+        }
+      ],
+      "observations": {
+        "error": "Error",
+        "before": {
+          "stock": [
+            {
+              "variant_id": 874,
+              "stock": 5
+            },
+            {
+              "variant_id": 875,
+              "stock": 5
+            }
+          ],
+          "items": [
+            {
+              "cart_item_id": 592,
+              "user_id": 737,
+              "variant_id": 874,
+              "quantity": 1
+            },
+            {
+              "cart_item_id": 593,
+              "user_id": 737,
+              "variant_id": 875,
+              "quantity": 1
+            }
+          ],
+          "orders": 0,
+          "orderRows": [],
+          "orderItems": []
+        },
+        "after": {
+          "stock": [
+            {
+              "variant_id": 874,
+              "stock": 5
+            },
+            {
+              "variant_id": 875,
+              "stock": 5
+            }
+          ],
+          "items": [
+            {
+              "cart_item_id": 592,
+              "user_id": 737,
+              "variant_id": 874,
+              "quantity": 1
+            },
+            {
+              "cart_item_id": 593,
+              "user_id": 737,
+              "variant_id": 875,
+              "quantity": 1
+            }
+          ],
+          "orders": 0,
+          "orderRows": [],
+          "orderItems": []
+        }
+      },
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "real-InnoDB-last-stock-race-5-rounds",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 739
+            },
+            {
+              "id": 740
+            }
+          ],
+          "addresses": [
+            748,
+            749
+          ],
+          "variants": [
+            876,
+            877
+          ],
+          "category": 394,
+          "product": 477,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 876,
+                "stock": 5
+              },
+              {
+                "variant_id": 877,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 876,
+                "stock": 0
+              },
+              {
+                "variant_id": 877,
+                "stock": 5
+              }
+            ],
+            "items": [
+              {
+                "cart_item_id": 595,
+                "user_id": 740,
+                "variant_id": 876,
+                "quantity": 1
+              }
+            ],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 355,
+                "user_id": 739,
+                "total_amount": "130000.01",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 391,
+                "order_id": 355,
+                "product_id": 477,
+                "variant_id": 876,
+                "product_name": "Sản phẩm TEST 4172e3a1c274",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-4172e3a1c274-0",
+                "quantity": 1,
+                "unit_price": "100000.01"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            355
+          ],
+          "cleanedAddressIds": [
+            748,
+            749
+          ],
+          "cleanedCartItemIds": [
+            595
+          ]
+        },
+        {
+          "users": [
+            {
+              "id": 741
+            },
+            {
+              "id": 742
+            }
+          ],
+          "addresses": [
+            750,
+            751
+          ],
+          "variants": [
+            878,
+            879
+          ],
+          "category": 395,
+          "product": 478,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 878,
+                "stock": 5
+              },
+              {
+                "variant_id": 879,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 878,
+                "stock": 0
+              },
+              {
+                "variant_id": 879,
+                "stock": 5
+              }
+            ],
+            "items": [
+              {
+                "cart_item_id": 597,
+                "user_id": 742,
+                "variant_id": 878,
+                "quantity": 1
+              }
+            ],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 356,
+                "user_id": 741,
+                "total_amount": "130000.01",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 392,
+                "order_id": 356,
+                "product_id": 478,
+                "variant_id": 878,
+                "product_name": "Sản phẩm TEST 3e85b734354a",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-3e85b734354a-0",
+                "quantity": 1,
+                "unit_price": "100000.01"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            356
+          ],
+          "cleanedAddressIds": [
+            750,
+            751
+          ],
+          "cleanedCartItemIds": [
+            597
+          ]
+        },
+        {
+          "users": [
+            {
+              "id": 743
+            },
+            {
+              "id": 744
+            }
+          ],
+          "addresses": [
+            752,
+            753
+          ],
+          "variants": [
+            880,
+            881
+          ],
+          "category": 396,
+          "product": 479,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 880,
+                "stock": 5
+              },
+              {
+                "variant_id": 881,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 880,
+                "stock": 0
+              },
+              {
+                "variant_id": 881,
+                "stock": 5
+              }
+            ],
+            "items": [
+              {
+                "cart_item_id": 599,
+                "user_id": 744,
+                "variant_id": 880,
+                "quantity": 1
+              }
+            ],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 357,
+                "user_id": 743,
+                "total_amount": "130000.01",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 393,
+                "order_id": 357,
+                "product_id": 479,
+                "variant_id": 880,
+                "product_name": "Sản phẩm TEST b659e991e619",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-b659e991e619-0",
+                "quantity": 1,
+                "unit_price": "100000.01"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            357
+          ],
+          "cleanedAddressIds": [
+            752,
+            753
+          ],
+          "cleanedCartItemIds": [
+            599
+          ]
+        },
+        {
+          "users": [
+            {
+              "id": 745
+            },
+            {
+              "id": 746
+            }
+          ],
+          "addresses": [
+            754,
+            755
+          ],
+          "variants": [
+            882,
+            883
+          ],
+          "category": 397,
+          "product": 480,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 882,
+                "stock": 5
+              },
+              {
+                "variant_id": 883,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 882,
+                "stock": 0
+              },
+              {
+                "variant_id": 883,
+                "stock": 5
+              }
+            ],
+            "items": [
+              {
+                "cart_item_id": 601,
+                "user_id": 746,
+                "variant_id": 882,
+                "quantity": 1
+              }
+            ],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 358,
+                "user_id": 745,
+                "total_amount": "130000.01",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 394,
+                "order_id": 358,
+                "product_id": 480,
+                "variant_id": 882,
+                "product_name": "Sản phẩm TEST 550e3116a174",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-550e3116a174-0",
+                "quantity": 1,
+                "unit_price": "100000.01"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            358
+          ],
+          "cleanedAddressIds": [
+            754,
+            755
+          ],
+          "cleanedCartItemIds": [
+            601
+          ]
+        },
+        {
+          "users": [
+            {
+              "id": 747
+            },
+            {
+              "id": 748
+            }
+          ],
+          "addresses": [
+            756,
+            757
+          ],
+          "variants": [
+            884,
+            885
+          ],
+          "category": 398,
+          "product": 481,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 884,
+                "stock": 5
+              },
+              {
+                "variant_id": 885,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 884,
+                "stock": 0
+              },
+              {
+                "variant_id": 885,
+                "stock": 5
+              }
+            ],
+            "items": [
+              {
+                "cart_item_id": 603,
+                "user_id": 748,
+                "variant_id": 884,
+                "quantity": 1
+              }
+            ],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 359,
+                "user_id": 747,
+                "total_amount": "130000.01",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 395,
+                "order_id": 359,
+                "product_id": 481,
+                "variant_id": 884,
+                "product_name": "Sản phẩm TEST c170d0e04247",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-c170d0e04247-0",
+                "quantity": 1,
+                "unit_price": "100000.01"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            359
+          ],
+          "cleanedAddressIds": [
+            756,
+            757
+          ],
+          "cleanedCartItemIds": [
+            603
+          ]
+        }
+      ],
+      "observations": {},
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "duplicate-tokens-same-cart",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 749
+            },
+            {
+              "id": 750
+            }
+          ],
+          "addresses": [
+            758,
+            759
+          ],
+          "variants": [
+            886,
+            887
+          ],
+          "category": 399,
+          "product": 482,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 886,
+                "stock": 5
+              },
+              {
+                "variant_id": 887,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 886,
+                "stock": 4
+              },
+              {
+                "variant_id": 887,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 360,
+                "user_id": 749,
+                "total_amount": "130000.01",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 396,
+                "order_id": 360,
+                "product_id": 482,
+                "variant_id": 886,
+                "product_name": "Sản phẩm TEST 98dec000175b",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-98dec000175b-0",
+                "quantity": 1,
+                "unit_price": "100000.01"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            360
+          ],
+          "cleanedAddressIds": [
+            758,
+            759
+          ],
+          "cleanedCartItemIds": []
+        }
+      ],
+      "observations": {},
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "real-HTTP-account-catalog-and-purchase",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 751
+            },
+            {
+              "id": 752
+            }
+          ],
+          "addresses": [
+            760,
+            761
+          ],
+          "variants": [
+            888,
+            889
+          ],
+          "category": 400,
+          "product": 483,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 888,
+                "stock": 5
+              },
+              {
+                "variant_id": 889,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 888,
+                "stock": 4
+              },
+              {
+                "variant_id": 889,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 361,
+                "user_id": 751,
+                "total_amount": "130000.01",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 397,
+                "order_id": 361,
+                "product_id": 483,
+                "variant_id": 888,
+                "product_name": "Sản phẩm TEST 3803d1391c84",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-3803d1391c84-0",
+                "quantity": 1,
+                "unit_price": "100000.01"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            361
+          ],
+          "cleanedAddressIds": [
+            760,
+            761
+          ],
+          "cleanedCartItemIds": []
+        }
+      ],
+      "observations": {},
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "real-HTTP-profile-address-password",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 753
+            },
+            {
+              "id": 754
+            }
+          ],
+          "addresses": [
+            762,
+            763
+          ],
+          "variants": [
+            890,
+            891
+          ],
+          "category": 401,
+          "product": 484,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 890,
+                "stock": 5
+              },
+              {
+                "variant_id": 891,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 890,
+                "stock": 5
+              },
+              {
+                "variant_id": 891,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "cleanedOrderIds": [],
+          "cleanedAddressIds": [
+            762,
+            764,
+            763
+          ],
+          "cleanedCartItemIds": []
+        }
+      ],
+      "observations": {},
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "HTTP-COD-commit-SQL-details-and-cart",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 755
+            },
+            {
+              "id": 756
+            }
+          ],
+          "addresses": [
+            765,
+            766
+          ],
+          "variants": [
+            892,
+            893
+          ],
+          "category": 402,
+          "product": 485,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 892,
+                "stock": 5
+              },
+              {
+                "variant_id": 893,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 892,
+                "stock": 3
+              },
+              {
+                "variant_id": 893,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 362,
+                "user_id": 755,
+                "total_amount": "230000.02",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 398,
+                "order_id": 362,
+                "product_id": 485,
+                "variant_id": 892,
+                "product_name": "Sản phẩm TEST cc066956e6aa",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-cc066956e6aa-0",
+                "quantity": 2,
+                "unit_price": "100000.01"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            362
+          ],
+          "cleanedAddressIds": [
+            765,
+            766
+          ],
+          "cleanedCartItemIds": []
+        }
+      ],
+      "observations": {
+        "before": {
+          "stock": [
+            {
+              "variant_id": 892,
+              "stock": 5
+            },
+            {
+              "variant_id": 893,
+              "stock": 5
+            }
+          ],
+          "items": [
+            {
+              "cart_item_id": 606,
+              "user_id": 755,
+              "variant_id": 892,
+              "quantity": 2
+            }
+          ],
+          "orders": 0,
+          "orderRows": [],
+          "orderItems": []
+        },
+        "response": {
+          "status": 303,
+          "location": "/checkout/success/362"
+        },
+        "after": {
+          "stock": [
+            {
+              "variant_id": 892,
+              "stock": 3
+            },
+            {
+              "variant_id": 893,
+              "stock": 5
+            }
+          ],
+          "items": [],
+          "orders": 1,
+          "orderRows": [
+            {
+              "order_id": 362,
+              "user_id": 755,
+              "total_amount": "230000.02",
+              "status": "pending",
+              "payment_method": "cod",
+              "payment_status": "unpaid"
+            }
+          ],
+          "orderItems": [
+            {
+              "order_item_id": 398,
+              "order_id": 362,
+              "product_id": 485,
+              "variant_id": 892,
+              "product_name": "Sản phẩm TEST cc066956e6aa",
+              "variant_name": "Phiên bản TEST 0",
+              "sku": "TEST-cc066956e6aa-0",
+              "quantity": 2,
+              "unit_price": "100000.01"
+            }
+          ]
+        }
+      },
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "HTTP-two-customers-last-stock-overlapping-InnoDB-5-rounds",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 757
+            },
+            {
+              "id": 758
+            }
+          ],
+          "addresses": [
+            767,
+            768
+          ],
+          "variants": [
+            894,
+            895
+          ],
+          "category": 403,
+          "product": 486,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 894,
+                "stock": 5
+              },
+              {
+                "variant_id": 895,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 894,
+                "stock": 0
+              },
+              {
+                "variant_id": 895,
+                "stock": 5
+              }
+            ],
+            "items": [
+              {
+                "cart_item_id": 607,
+                "user_id": 757,
+                "variant_id": 894,
+                "quantity": 1
+              }
+            ],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 363,
+                "user_id": 758,
+                "total_amount": "130000.01",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 399,
+                "order_id": 363,
+                "product_id": 486,
+                "variant_id": 894,
+                "product_name": "Sản phẩm TEST a59e07d6b997",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-a59e07d6b997-0",
+                "quantity": 1,
+                "unit_price": "100000.01"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            363
+          ],
+          "cleanedAddressIds": [
+            767,
+            768
+          ],
+          "cleanedCartItemIds": [
+            607
+          ]
+        },
+        {
+          "users": [
+            {
+              "id": 759
+            },
+            {
+              "id": 760
+            }
+          ],
+          "addresses": [
+            769,
+            770
+          ],
+          "variants": [
+            896,
+            897
+          ],
+          "category": 404,
+          "product": 487,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 896,
+                "stock": 5
+              },
+              {
+                "variant_id": 897,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 896,
+                "stock": 0
+              },
+              {
+                "variant_id": 897,
+                "stock": 5
+              }
+            ],
+            "items": [
+              {
+                "cart_item_id": 609,
+                "user_id": 759,
+                "variant_id": 896,
+                "quantity": 1
+              }
+            ],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 364,
+                "user_id": 760,
+                "total_amount": "130000.01",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 400,
+                "order_id": 364,
+                "product_id": 487,
+                "variant_id": 896,
+                "product_name": "Sản phẩm TEST 3105e50b252f",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-3105e50b252f-0",
+                "quantity": 1,
+                "unit_price": "100000.01"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            364
+          ],
+          "cleanedAddressIds": [
+            769,
+            770
+          ],
+          "cleanedCartItemIds": [
+            609
+          ]
+        },
+        {
+          "users": [
+            {
+              "id": 761
+            },
+            {
+              "id": 762
+            }
+          ],
+          "addresses": [
+            771,
+            772
+          ],
+          "variants": [
+            898,
+            899
+          ],
+          "category": 405,
+          "product": 488,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 898,
+                "stock": 5
+              },
+              {
+                "variant_id": 899,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 898,
+                "stock": 0
+              },
+              {
+                "variant_id": 899,
+                "stock": 5
+              }
+            ],
+            "items": [
+              {
+                "cart_item_id": 612,
+                "user_id": 762,
+                "variant_id": 898,
+                "quantity": 1
+              }
+            ],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 365,
+                "user_id": 761,
+                "total_amount": "130000.01",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 401,
+                "order_id": 365,
+                "product_id": 488,
+                "variant_id": 898,
+                "product_name": "Sản phẩm TEST 97eb00b87b07",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-97eb00b87b07-0",
+                "quantity": 1,
+                "unit_price": "100000.01"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            365
+          ],
+          "cleanedAddressIds": [
+            771,
+            772
+          ],
+          "cleanedCartItemIds": [
+            612
+          ]
+        },
+        {
+          "users": [
+            {
+              "id": 763
+            },
+            {
+              "id": 764
+            }
+          ],
+          "addresses": [
+            773,
+            774
+          ],
+          "variants": [
+            900,
+            901
+          ],
+          "category": 406,
+          "product": 489,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 900,
+                "stock": 5
+              },
+              {
+                "variant_id": 901,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 900,
+                "stock": 0
+              },
+              {
+                "variant_id": 901,
+                "stock": 5
+              }
+            ],
+            "items": [
+              {
+                "cart_item_id": 613,
+                "user_id": 763,
+                "variant_id": 900,
+                "quantity": 1
+              }
+            ],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 366,
+                "user_id": 764,
+                "total_amount": "130000.01",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 402,
+                "order_id": 366,
+                "product_id": 489,
+                "variant_id": 900,
+                "product_name": "Sản phẩm TEST a2f02ece2fc6",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-a2f02ece2fc6-0",
+                "quantity": 1,
+                "unit_price": "100000.01"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            366
+          ],
+          "cleanedAddressIds": [
+            773,
+            774
+          ],
+          "cleanedCartItemIds": [
+            613
+          ]
+        },
+        {
+          "users": [
+            {
+              "id": 765
+            },
+            {
+              "id": 766
+            }
+          ],
+          "addresses": [
+            775,
+            776
+          ],
+          "variants": [
+            902,
+            903
+          ],
+          "category": 407,
+          "product": 490,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 902,
+                "stock": 5
+              },
+              {
+                "variant_id": 903,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 902,
+                "stock": 0
+              },
+              {
+                "variant_id": 903,
+                "stock": 5
+              }
+            ],
+            "items": [
+              {
+                "cart_item_id": 615,
+                "user_id": 765,
+                "variant_id": 902,
+                "quantity": 1
+              }
+            ],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 367,
+                "user_id": 766,
+                "total_amount": "130000.01",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 403,
+                "order_id": 367,
+                "product_id": 490,
+                "variant_id": 902,
+                "product_name": "Sản phẩm TEST a025e1273dba",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-a025e1273dba-0",
+                "quantity": 1,
+                "unit_price": "100000.01"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            367
+          ],
+          "cleanedAddressIds": [
+            775,
+            776
+          ],
+          "cleanedCartItemIds": [
+            615
+          ]
+        }
+      ],
+      "observations": {
+        "rounds": [
+          {
+            "before": {
+              "stock": [
+                {
+                  "variant_id": 894,
+                  "stock": 1
+                },
+                {
+                  "variant_id": 895,
+                  "stock": 5
+                }
+              ],
+              "items": [
+                {
+                  "cart_item_id": 607,
+                  "user_id": 757,
+                  "variant_id": 894,
+                  "quantity": 1
+                },
+                {
+                  "cart_item_id": 608,
+                  "user_id": 758,
+                  "variant_id": 894,
+                  "quantity": 1
+                }
+              ],
+              "orders": 0,
+              "orderRows": [],
+              "orderItems": []
+            },
+            "after": {
+              "stock": [
+                {
+                  "variant_id": 894,
+                  "stock": 0
+                },
+                {
+                  "variant_id": 895,
+                  "stock": 5
+                }
+              ],
+              "items": [
+                {
+                  "cart_item_id": 607,
+                  "user_id": 757,
+                  "variant_id": 894,
+                  "quantity": 1
+                }
+              ],
+              "orders": 1,
+              "orderRows": [
+                {
+                  "order_id": 363,
+                  "user_id": 758,
+                  "total_amount": "130000.01",
+                  "status": "pending",
+                  "payment_method": "cod",
+                  "payment_status": "unpaid"
+                }
+              ],
+              "orderItems": [
+                {
+                  "order_item_id": 399,
+                  "order_id": 363,
+                  "product_id": 486,
+                  "variant_id": 894,
+                  "product_name": "Sản phẩm TEST a59e07d6b997",
+                  "variant_name": "Phiên bản TEST 0",
+                  "sku": "TEST-a59e07d6b997-0",
+                  "quantity": 1,
+                  "unit_price": "100000.01"
+                }
+              ]
+            },
+            "statuses": [
+              409,
+              303
+            ],
+            "transactions": [
+              {
+                "connectionId": 16,
+                "steps": [
+                  "begin",
+                  "lockUser",
+                  "cart",
+                  "variant",
+                  "address",
+                  "rollback",
+                  "release"
+                ]
+              },
+              {
+                "connectionId": 14,
+                "steps": [
+                  "begin",
+                  "lockUser",
+                  "cart",
+                  "variant",
+                  "address",
+                  "stock",
+                  "order",
+                  "item",
+                  "clear",
+                  "commit",
+                  "release"
+                ]
+              }
+            ]
+          },
+          {
+            "before": {
+              "stock": [
+                {
+                  "variant_id": 896,
+                  "stock": 1
+                },
+                {
+                  "variant_id": 897,
+                  "stock": 5
+                }
+              ],
+              "items": [
+                {
+                  "cart_item_id": 609,
+                  "user_id": 759,
+                  "variant_id": 896,
+                  "quantity": 1
+                },
+                {
+                  "cart_item_id": 610,
+                  "user_id": 760,
+                  "variant_id": 896,
+                  "quantity": 1
+                }
+              ],
+              "orders": 0,
+              "orderRows": [],
+              "orderItems": []
+            },
+            "after": {
+              "stock": [
+                {
+                  "variant_id": 896,
+                  "stock": 0
+                },
+                {
+                  "variant_id": 897,
+                  "stock": 5
+                }
+              ],
+              "items": [
+                {
+                  "cart_item_id": 609,
+                  "user_id": 759,
+                  "variant_id": 896,
+                  "quantity": 1
+                }
+              ],
+              "orders": 1,
+              "orderRows": [
+                {
+                  "order_id": 364,
+                  "user_id": 760,
+                  "total_amount": "130000.01",
+                  "status": "pending",
+                  "payment_method": "cod",
+                  "payment_status": "unpaid"
+                }
+              ],
+              "orderItems": [
+                {
+                  "order_item_id": 400,
+                  "order_id": 364,
+                  "product_id": 487,
+                  "variant_id": 896,
+                  "product_name": "Sản phẩm TEST 3105e50b252f",
+                  "variant_name": "Phiên bản TEST 0",
+                  "sku": "TEST-3105e50b252f-0",
+                  "quantity": 1,
+                  "unit_price": "100000.01"
+                }
+              ]
+            },
+            "statuses": [
+              409,
+              303
+            ],
+            "transactions": [
+              {
+                "connectionId": 16,
+                "steps": [
+                  "begin",
+                  "lockUser",
+                  "cart",
+                  "variant",
+                  "address",
+                  "stock",
+                  "order",
+                  "item",
+                  "clear",
+                  "commit",
+                  "release"
+                ]
+              },
+              {
+                "connectionId": 14,
+                "steps": [
+                  "begin",
+                  "lockUser",
+                  "cart",
+                  "variant",
+                  "address",
+                  "rollback",
+                  "release"
+                ]
+              }
+            ]
+          },
+          {
+            "before": {
+              "stock": [
+                {
+                  "variant_id": 898,
+                  "stock": 1
+                },
+                {
+                  "variant_id": 899,
+                  "stock": 5
+                }
+              ],
+              "items": [
+                {
+                  "cart_item_id": 611,
+                  "user_id": 761,
+                  "variant_id": 898,
+                  "quantity": 1
+                },
+                {
+                  "cart_item_id": 612,
+                  "user_id": 762,
+                  "variant_id": 898,
+                  "quantity": 1
+                }
+              ],
+              "orders": 0,
+              "orderRows": [],
+              "orderItems": []
+            },
+            "after": {
+              "stock": [
+                {
+                  "variant_id": 898,
+                  "stock": 0
+                },
+                {
+                  "variant_id": 899,
+                  "stock": 5
+                }
+              ],
+              "items": [
+                {
+                  "cart_item_id": 612,
+                  "user_id": 762,
+                  "variant_id": 898,
+                  "quantity": 1
+                }
+              ],
+              "orders": 1,
+              "orderRows": [
+                {
+                  "order_id": 365,
+                  "user_id": 761,
+                  "total_amount": "130000.01",
+                  "status": "pending",
+                  "payment_method": "cod",
+                  "payment_status": "unpaid"
+                }
+              ],
+              "orderItems": [
+                {
+                  "order_item_id": 401,
+                  "order_id": 365,
+                  "product_id": 488,
+                  "variant_id": 898,
+                  "product_name": "Sản phẩm TEST 97eb00b87b07",
+                  "variant_name": "Phiên bản TEST 0",
+                  "sku": "TEST-97eb00b87b07-0",
+                  "quantity": 1,
+                  "unit_price": "100000.01"
+                }
+              ]
+            },
+            "statuses": [
+              303,
+              409
+            ],
+            "transactions": [
+              {
+                "connectionId": 16,
+                "steps": [
+                  "begin",
+                  "lockUser",
+                  "cart",
+                  "variant",
+                  "address",
+                  "stock",
+                  "order",
+                  "item",
+                  "clear",
+                  "commit",
+                  "release"
+                ]
+              },
+              {
+                "connectionId": 14,
+                "steps": [
+                  "begin",
+                  "lockUser",
+                  "cart",
+                  "variant",
+                  "address",
+                  "rollback",
+                  "release"
+                ]
+              }
+            ]
+          },
+          {
+            "before": {
+              "stock": [
+                {
+                  "variant_id": 900,
+                  "stock": 1
+                },
+                {
+                  "variant_id": 901,
+                  "stock": 5
+                }
+              ],
+              "items": [
+                {
+                  "cart_item_id": 613,
+                  "user_id": 763,
+                  "variant_id": 900,
+                  "quantity": 1
+                },
+                {
+                  "cart_item_id": 614,
+                  "user_id": 764,
+                  "variant_id": 900,
+                  "quantity": 1
+                }
+              ],
+              "orders": 0,
+              "orderRows": [],
+              "orderItems": []
+            },
+            "after": {
+              "stock": [
+                {
+                  "variant_id": 900,
+                  "stock": 0
+                },
+                {
+                  "variant_id": 901,
+                  "stock": 5
+                }
+              ],
+              "items": [
+                {
+                  "cart_item_id": 613,
+                  "user_id": 763,
+                  "variant_id": 900,
+                  "quantity": 1
+                }
+              ],
+              "orders": 1,
+              "orderRows": [
+                {
+                  "order_id": 366,
+                  "user_id": 764,
+                  "total_amount": "130000.01",
+                  "status": "pending",
+                  "payment_method": "cod",
+                  "payment_status": "unpaid"
+                }
+              ],
+              "orderItems": [
+                {
+                  "order_item_id": 402,
+                  "order_id": 366,
+                  "product_id": 489,
+                  "variant_id": 900,
+                  "product_name": "Sản phẩm TEST a2f02ece2fc6",
+                  "variant_name": "Phiên bản TEST 0",
+                  "sku": "TEST-a2f02ece2fc6-0",
+                  "quantity": 1,
+                  "unit_price": "100000.01"
+                }
+              ]
+            },
+            "statuses": [
+              409,
+              303
+            ],
+            "transactions": [
+              {
+                "connectionId": 16,
+                "steps": [
+                  "begin",
+                  "lockUser",
+                  "cart",
+                  "variant",
+                  "address",
+                  "stock",
+                  "order",
+                  "item",
+                  "clear",
+                  "commit",
+                  "release"
+                ]
+              },
+              {
+                "connectionId": 14,
+                "steps": [
+                  "begin",
+                  "lockUser",
+                  "cart",
+                  "variant",
+                  "address",
+                  "rollback",
+                  "release"
+                ]
+              }
+            ]
+          },
+          {
+            "before": {
+              "stock": [
+                {
+                  "variant_id": 902,
+                  "stock": 1
+                },
+                {
+                  "variant_id": 903,
+                  "stock": 5
+                }
+              ],
+              "items": [
+                {
+                  "cart_item_id": 615,
+                  "user_id": 765,
+                  "variant_id": 902,
+                  "quantity": 1
+                },
+                {
+                  "cart_item_id": 616,
+                  "user_id": 766,
+                  "variant_id": 902,
+                  "quantity": 1
+                }
+              ],
+              "orders": 0,
+              "orderRows": [],
+              "orderItems": []
+            },
+            "after": {
+              "stock": [
+                {
+                  "variant_id": 902,
+                  "stock": 0
+                },
+                {
+                  "variant_id": 903,
+                  "stock": 5
+                }
+              ],
+              "items": [
+                {
+                  "cart_item_id": 615,
+                  "user_id": 765,
+                  "variant_id": 902,
+                  "quantity": 1
+                }
+              ],
+              "orders": 1,
+              "orderRows": [
+                {
+                  "order_id": 367,
+                  "user_id": 766,
+                  "total_amount": "130000.01",
+                  "status": "pending",
+                  "payment_method": "cod",
+                  "payment_status": "unpaid"
+                }
+              ],
+              "orderItems": [
+                {
+                  "order_item_id": 403,
+                  "order_id": 367,
+                  "product_id": 490,
+                  "variant_id": 902,
+                  "product_name": "Sản phẩm TEST a025e1273dba",
+                  "variant_name": "Phiên bản TEST 0",
+                  "sku": "TEST-a025e1273dba-0",
+                  "quantity": 1,
+                  "unit_price": "100000.01"
+                }
+              ]
+            },
+            "statuses": [
+              409,
+              303
+            ],
+            "transactions": [
+              {
+                "connectionId": 16,
+                "steps": [
+                  "begin",
+                  "lockUser",
+                  "cart",
+                  "variant",
+                  "address",
+                  "stock",
+                  "order",
+                  "item",
+                  "clear",
+                  "commit",
+                  "release"
+                ]
+              },
+              {
+                "connectionId": 14,
+                "steps": [
+                  "begin",
+                  "lockUser",
+                  "cart",
+                  "variant",
+                  "address",
+                  "rollback",
+                  "release"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "HTTP-replay-after-success-and-12-parallel-same-token",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 767
+            },
+            {
+              "id": 768
+            }
+          ],
+          "addresses": [
+            777,
+            778
+          ],
+          "variants": [
+            904,
+            905
+          ],
+          "category": 408,
+          "product": 491,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 904,
+                "stock": 5
+              },
+              {
+                "variant_id": 905,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 904,
+                "stock": 4
+              },
+              {
+                "variant_id": 905,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 368,
+                "user_id": 767,
+                "total_amount": "130000.01",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 404,
+                "order_id": 368,
+                "product_id": 491,
+                "variant_id": 904,
+                "product_name": "Sản phẩm TEST aabcf79137a1",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-aabcf79137a1-0",
+                "quantity": 1,
+                "unit_price": "100000.01"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            368
+          ],
+          "cleanedAddressIds": [
+            777,
+            778
+          ],
+          "cleanedCartItemIds": []
+        }
+      ],
+      "observations": {
+        "statuses": [
+          303,
+          409,
+          409,
+          409,
+          409,
+          409,
+          409,
+          409,
+          409,
+          409,
+          409,
+          409
+        ],
+        "after": {
+          "stock": [
+            {
+              "variant_id": 904,
+              "stock": 4
+            },
+            {
+              "variant_id": 905,
+              "stock": 5
+            }
+          ],
+          "items": [],
+          "orders": 1,
+          "orderRows": [
+            {
+              "order_id": 368,
+              "user_id": 767,
+              "total_amount": "130000.01",
+              "status": "pending",
+              "payment_method": "cod",
+              "payment_status": "unpaid"
+            }
+          ],
+          "orderItems": [
+            {
+              "order_item_id": 404,
+              "order_id": 368,
+              "product_id": 491,
+              "variant_id": 904,
+              "product_name": "Sản phẩm TEST aabcf79137a1",
+              "variant_name": "Phiên bản TEST 0",
+              "sku": "TEST-aabcf79137a1-0",
+              "quantity": 1,
+              "unit_price": "100000.01"
+            }
+          ]
+        }
+      },
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "HTTP-client-abort-after-real-commit-and-retry",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 769
+            },
+            {
+              "id": 770
+            }
+          ],
+          "addresses": [
+            779,
+            780
+          ],
+          "variants": [
+            906,
+            907
+          ],
+          "category": 409,
+          "product": 492,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 906,
+                "stock": 5
+              },
+              {
+                "variant_id": 907,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 906,
+                "stock": 4
+              },
+              {
+                "variant_id": 907,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 369,
+                "user_id": 769,
+                "total_amount": "130000.01",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 405,
+                "order_id": 369,
+                "product_id": 492,
+                "variant_id": 906,
+                "product_name": "Sản phẩm TEST 94b0c6383324",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-94b0c6383324-0",
+                "quantity": 1,
+                "unit_price": "100000.01"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            369
+          ],
+          "cleanedAddressIds": [
+            779,
+            780
+          ],
+          "cleanedCartItemIds": []
+        }
+      ],
+      "observations": {
+        "transactions": [
+          {
+            "connectionId": 19,
+            "steps": [
+              "begin",
+              "lockUser",
+              "cart",
+              "variant",
+              "address",
+              "stock",
+              "order",
+              "item",
+              "clear",
+              "commit",
+              "release"
+            ]
+          }
+        ],
+        "atCommit": {
+          "stock": [
+            {
+              "variant_id": 906,
+              "stock": 4
+            },
+            {
+              "variant_id": 907,
+              "stock": 5
+            }
+          ],
+          "items": [],
+          "orders": 1,
+          "orderRows": [
+            {
+              "order_id": 369,
+              "user_id": 769,
+              "total_amount": "130000.01",
+              "status": "pending",
+              "payment_method": "cod",
+              "payment_status": "unpaid"
+            }
+          ],
+          "orderItems": [
+            {
+              "order_item_id": 405,
+              "order_id": 369,
+              "product_id": 492,
+              "variant_id": 906,
+              "product_name": "Sản phẩm TEST 94b0c6383324",
+              "variant_name": "Phiên bản TEST 0",
+              "sku": "TEST-94b0c6383324-0",
+              "quantity": 1,
+              "unit_price": "100000.01"
+            }
+          ]
+        },
+        "clientResult": "AbortError",
+        "retryStatus": 303
+      },
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "real-commit-adapter-response-error-then-retry-refused",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 771
+            },
+            {
+              "id": 772
+            }
+          ],
+          "addresses": [
+            781,
+            782
+          ],
+          "variants": [
+            908,
+            909
+          ],
+          "category": 410,
+          "product": 493,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 908,
+                "stock": 5
+              },
+              {
+                "variant_id": 909,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 908,
+                "stock": 4
+              },
+              {
+                "variant_id": 909,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 370,
+                "user_id": 771,
+                "total_amount": "130000.01",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 406,
+                "order_id": 370,
+                "product_id": 493,
+                "variant_id": 908,
+                "product_name": "Sản phẩm TEST b428d4b4932e",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-b428d4b4932e-0",
+                "quantity": 1,
+                "unit_price": "100000.01"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            370
+          ],
+          "cleanedAddressIds": [
+            781,
+            782
+          ],
+          "cleanedCartItemIds": []
+        }
+      ],
+      "observations": {
+        "transactions": [
+          {
+            "connectionId": 19,
+            "steps": [
+              "begin",
+              "lockUser",
+              "cart",
+              "variant",
+              "address",
+              "stock",
+              "order",
+              "item",
+              "clear",
+              "commit",
+              "rollback",
+              "release"
+            ]
+          }
+        ],
+        "afterCommitError": {
+          "stock": [
+            {
+              "variant_id": 908,
+              "stock": 4
+            },
+            {
+              "variant_id": 909,
+              "stock": 5
+            }
+          ],
+          "items": [],
+          "orders": 1,
+          "orderRows": [
+            {
+              "order_id": 370,
+              "user_id": 771,
+              "total_amount": "130000.01",
+              "status": "pending",
+              "payment_method": "cod",
+              "payment_status": "unpaid"
+            }
+          ],
+          "orderItems": [
+            {
+              "order_item_id": 406,
+              "order_id": 370,
+              "product_id": 493,
+              "variant_id": 908,
+              "product_name": "Sản phẩm TEST b428d4b4932e",
+              "variant_name": "Phiên bản TEST 0",
+              "sku": "TEST-b428d4b4932e-0",
+              "quantity": 1,
+              "unit_price": "100000.01"
+            }
+          ]
+        },
+        "statuses": [
+          500,
+          409
+        ]
+      },
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "actual-Express-child-restart-old-token-and-history",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 773
+            },
+            {
+              "id": 774
+            }
+          ],
+          "addresses": [
+            783,
+            784
+          ],
+          "variants": [
+            910,
+            911
+          ],
+          "category": 411,
+          "product": 494,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 910,
+                "stock": 5
+              },
+              {
+                "variant_id": 911,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 910,
+                "stock": 4
+              },
+              {
+                "variant_id": 911,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 371,
+                "user_id": 773,
+                "total_amount": "130000.01",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 407,
+                "order_id": 371,
+                "product_id": 494,
+                "variant_id": 910,
+                "product_name": "Sản phẩm TEST b3bcdfe22c73",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-b3bcdfe22c73-0",
+                "quantity": 1,
+                "unit_price": "100000.01"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            371
+          ],
+          "cleanedAddressIds": [
+            783,
+            784
+          ],
+          "cleanedCartItemIds": []
+        }
+      ],
+      "observations": {
+        "after": {
+          "stock": [
+            {
+              "variant_id": 910,
+              "stock": 4
+            },
+            {
+              "variant_id": 911,
+              "stock": 5
+            }
+          ],
+          "items": [],
+          "orders": 1,
+          "orderRows": [
+            {
+              "order_id": 371,
+              "user_id": 773,
+              "total_amount": "130000.01",
+              "status": "pending",
+              "payment_method": "cod",
+              "payment_status": "unpaid"
+            }
+          ],
+          "orderItems": [
+            {
+              "order_item_id": 407,
+              "order_id": 371,
+              "product_id": 494,
+              "variant_id": 910,
+              "product_name": "Sản phẩm TEST b3bcdfe22c73",
+              "variant_name": "Phiên bản TEST 0",
+              "sku": "TEST-b3bcdfe22c73-0",
+              "quantity": 1,
+              "unit_price": "100000.01"
+            }
+          ]
+        },
+        "note": "Actual Node child restarted; new login; token not durable."
+      },
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "HTTP-frontend-total-low-high-ignored",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 775
+            },
+            {
+              "id": 776
+            }
+          ],
+          "addresses": [
+            785,
+            786
+          ],
+          "variants": [
+            912,
+            913
+          ],
+          "category": 412,
+          "product": 495,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 912,
+                "stock": 5
+              },
+              {
+                "variant_id": 913,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 912,
+                "stock": 4
+              },
+              {
+                "variant_id": 913,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 372,
+                "user_id": 775,
+                "total_amount": "130000.01",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 408,
+                "order_id": 372,
+                "product_id": 495,
+                "variant_id": 912,
+                "product_name": "Sản phẩm TEST a0e2eeff69d3",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-a0e2eeff69d3-0",
+                "quantity": 1,
+                "unit_price": "100000.01"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            372
+          ],
+          "cleanedAddressIds": [
+            785,
+            786
+          ],
+          "cleanedCartItemIds": []
+        },
+        {
+          "users": [
+            {
+              "id": 777
+            },
+            {
+              "id": 778
+            }
+          ],
+          "addresses": [
+            787,
+            788
+          ],
+          "variants": [
+            914,
+            915
+          ],
+          "category": 413,
+          "product": 496,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 914,
+                "stock": 5
+              },
+              {
+                "variant_id": 915,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 914,
+                "stock": 4
+              },
+              {
+                "variant_id": 915,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 373,
+                "user_id": 777,
+                "total_amount": "130000.01",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 409,
+                "order_id": 373,
+                "product_id": 496,
+                "variant_id": 914,
+                "product_name": "Sản phẩm TEST d37b84646993",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-d37b84646993-0",
+                "quantity": 1,
+                "unit_price": "100000.01"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            373
+          ],
+          "cleanedAddressIds": [
+            787,
+            788
+          ],
+          "cleanedCartItemIds": []
+        }
+      ],
+      "observations": {
+        "orders": [
+          {
+            "stock": [
+              {
+                "variant_id": 912,
+                "stock": 4
+              },
+              {
+                "variant_id": 913,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 372,
+                "user_id": 775,
+                "total_amount": "130000.01",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 408,
+                "order_id": 372,
+                "product_id": 495,
+                "variant_id": 912,
+                "product_name": "Sản phẩm TEST a0e2eeff69d3",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-a0e2eeff69d3-0",
+                "quantity": 1,
+                "unit_price": "100000.01"
+              }
+            ]
+          },
+          {
+            "stock": [
+              {
+                "variant_id": 914,
+                "stock": 4
+              },
+              {
+                "variant_id": 915,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 373,
+                "user_id": 777,
+                "total_amount": "130000.01",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 409,
+                "order_id": 373,
+                "product_id": 496,
+                "variant_id": 914,
+                "product_name": "Sản phẩm TEST d37b84646993",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-d37b84646993-0",
+                "quantity": 1,
+                "unit_price": "100000.01"
+              }
+            ]
+          }
+        ]
+      },
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "price-change-before-preview-current-database-price",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 779
+            },
+            {
+              "id": 780
+            }
+          ],
+          "addresses": [
+            789,
+            790
+          ],
+          "variants": [
+            916,
+            917
+          ],
+          "category": 414,
+          "product": 497,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 916,
+                "stock": 5
+              },
+              {
+                "variant_id": 917,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 916,
+                "stock": 4
+              },
+              {
+                "variant_id": 917,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 374,
+                "user_id": 779,
+                "total_amount": "180000.00",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 410,
+                "order_id": 374,
+                "product_id": 497,
+                "variant_id": 916,
+                "product_name": "Sản phẩm TEST af1ca933498e",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-af1ca933498e-0",
+                "quantity": 1,
+                "unit_price": "150000.00"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            374
+          ],
+          "cleanedAddressIds": [
+            789,
+            790
+          ],
+          "cleanedCartItemIds": []
+        }
+      ],
+      "observations": {
+        "after": {
+          "stock": [
+            {
+              "variant_id": 916,
+              "stock": 4
+            },
+            {
+              "variant_id": 917,
+              "stock": 5
+            }
+          ],
+          "items": [],
+          "orders": 1,
+          "orderRows": [
+            {
+              "order_id": 374,
+              "user_id": 779,
+              "total_amount": "180000.00",
+              "status": "pending",
+              "payment_method": "cod",
+              "payment_status": "unpaid"
+            }
+          ],
+          "orderItems": [
+            {
+              "order_item_id": 410,
+              "order_id": 374,
+              "product_id": 497,
+              "variant_id": 916,
+              "product_name": "Sản phẩm TEST af1ca933498e",
+              "variant_name": "Phiên bản TEST 0",
+              "sku": "TEST-af1ca933498e-0",
+              "quantity": 1,
+              "unit_price": "150000.00"
+            }
+          ]
+        },
+        "note": "Uses current database price; no price-at-add marker."
+      },
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "HTTP-price-change-after-preview-reconfirm",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 781
+            },
+            {
+              "id": 782
+            }
+          ],
+          "addresses": [
+            791,
+            792
+          ],
+          "variants": [
+            918,
+            919
+          ],
+          "category": 415,
+          "product": 498,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 918,
+                "stock": 5
+              },
+              {
+                "variant_id": 919,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 918,
+                "stock": 4
+              },
+              {
+                "variant_id": 919,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 375,
+                "user_id": 781,
+                "total_amount": "180000.00",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 411,
+                "order_id": 375,
+                "product_id": 498,
+                "variant_id": 918,
+                "product_name": "Sản phẩm TEST 24f1e03a773f",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-24f1e03a773f-0",
+                "quantity": 1,
+                "unit_price": "150000.00"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            375
+          ],
+          "cleanedAddressIds": [
+            791,
+            792
+          ],
+          "cleanedCartItemIds": []
+        }
+      ],
+      "observations": {
+        "after": {
+          "stock": [
+            {
+              "variant_id": 918,
+              "stock": 4
+            },
+            {
+              "variant_id": 919,
+              "stock": 5
+            }
+          ],
+          "items": [],
+          "orders": 1,
+          "orderRows": [
+            {
+              "order_id": 375,
+              "user_id": 781,
+              "total_amount": "180000.00",
+              "status": "pending",
+              "payment_method": "cod",
+              "payment_status": "unpaid"
+            }
+          ],
+          "orderItems": [
+            {
+              "order_item_id": 411,
+              "order_id": 375,
+              "product_id": 498,
+              "variant_id": 918,
+              "product_name": "Sản phẩm TEST 24f1e03a773f",
+              "variant_name": "Phiên bản TEST 0",
+              "sku": "TEST-24f1e03a773f-0",
+              "quantity": 1,
+              "unit_price": "150000.00"
+            }
+          ]
+        }
+      },
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "zero-price-refused-negative-price-CHECK",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 783
+            },
+            {
+              "id": 784
+            }
+          ],
+          "addresses": [
+            793,
+            794
+          ],
+          "variants": [
+            920,
+            921
+          ],
+          "category": 416,
+          "product": 499,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 920,
+                "stock": 5
+              },
+              {
+                "variant_id": 921,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 920,
+                "stock": 5
+              },
+              {
+                "variant_id": 921,
+                "stock": 5
+              }
+            ],
+            "items": [
+              {
+                "cart_item_id": 625,
+                "user_id": 783,
+                "variant_id": 920,
+                "quantity": 1
+              }
+            ],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "cleanedOrderIds": [],
+          "cleanedAddressIds": [
+            793,
+            794
+          ],
+          "cleanedCartItemIds": [
+            625
+          ]
+        }
+      ],
+      "observations": {
+        "after": {
+          "stock": [
+            {
+              "variant_id": 920,
+              "stock": 5
+            },
+            {
+              "variant_id": 921,
+              "stock": 5
+            }
+          ],
+          "items": [
+            {
+              "cart_item_id": 625,
+              "user_id": 783,
+              "variant_id": 920,
+              "quantity": 1
+            }
+          ],
+          "orders": 0,
+          "orderRows": [],
+          "orderItems": []
+        },
+        "note": "Schema disallows persisted negative prices; only CHECK rejection tested for negative value."
+      },
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "HTTP-quantity-invalid-boundary-and-empty-cart",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 785
+            },
+            {
+              "id": 786
+            }
+          ],
+          "addresses": [
+            795,
+            796
+          ],
+          "variants": [
+            922,
+            923
+          ],
+          "category": 417,
+          "product": 500,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 922,
+                "stock": 5
+              },
+              {
+                "variant_id": 923,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 922,
+                "stock": 120
+              },
+              {
+                "variant_id": 923,
+                "stock": 5
+              }
+            ],
+            "items": [
+              {
+                "cart_item_id": 626,
+                "user_id": 785,
+                "variant_id": 922,
+                "quantity": 99
+              }
+            ],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "cleanedOrderIds": [],
+          "cleanedAddressIds": [
+            795,
+            796
+          ],
+          "cleanedCartItemIds": [
+            626
+          ]
+        }
+      ],
+      "observations": {
+        "statuses": [
+          {
+            "quantity": "0",
+            "status": 422
+          },
+          {
+            "quantity": "-1",
+            "status": 422
+          },
+          {
+            "quantity": "1.5",
+            "status": 422
+          },
+          {
+            "quantity": "100",
+            "status": 422
+          },
+          {
+            "quantity": "6",
+            "status": 422
+          },
+          {
+            "quantity": "abc",
+            "status": 422
+          }
+        ],
+        "boundary": {
+          "stock": [
+            {
+              "variant_id": 922,
+              "stock": 120
+            },
+            {
+              "variant_id": 923,
+              "stock": 5
+            }
+          ],
+          "items": [
+            {
+              "cart_item_id": 626,
+              "user_id": 785,
+              "variant_id": 922,
+              "quantity": 99
+            }
+          ],
+          "orders": 0,
+          "orderRows": [],
+          "orderItems": []
+        }
+      },
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "HTTP-unknown-invalid-variant-spoofed-product",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 787
+            },
+            {
+              "id": 788
+            }
+          ],
+          "addresses": [
+            797,
+            798
+          ],
+          "variants": [
+            924,
+            925
+          ],
+          "category": 418,
+          "product": 501,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 924,
+                "stock": 5
+              },
+              {
+                "variant_id": 925,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 924,
+                "stock": 4
+              },
+              {
+                "variant_id": 925,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 376,
+                "user_id": 787,
+                "total_amount": "130000.01",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 412,
+                "order_id": 376,
+                "product_id": 501,
+                "variant_id": 924,
+                "product_name": "Sản phẩm TEST e715aa14fad4",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-e715aa14fad4-0",
+                "quantity": 1,
+                "unit_price": "100000.01"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            376
+          ],
+          "cleanedAddressIds": [
+            797,
+            798
+          ],
+          "cleanedCartItemIds": []
+        },
+        {
+          "users": [
+            {
+              "id": 789
+            },
+            {
+              "id": 790
+            }
+          ],
+          "addresses": [
+            799,
+            800
+          ],
+          "variants": [
+            926,
+            927
+          ],
+          "category": 419,
+          "product": 502,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 926,
+                "stock": 5
+              },
+              {
+                "variant_id": 927,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 926,
+                "stock": 5
+              },
+              {
+                "variant_id": 927,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "cleanedOrderIds": [],
+          "cleanedAddressIds": [
+            799,
+            800
+          ],
+          "cleanedCartItemIds": []
+        },
+        {
+          "users": [
+            {
+              "id": 791
+            },
+            {
+              "id": 792
+            }
+          ],
+          "addresses": [
+            801,
+            802
+          ],
+          "variants": [
+            928,
+            929
+          ],
+          "category": 420,
+          "product": 503,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 928,
+                "stock": 5
+              },
+              {
+                "variant_id": 929,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "optionIds": [
+            11
+          ],
+          "final": {
+            "stock": [
+              {
+                "variant_id": 928,
+                "stock": 5
+              },
+              {
+                "variant_id": 929,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "cleanedOrderIds": [],
+          "cleanedAddressIds": [
+            801,
+            802
+          ],
+          "cleanedCartItemIds": []
+        }
+      ],
+      "observations": {
+        "after": {
+          "stock": [
+            {
+              "variant_id": 924,
+              "stock": 4
+            },
+            {
+              "variant_id": 925,
+              "stock": 5
+            }
+          ],
+          "items": [],
+          "orders": 1,
+          "orderRows": [
+            {
+              "order_id": 376,
+              "user_id": 787,
+              "total_amount": "130000.01",
+              "status": "pending",
+              "payment_method": "cod",
+              "payment_status": "unpaid"
+            }
+          ],
+          "orderItems": [
+            {
+              "order_item_id": 412,
+              "order_id": 376,
+              "product_id": 501,
+              "variant_id": 924,
+              "product_name": "Sản phẩm TEST e715aa14fad4",
+              "variant_name": "Phiên bản TEST 0",
+              "sku": "TEST-e715aa14fad4-0",
+              "quantity": 1,
+              "unit_price": "100000.01"
+            }
+          ]
+        }
+      },
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "HTTP-owner-address-cart-order-and-spoofed-user",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 793
+            },
+            {
+              "id": 794
+            }
+          ],
+          "addresses": [
+            803,
+            804
+          ],
+          "variants": [
+            930,
+            931
+          ],
+          "category": 421,
+          "product": 504,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 930,
+                "stock": 5
+              },
+              {
+                "variant_id": 931,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [
+              {
+                "variant_id": 930,
+                "stock": 4
+              },
+              {
+                "variant_id": 931,
+                "stock": 5
+              }
+            ],
+            "items": [
+              {
+                "cart_item_id": 629,
+                "user_id": 794,
+                "variant_id": 930,
+                "quantity": 1
+              }
+            ],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 377,
+                "user_id": 793,
+                "total_amount": "130000.01",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 413,
+                "order_id": 377,
+                "product_id": 504,
+                "variant_id": 930,
+                "product_name": "Sản phẩm TEST 936d0033c32c",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-936d0033c32c-0",
+                "quantity": 1,
+                "unit_price": "100000.01"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            377
+          ],
+          "cleanedAddressIds": [
+            803,
+            804
+          ],
+          "cleanedCartItemIds": [
+            629
+          ]
+        }
+      ],
+      "observations": {
+        "after": {
+          "stock": [
+            {
+              "variant_id": 930,
+              "stock": 4
+            },
+            {
+              "variant_id": 931,
+              "stock": 5
+            }
+          ],
+          "items": [
+            {
+              "cart_item_id": 629,
+              "user_id": 794,
+              "variant_id": 930,
+              "quantity": 1
+            }
+          ],
+          "orders": 1,
+          "orderRows": [
+            {
+              "order_id": 377,
+              "user_id": 793,
+              "total_amount": "130000.01",
+              "status": "pending",
+              "payment_method": "cod",
+              "payment_status": "unpaid"
+            }
+          ],
+          "orderItems": [
+            {
+              "order_item_id": 413,
+              "order_id": 377,
+              "product_id": 504,
+              "variant_id": 930,
+              "product_name": "Sản phẩm TEST 936d0033c32c",
+              "variant_name": "Phiên bản TEST 0",
+              "sku": "TEST-936d0033c32c-0",
+              "quantity": 1,
+              "unit_price": "100000.01"
+            }
+          ]
+        }
+      },
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    },
+    {
+      "name": "history-snapshots-after-edit-and-FK-SET-NULL",
+      "status": "PASS",
+      "fixtures": [
+        {
+          "users": [
+            {
+              "id": 795
+            },
+            {
+              "id": 796
+            }
+          ],
+          "addresses": [
+            805,
+            806
+          ],
+          "variants": [
+            932,
+            933
+          ],
+          "category": 422,
+          "product": 505,
+          "initial": {
+            "stock": [
+              {
+                "variant_id": 932,
+                "stock": 5
+              },
+              {
+                "variant_id": 933,
+                "stock": 5
+              }
+            ],
+            "items": [],
+            "orders": 0,
+            "orderRows": [],
+            "orderItems": []
+          },
+          "final": {
+            "stock": [],
+            "items": [],
+            "orders": 1,
+            "orderRows": [
+              {
+                "order_id": 378,
+                "user_id": 795,
+                "total_amount": "130000.01",
+                "status": "pending",
+                "payment_method": "cod",
+                "payment_status": "unpaid"
+              }
+            ],
+            "orderItems": [
+              {
+                "order_item_id": 414,
+                "order_id": 378,
+                "product_id": null,
+                "variant_id": null,
+                "product_name": "Sản phẩm TEST ceb363a7c93c",
+                "variant_name": "Phiên bản TEST 0",
+                "sku": "TEST-ceb363a7c93c-0",
+                "quantity": 1,
+                "unit_price": "100000.01"
+              }
+            ]
+          },
+          "cleanedOrderIds": [
+            378
+          ],
+          "cleanedAddressIds": [
+            806
+          ],
+          "cleanedCartItemIds": []
+        }
+      ],
+      "observations": {
+        "snapshot": {
+          "order_id": 378,
+          "receiver_name": "Người nhận TEST",
+          "address_detail": "Đường TEST",
+          "ward": "Phường TEST",
+          "district": "",
+          "province": "Tỉnh TEST",
+          "total_amount": "130000.01",
+          "coupon_id": null,
+          "coupon_code": null,
+          "discount_amount": "0.00",
+          "shipping_fee": "30000.00",
+          "status": "pending",
+          "payment_method": "cod",
+          "payment_status": "unpaid",
+          "payment_window_open": 1,
+          "created_at_label": "02/11/2026 01:10",
+          "items": [
+            {
+              "order_item_id": 414,
+              "product_name": "Sản phẩm TEST ceb363a7c93c",
+              "variant_name": "Phiên bản TEST 0",
+              "sku": "TEST-ceb363a7c93c-0",
+              "quantity": 1,
+              "unit_price": "100000.01",
+              "priceLabel": "100.000,01 ₫",
+              "lineLabel": "100.000,01 ₫"
+            }
+          ],
+          "totalLabel": "130.000,01 ₫",
+          "statusLabel": "Chờ xác nhận",
+          "canPayBank": false,
+          "paymentLabel": "Chưa thanh toán",
+          "methodLabel": "Thanh toán khi nhận hàng (COD)",
+          "bankDetails": {
+            "bank": "MB",
+            "account": "0878250056",
+            "owner": "TechZone"
+          },
+          "subtotalLabel": "100.000,01 ₫",
+          "discountLabel": "0 ₫",
+          "shippingLabel": "30.000 ₫",
+          "warning": ""
+        },
+        "links": {
+          "address_id": null,
+          "product_id": null,
+          "variant_id": null
+        }
+      },
+      "cleanup": "PASS",
+      "pass": true,
+      "oldDataUnchanged": true
+    }
+  ],
+  "before": {
+    "cart_items": {
+      "count": 29,
+      "hash": "96ca0677d3260f1a0ae38dbb6a7853b575069e8a0870f94b3976448bd3e2b16e"
+    },
+    "categories": {
+      "count": 32,
+      "hash": "bcad7777f5e91c5f482d6763d946d46b9521f116d67ef376da3c2ba426cad204"
+    },
+    "coupons": {
+      "count": 0,
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "order_items": {
+      "count": 20,
+      "hash": "bb4810f279ce231ea77c3a84c7cfd9fe1e4541ce2a94a6ebb623e65206711bf8"
+    },
+    "orders": {
+      "count": 20,
+      "hash": "ce6ea5116320c360cd57b74197e173ddb3dea34e774801e3e43131717183c0a1"
+    },
+    "product_images": {
+      "count": 0,
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "product_option_values": {
+      "count": 0,
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "product_options": {
+      "count": 0,
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "product_variants": {
+      "count": 64,
+      "hash": "635c22014f8f4d2317dc5b0fa6013fe4807f8816bee232d78931adf17da6dd14"
+    },
+    "products": {
+      "count": 32,
+      "hash": "c6f846ee524003eb2fb1fe81d099228ff79dc8d5232c21281404c36bfc7a1c5a"
+    },
+    "reviews": {
+      "count": 0,
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "user_addresses": {
+      "count": 66,
+      "hash": "3260a1819577977c414f979c62aee074d7b5b75c10f0f26646405f0085179aa3"
+    },
+    "users": {
+      "count": 66,
+      "hash": "b5eae7c70210a987936d06267a8bebc2e55b08f3bed45e403037de14799d4f7f"
+    },
+    "variant_option_values": {
+      "count": 0,
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  },
+  "environment": {
+    "db": "techshop_test",
+    "version": "8.0.46",
+    "isolation": "REPEATABLE-READ",
+    "engines": [
+      {
+        "name": "cart_items",
+        "engine": "InnoDB"
+      },
+      {
+        "name": "categories",
+        "engine": "InnoDB"
+      },
+      {
+        "name": "coupons",
+        "engine": "InnoDB"
+      },
+      {
+        "name": "order_items",
+        "engine": "InnoDB"
+      },
+      {
+        "name": "orders",
+        "engine": "InnoDB"
+      },
+      {
+        "name": "product_images",
+        "engine": "InnoDB"
+      },
+      {
+        "name": "product_option_values",
+        "engine": "InnoDB"
+      },
+      {
+        "name": "product_options",
+        "engine": "InnoDB"
+      },
+      {
+        "name": "product_variants",
+        "engine": "InnoDB"
+      },
+      {
+        "name": "products",
+        "engine": "InnoDB"
+      },
+      {
+        "name": "reviews",
+        "engine": "InnoDB"
+      },
+      {
+        "name": "user_addresses",
+        "engine": "InnoDB"
+      },
+      {
+        "name": "users",
+        "engine": "InnoDB"
+      },
+      {
+        "name": "variant_option_values",
+        "engine": "InnoDB"
+      }
+    ],
+    "restrictedGrantsValidated": true
+  },
+  "after": {
+    "cart_items": {
+      "count": 29,
+      "hash": "96ca0677d3260f1a0ae38dbb6a7853b575069e8a0870f94b3976448bd3e2b16e"
+    },
+    "categories": {
+      "count": 32,
+      "hash": "bcad7777f5e91c5f482d6763d946d46b9521f116d67ef376da3c2ba426cad204"
+    },
+    "coupons": {
+      "count": 0,
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "order_items": {
+      "count": 20,
+      "hash": "bb4810f279ce231ea77c3a84c7cfd9fe1e4541ce2a94a6ebb623e65206711bf8"
+    },
+    "orders": {
+      "count": 20,
+      "hash": "ce6ea5116320c360cd57b74197e173ddb3dea34e774801e3e43131717183c0a1"
+    },
+    "product_images": {
+      "count": 0,
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "product_option_values": {
+      "count": 0,
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "product_options": {
+      "count": 0,
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "product_variants": {
+      "count": 64,
+      "hash": "635c22014f8f4d2317dc5b0fa6013fe4807f8816bee232d78931adf17da6dd14"
+    },
+    "products": {
+      "count": 32,
+      "hash": "c6f846ee524003eb2fb1fe81d099228ff79dc8d5232c21281404c36bfc7a1c5a"
+    },
+    "reviews": {
+      "count": 0,
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "user_addresses": {
+      "count": 66,
+      "hash": "3260a1819577977c414f979c62aee074d7b5b75c10f0f26646405f0085179aa3"
+    },
+    "users": {
+      "count": 66,
+      "hash": "b5eae7c70210a987936d06267a8bebc2e55b08f3bed45e403037de14799d4f7f"
+    },
+    "variant_option_values": {
+      "count": 0,
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  },
+  "connections": [
+    {
+      "id": 19
+    },
+    {
+      "id": 16
+    },
+    {
+      "id": 14
+    },
+    {
+      "id": 13
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 17
+    },
+    {
+      "id": 18
+    },
+    {
+      "id": 15
+    }
+  ],
+  "activeInnoDBTransactions": 0,
+  "cleanupAndOldDataVerified": true,
+  "finished": "2026-11-01T18:10:27.578Z",
+  "passed": 28,
+  "total": 28
+}

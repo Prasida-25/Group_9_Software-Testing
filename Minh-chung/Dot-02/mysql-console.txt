@@ -1,0 +1,30 @@
+PASS isolation-and-InnoDB cleanup=PASS
+PASS cart-CRUD-and-owner cleanup=PASS
+PASS cart-concurrent-add-unique cleanup=PASS
+PASS shipping-price-and-snapshot cleanup=PASS
+PASS price-change-foreign-address-and-empty cleanup=PASS
+PASS real-rollback-stock-second cleanup=PASS
+PASS real-rollback-order cleanup=PASS
+PASS real-rollback-item-second cleanup=PASS
+PASS real-rollback-clear cleanup=PASS
+PASS real-rollback-before-commit cleanup=PASS
+PASS real-InnoDB-last-stock-race-5-rounds cleanup=PASS
+PASS duplicate-tokens-same-cart cleanup=PASS
+PASS real-HTTP-account-catalog-and-purchase cleanup=PASS
+PASS real-HTTP-profile-address-password cleanup=PASS
+PASS HTTP-COD-commit-SQL-details-and-cart cleanup=PASS
+PASS HTTP-two-customers-last-stock-overlapping-InnoDB-5-rounds cleanup=PASS
+PASS HTTP-replay-after-success-and-12-parallel-same-token cleanup=PASS
+PASS HTTP-client-abort-after-real-commit-and-retry cleanup=PASS
+[HTTP] Có lỗi khi xử lý yêu cầu.
+PASS real-commit-adapter-response-error-then-retry-refused cleanup=PASS
+PASS actual-Express-child-restart-old-token-and-history cleanup=PASS
+PASS HTTP-frontend-total-low-high-ignored cleanup=PASS
+PASS price-change-before-preview-current-database-price cleanup=PASS
+PASS HTTP-price-change-after-preview-reconfirm cleanup=PASS
+PASS zero-price-refused-negative-price-CHECK cleanup=PASS
+PASS HTTP-quantity-invalid-boundary-and-empty-cart cleanup=PASS
+PASS HTTP-unknown-invalid-variant-spoofed-product cleanup=PASS
+PASS HTTP-owner-address-cart-order-and-spoofed-user cleanup=PASS
+PASS history-snapshots-after-edit-and-FK-SET-NULL cleanup=PASS
+MYSQL_TEST_SUMMARY 28/28

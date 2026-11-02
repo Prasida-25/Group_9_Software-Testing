@@ -1,0 +1,94 @@
+Trích kết quả runner; đã bỏ HTML của assertion lỗi để tránh xuất phiên/token. Log gốc lưu trong thư mục tạm.
+ok 1 - Định dạng điện thoại, địa chỉ district rỗng và returnTo chỉ tới route hợp lệ
+ok 2 - Đăng nhập thường về trang chủ, giữ đích nội bộ và admin vẫn về quản trị
+ok 3 - Thêm giỏ khi chưa đăng nhập: quay lại sản phẩm và biến thể, giữ đích khi nhập sai mật khẩu
+ok 4 - Đăng ký: validate từng trường, Argon2id, số duy nhất và không tự tạo admin
+ok 5 - Đăng ký đồng thời trùng số: UNIQUE được xử lý thành 409, không mất tài khoản
+ok 6 - Đăng nhập/đăng xuất: thông báo chung, cookie, regenerate, session cũ và header Catalog
+ok 7 - Giới hạn đăng nhập thất bại trả 429 và Retry-After, không khóa vĩnh viễn trong DB
+ok 8 - CSRF bắt buộc cho tất cả POST tài khoản và token không dùng được giữa hai client
+ok 9 - Hồ sơ: sửa của mình, đổi số không OTP, UNIQUE và không thay role/mật khẩu/user_id
+ok 10 - Địa chỉ: CRUD, district rỗng, chuyển mặc định, không truy cập địa chỉ người khác
+ok 11 - Địa chỉ: khóa theo người dùng ngăn nhiều mặc định và rollback cập nhật dở dang
+ok 12 - Đổi mật khẩu: validate, không nhận user_id khác và hủy mọi session cũ
+ok 13 - Version HMAC từ chối session cũ cả khi bỏ lỡ lần destroy store; không nhận hash thuần
+ok 14 - Cấu hình session demo không cho dùng MemoryStore trong production
+ok 15 - Đơn admin: danh sách/tìm/lọc/phân trang, input an toàn và chỉ SELECT khi đọc
+ok 16 - Đơn admin: snapshot không lấy giá/địa chỉ hiện tại, thiếu dữ liệu không tạo phí giả; ID lỗi 404
+ok 17 - Đơn admin: chuyển tuần tự, không bỏ/quay bước; không ghi payment/giá/khách hàng/kho khi giao
+ok 18 - Hủy admin: hai yêu cầu đồng thời hoàn kho một lần; từ chối đơn đã thu tiền/khác COD/đã xác nhận
+ok 19 - Hủy admin: gộp variant trùng, rollback khi hoàn kho hoặc status lỗi; chặn thiếu variant/overflow
+ok 20 - Tự hủy: chỉ pending quá 72h/cod/unpaid; cạnh tranh admin không hoàn hai lần; lỗi một đơn không bỏ toàn batch
+ok 21 - Worker tự hủy: chạy lúc start, không chồng tick, dừng chờ lượt đang chạy; log không lộ lỗi gốc
+not ok 22 - Đơn admin HTTP: quyền/CSRF, snapshot/EJS, POST trạng thái và hủy, không thay dữ liệu bằng GET
+ok 23 - COD: xác nhận riêng sau giao, chỉ cập nhật payment_status; request lặp không ghi lần hai
+ok 24 - COD: từ chối sai ID, chưa xác nhận, chưa giao, đã hủy, bank, refund và trạng thái không biết
+ok 25 - COD: hai yêu cầu cùng xác nhận chỉ ghi một lần (mutex giả lập, không phải InnoDB)
+ok 26 - COD: lỗi ghi/affectedRows=0 và lỗi trước commit rollback; lock timeout trả thông báo an toàn
+ok 27 - COD HTTP/EJS: admin/CSRF, GET không ghi, nút chỉ cho đơn đủ điều kiện, không lộ lỗi, gửi lại an toàn
+ok 28 - Mua ngay: đúng số lượng chọn, không cộng giỏ cũ, giữ dòng khác và rollback lỗi
+ok 29 - Giỏ: dòng mới tạo đứng đầu, thêm lại cùng biến thể vẫn một dòng
+ok 30 - Giỏ xem nhanh HTTP: yêu cầu session, chỉ đọc giỏ của mình, giới hạn 5, logout/giỏ rỗng/lỗi an toàn
+ok 31 - Giỏ: gộp cùng biến thể, tách biến thể khác; bỏ qua giá/user_id trình duyệt
+ok 32 - Giỏ: kiểm tra số lượng, ID, giá dương, biến thể hợp lệ và tồn kho ở backend
+ok 33 - Giỏ: tăng/giảm, xóa dòng/xóa giỏ và kiểm tra quyền sở hữu
+ok 34 - Giỏ: luôn đọc giá/kho mới, thông báo lỗi nhưng không tự xóa dòng
+ok 35 - Giỏ: mô phỏng thêm đồng thời không mất cập nhật; rollback/release khi lỗi
+ok 36 - Giỏ: SQL giới hạn theo user, không tải BLOB, không ghi stock/đơn; tiền không sai số
+ok 37 - Giỏ HTTP/EJS: đăng nhập, CSRF, CRUD, giả mạo ID/giá, trạng thái trống và CSS
+ok 38 - Chuẩn hóa query: ID, giá, trang, limit, ký tự đặc biệt và allowlist sort
+ok 39 - HTTP giả lập: trang chủ, danh sách, tìm kiếm, lọc, phân trang và escape HTML
+ok 40 - HTTP giả lập: chi tiết chọn đúng giá, tồn kho, thuộc tính và SKU của biến thể
+ok 41 - Chi tiết: đánh giá thật từ repository sau mô tả, escape nhận xét và liên kết xem thêm
+ok 42 - HTTP giả lập: ảnh BLOB, cache, fallback, MIME không an toàn và ảnh sai ID
+ok 43 - Chi tiết không hiển thị giá 0 hoặc form mua khi phiên bản chưa có giá hợp lệ
+ok 44 - Bộ ảnh catalog: render thumbnail, endpoint đúng product/image, MIME/cache và ID lỗi (mock DB, HTTP thật)
+ok 45 - Endpoint ảnh phục vụ đúng MIME và bytes cho JPEG/WebP/GIF/AVIF/BMP/PNG
+ok 46 - Repository ảnh bổ sung: SELECT theo cả product_id/image_id; đọc danh sách không lấy BLOB
+ok 47 - HTTP giả lập: dữ liệu rỗng và lỗi tải không lộ SQL
+ok 48 - JavaScript chọn biến thể gửi lại form để server đọc giá, chạy được khi không có select
+ok 49 - JavaScript chi tiết: thư viện ảnh, số lượng có giới hạn và input không hợp lệ
+ok 50 - Repository chỉ SELECT: escape LIKE, không SELECT BLOB trong danh sách và sắp xếp từ allowlist
+ok 51 - Card sản phẩm: điểm thật, thiếu đánh giá, giá thấp nhất và trạng thái hết hàng (fixture EJS)
+ok 52 - Checkout: phí đúng ngưỡng, tiền chính xác và giới hạn DECIMAL
+ok 53 - Checkout: thành công atomic, snapshot, COD pending/unpaid; bỏ qua giá/user frontend
+ok 54 - Checkout chọn dòng: chỉ đặt/xóa dòng đã chọn, giữ món còn lại và không tin danh sách POST (mock DB)
+ok 55 - Checkout chọn dòng: input lạ, ID người khác, thay giỏ, rollback và gửi trùng (mock DB)
+ok 56 - Checkout: từ chối giỏ/giá/kho/địa chỉ thay đổi và xác nhận lại giá mới
+ok 57 - Checkout: địa chỉ người khác, thiếu địa chỉ, ID sai và không xác nhận
+ok 58 - Checkout: rollback khi trừ kho, tạo đơn, chi tiết, xóa giỏ hoặc commit lỗi
+ok 59 - Checkout: gửi trùng token/khác token cùng giỏ và tranh mua kho thấp (giả lập)
+ok 60 - Checkout: token hết hạn và thứ tự khóa/SQL có điều kiện
+ok 61 - Checkout: giữ kết quả khi commit xong nhưng response bị mất; không tự gửi lại câu ghi
+ok 62 - Checkout HTTP/EJS: đăng nhập, CSRF, checkout, thành công, lặp và không lộ đơn khác
+ok 63 - Xác nhận EJS: hiển thị đúng dữ liệu thanh toán/trạng thái bằng fixture, không dùng MySQL
+ok 64 - C1-01 | unit | tiền hàng 200000.00, phí 30000.00
+ok 65 - C1-02 | unit | tiền hàng 300000.00, phí 0.00
+ok 66 - C1-03 | unit | tiền hàng 400000.00, phí 0.00
+ok 67 - C1-04 | unit | cộng nhiều dòng và nhân số lượng
+ok 68 - C1-05 | unit | từ chối giỏ trống
+ok 69 - C1-06 | unit | từ chối số lượng vượt kho
+ok 70 - C1-07 | unit | không làm mất phần lẻ khi tính tiền
+ok 71 - C1-08 | integration mock | gộp cùng biến thể, không trừ kho khi thêm giỏ
+ok 72 - C1-09 | integration mock | bỏ qua giá và user_id giả từ client
+ok 73 - C1-10 | integration mock | người khác không xóa được dòng giỏ
+ok 74 - Thanh toán sau đặt hàng: chỉ bank/pending/unpaid trong 72 giờ; GET không xác nhận tiền
+ok 75 - Đơn mua mới: lọc thật, snapshot sản phẩm theo trang, một lần đọc items và input an toàn
+ok 76 - Đơn hàng: lịch sử đúng chủ sở hữu, thứ tự và phân trang thật/giá trị sai
+ok 77 - Đơn hàng: snapshot độc lập catalog/địa chỉ đã xóa; phí lịch sử không tính lại
+ok 78 - Đơn hàng: ID sai/không tồn tại/người khác đều 404, không đọc items trái quyền
+ok 79 - Đơn hàng: dữ liệu thiếu/không khớp không tạo phí giả; trạng thái theo dữ liệu
+ok 80 - Đơn hàng: repository chỉ SELECT có tham số, offset không nhận SQL tùy ý
+ok 81 - Đơn hàng HTTP/EJS: session, quyền, phân trang, snapshot, rỗng, lỗi an toàn và CSS
+ok 82 - Mua ngay HTTP/session/mock: đăng nhập/CSRF, chỉ checkout dòng chọn, đặt xong giữ giỏ khác
+ok 83 - Luồng mua HTTP: giỏ → xác nhận lại giá → 12 request lặp → lịch sử snapshot
+ok 84 - Luồng mua HTTP: hai khách đồng thời tranh kho 1 (DB giả lập, không chứng minh InnoDB)
+ok 85 - Rollback sau khi order_items thứ nhất đã ghi và dòng thứ hai thất bại (giả lập)
+1..85
+# tests 93
+# pass 92
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 8953.5584

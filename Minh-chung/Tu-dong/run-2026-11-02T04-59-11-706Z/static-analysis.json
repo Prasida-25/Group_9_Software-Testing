@@ -1,0 +1,84 @@
+{
+  "rules": {
+    "no-undef": "error",
+    "no-unreachable": "error",
+    "no-dupe-args": "error",
+    "no-dupe-keys": "error",
+    "no-constant-condition": "warn",
+    "no-unused-vars": [
+      "warn",
+      {
+        "args": "none",
+        "caughtErrors": "none"
+      }
+    ],
+    "eqeqeq": "warn",
+    "no-eval": "error",
+    "no-implied-eval": "error",
+    "no-control-regex": "warn"
+  },
+  "results": [
+    {
+      "source": "src/utils/cart-validation.js",
+      "errorCount": 0,
+      "warningCount": 0,
+      "messages": []
+    },
+    {
+      "source": "src/utils/checkout.js",
+      "errorCount": 0,
+      "warningCount": 0,
+      "messages": []
+    },
+    {
+      "source": "src/services/cart-service.js",
+      "errorCount": 0,
+      "warningCount": 0,
+      "messages": []
+    },
+    {
+      "source": "src/utils/catalog-query.js",
+      "errorCount": 0,
+      "warningCount": 1,
+      "messages": [
+        {
+          "ruleId": "no-control-regex",
+          "severity": 1,
+          "message": "Unexpected control character(s) in regular expression: \\x00, \\x1f.",
+          "line": 41,
+          "column": 25,
+          "messageId": "unexpected",
+          "endLine": 41,
+          "endColumn": 49
+        }
+      ]
+    },
+    {
+      "source": "src/utils/account-validation.js",
+      "errorCount": 0,
+      "warningCount": 2,
+      "messages": [
+        {
+          "ruleId": "no-control-regex",
+          "severity": 1,
+          "message": "Unexpected control character(s) in regular expression: \\x00, \\x1f.",
+          "line": 28,
+          "column": 57,
+          "messageId": "unexpected",
+          "endLine": 28,
+          "endColumn": 80
+        },
+        {
+          "ruleId": "no-control-regex",
+          "severity": 1,
+          "message": "Unexpected control character(s) in regular expression: \\x00, \\x1f.",
+          "line": 60,
+          "column": 79,
+          "messageId": "unexpected",
+          "endLine": 60,
+          "endColumn": 102
+        }
+      ]
+    }
+  ]
+}

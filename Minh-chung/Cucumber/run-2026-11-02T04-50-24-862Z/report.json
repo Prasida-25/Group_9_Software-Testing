@@ -1,0 +1,1171 @@
+[
+  {
+    "description": "  Cac scenario dung fixture moi trong bo nho, khong ket noi MySQL.",
+    "elements": [
+      {
+        "description": "",
+        "id": "quan-ly-gio-hang-theo-quy-tac-server;them-lai-cung-bien-the-phai-gop-dong-va-khong-tru-kho",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Them lai cung bien the phai gop dong va khong tru kho",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 267799
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 270900
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "a new cart with product stock 5",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:18"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 807799
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "customer 1 adds quantity \"1\"",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:25"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 189399
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "customer 1 adds quantity \"1\"",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:25"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 5938099
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "customer 1 has one cart line with quantity 2",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:36"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 68299
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "product stock remains 5",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:42"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cart",
+            "line": 1
+          },
+          {
+            "name": "@REQ-CART-04",
+            "line": 5
+          },
+          {
+            "name": "@REQ-CART-05",
+            "line": 5
+          },
+          {
+            "name": "@UC-09",
+            "line": 5
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "quan-ly-gio-hang-theo-quy-tac-server;tu-choi-so-luong-khong-hop-le",
+        "keyword": "Scenario Outline",
+        "line": 23,
+        "name": "Tu choi so luong khong hop le",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 17600
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 48499
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "a new cart with product stock 120",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:18"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 269499
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "customer 1 adds quantity \"0\"",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:25"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 112000
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "the operation is rejected with status 422",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:41"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 173600
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "customer 1 has an empty cart",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:39"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 53899
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "product stock remains 120",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:42"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cart",
+            "line": 1
+          },
+          {
+            "name": "@REQ-CART-02",
+            "line": 13
+          },
+          {
+            "name": "@UC-09",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "quan-ly-gio-hang-theo-quy-tac-server;tu-choi-so-luong-khong-hop-le",
+        "keyword": "Scenario Outline",
+        "line": 24,
+        "name": "Tu choi so luong khong hop le",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 16200
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 33799
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "a new cart with product stock 120",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:18"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 91999
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "customer 1 adds quantity \"-1\"",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:25"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 19900
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "the operation is rejected with status 422",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:41"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 120900
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "customer 1 has an empty cart",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:39"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 26399
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "product stock remains 120",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:42"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cart",
+            "line": 1
+          },
+          {
+            "name": "@REQ-CART-02",
+            "line": 13
+          },
+          {
+            "name": "@UC-09",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "quan-ly-gio-hang-theo-quy-tac-server;tu-choi-so-luong-khong-hop-le",
+        "keyword": "Scenario Outline",
+        "line": 25,
+        "name": "Tu choi so luong khong hop le",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 8399
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 31999
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "a new cart with product stock 120",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:18"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 70699
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "customer 1 adds quantity \"1.5\"",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:25"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 20000
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "the operation is rejected with status 422",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:41"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 135099
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "customer 1 has an empty cart",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:39"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 30899
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "product stock remains 120",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:42"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cart",
+            "line": 1
+          },
+          {
+            "name": "@REQ-CART-02",
+            "line": 13
+          },
+          {
+            "name": "@UC-09",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "quan-ly-gio-hang-theo-quy-tac-server;tu-choi-so-luong-khong-hop-le",
+        "keyword": "Scenario Outline",
+        "line": 26,
+        "name": "Tu choi so luong khong hop le",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 14700
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 57099
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "a new cart with product stock 120",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:18"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 145300
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "customer 1 adds quantity \"100\"",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:25"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 60800
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "the operation is rejected with status 422",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:41"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 186899
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "customer 1 has an empty cart",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:39"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 33099
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "product stock remains 120",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:42"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cart",
+            "line": 1
+          },
+          {
+            "name": "@REQ-CART-02",
+            "line": 13
+          },
+          {
+            "name": "@UC-09",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "quan-ly-gio-hang-theo-quy-tac-server;tu-choi-vuot-kho-sau-khi-cong-so-luong-cu",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Tu choi vuot kho sau khi cong so luong cu",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 10499
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 28300
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 30,
+            "name": "a new cart with product stock 5",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:18"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 135600
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "customer 1 already has quantity 4",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:22"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 131500
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "customer 1 adds quantity \"2\"",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:25"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 21099
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "the operation is rejected with status 422",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:41"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 185400
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "customer 1 has one cart line with quantity 4",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:36"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 32600
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "product stock remains 5",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:42"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cart",
+            "line": 1
+          },
+          {
+            "name": "@REQ-CART-02",
+            "line": 28
+          },
+          {
+            "name": "@UC-09",
+            "line": 28
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "quan-ly-gio-hang-theo-quy-tac-server;khach-khac-khong-xoa-duoc-dong-gio-cua-chu-so-huu",
+        "keyword": "Scenario",
+        "line": 38,
+        "name": "Khach khac khong xoa duoc dong gio cua chu so huu",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 8300
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 27600
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 39,
+            "name": "a new cart with product stock 5",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:18"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 95499
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "customer 1 already has quantity 2",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:22"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 139099
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 41,
+            "name": "customer 2 removes customer 1 cart line",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 21700
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "the operation is rejected with status 404",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:41"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 164899
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "customer 1 has one cart line with quantity 2",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:36"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 104800
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "customer 2 has an empty cart",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:39"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cart",
+            "line": 1
+          },
+          {
+            "name": "@REQ-ACCESS-01",
+            "line": 37
+          },
+          {
+            "name": "@UC-11",
+            "line": 37
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "quan-ly-gio-hang-theo-quy-tac-server;cap-nhat-so-luong-la-thay-the-khong-phai-cong-them",
+        "keyword": "Scenario",
+        "line": 47,
+        "name": "Cap nhat so luong la thay the khong phai cong them",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 9400
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 31499
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 48,
+            "name": "a new cart with product stock 5",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:18"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 66800
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 49,
+            "name": "customer 1 already has quantity 2",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:22"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 129400
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 50,
+            "name": "customer 1 changes quantity to \"3\"",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:28"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 172599
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 51,
+            "name": "customer 1 has one cart line with quantity 3",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:36"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 21500
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
+            "name": "product stock remains 5",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:42"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cart",
+            "line": 1
+          },
+          {
+            "name": "@REQ-CART-03",
+            "line": 46
+          },
+          {
+            "name": "@UC-10",
+            "line": 46
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "quan-ly-gio-hang-theo-quy-tac-server;chu-so-huu-xoa-dong-gio-cua-minh",
+        "keyword": "Scenario",
+        "line": 55,
+        "name": "Chu so huu xoa dong gio cua minh",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 9700
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 32600
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 56,
+            "name": "a new cart with product stock 5",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:18"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 66599
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 57,
+            "name": "customer 1 already has quantity 2",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:22"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 122500
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 58,
+            "name": "customer 1 removes customer 1 cart line",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 35099
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 59,
+            "name": "the operation succeeds",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:40"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 94699
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 60,
+            "name": "customer 1 has an empty cart",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:39"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 18399
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 61,
+            "name": "product stock remains 5",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:42"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cart",
+            "line": 1
+          },
+          {
+            "name": "@REQ-CART-03",
+            "line": 54
+          },
+          {
+            "name": "@UC-11",
+            "line": 54
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "quan-ly-gio-hang-theo-quy-tac-server",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Quan ly gio hang theo quy tac server",
+    "tags": [
+      {
+        "name": "@cart",
+        "line": 1
+      }
+    ],
+    "uri": "features\\cart.feature"
+  },
+  {
+    "description": "  Phi van chuyen duoc tinh tu tien hang tai server.",
+    "elements": [
+      {
+        "description": "",
+        "id": "tinh-phi-van-chuyen-cod-khong-voucher;phi-van-chuyen-o-bien-300000-dong",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Phi van chuyen o bien 300000 dong",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 10899
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 60000
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "a valid product priced \"299999.00\" with quantity 1",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:11"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 356800
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the server calculates the quote",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:14"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 70800
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "subtotal is \"299999.00\" shipping is \"30000.00\" and total is \"329999.00\"",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:15"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@shipping",
+            "line": 1
+          },
+          {
+            "name": "@REQ-SHIP-01",
+            "line": 1
+          },
+          {
+            "name": "@UC-13",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tinh-phi-van-chuyen-cod-khong-voucher;phi-van-chuyen-o-bien-300000-dong",
+        "keyword": "Scenario Outline",
+        "line": 13,
+        "name": "Phi van chuyen o bien 300000 dong",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 11599
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 28099
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "a valid product priced \"300000.00\" with quantity 1",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:11"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 185699
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the server calculates the quote",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:14"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 36499
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "subtotal is \"300000.00\" shipping is \"0.00\" and total is \"300000.00\"",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:15"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@shipping",
+            "line": 1
+          },
+          {
+            "name": "@REQ-SHIP-01",
+            "line": 1
+          },
+          {
+            "name": "@UC-13",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tinh-phi-van-chuyen-cod-khong-voucher;phi-van-chuyen-o-bien-300000-dong",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Phi van chuyen o bien 300000 dong",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 6299
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 29000
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "a valid product priced \"300001.00\" with quantity 1",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:11"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 216700
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the server calculates the quote",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:14"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 33999
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "subtotal is \"300001.00\" shipping is \"0.00\" and total is \"300001.00\"",
+            "match": {
+              "location": "features\\step_definitions\\business.cjs:15"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@shipping",
+            "line": 1
+          },
+          {
+            "name": "@REQ-SHIP-01",
+            "line": 1
+          },
+          {
+            "name": "@UC-13",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "tinh-phi-van-chuyen-cod-khong-voucher",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Tinh phi van chuyen COD khong voucher",
+    "tags": [
+      {
+        "name": "@shipping",
+        "line": 1
+      },
+      {
+        "name": "@REQ-SHIP-01",
+        "line": 1
+      },
+      {
+        "name": "@UC-13",
+        "line": 1
+      }
+    ],
+    "uri": "features\\shipping.feature"
+  }
+]

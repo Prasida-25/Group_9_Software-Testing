@@ -1,0 +1,191 @@
+TAP version 13
+# Subtest: WB-INT-01
+ok 1 - WB-INT-01
+  ---
+  duration_ms: 1.1986
+  type: 'test'
+  ...
+# Subtest: WB-INT-02
+ok 2 - WB-INT-02
+  ---
+  duration_ms: 0.1141
+  type: 'test'
+  ...
+# Subtest: WB-INT-03
+ok 3 - WB-INT-03
+  ---
+  duration_ms: 0.0977
+  type: 'test'
+  ...
+# Subtest: WB-INT-04
+ok 4 - WB-INT-04
+  ---
+  duration_ms: 0.0952
+  type: 'test'
+  ...
+# Subtest: WB-INT-05
+ok 5 - WB-INT-05
+  ---
+  duration_ms: 0.1281
+  type: 'test'
+  ...
+# Subtest: WB-INT-06
+ok 6 - WB-INT-06
+  ---
+  duration_ms: 0.0768
+  type: 'test'
+  ...
+# Subtest: WB-INT-07
+ok 7 - WB-INT-07
+  ---
+  duration_ms: 0.0581
+  type: 'test'
+  ...
+# Subtest: WB-INT-08
+ok 8 - WB-INT-08
+  ---
+  duration_ms: 0.0736
+  type: 'test'
+  ...
+# Subtest: WB-VAR-01
+ok 9 - WB-VAR-01
+  ---
+  duration_ms: 0.1607
+  type: 'test'
+  ...
+# Subtest: WB-VAR-02
+ok 10 - WB-VAR-02
+  ---
+  duration_ms: 0.199
+  type: 'test'
+  ...
+# Subtest: WB-VAR-03
+ok 11 - WB-VAR-03
+  ---
+  duration_ms: 0.1303
+  type: 'test'
+  ...
+# Subtest: WB-VAR-04
+ok 12 - WB-VAR-04
+  ---
+  duration_ms: 0.0902
+  type: 'test'
+  ...
+# Subtest: WB-VAR-05
+ok 13 - WB-VAR-05
+  ---
+  duration_ms: 0.0724
+  type: 'test'
+  ...
+# Subtest: WB-VAR-06
+ok 14 - WB-VAR-06
+  ---
+  duration_ms: 0.0638
+  type: 'test'
+  ...
+# Subtest: WB-VAR-07
+ok 15 - WB-VAR-07
+  ---
+  duration_ms: 0.1088
+  type: 'test'
+  ...
+# Subtest: WB-VAR-08
+ok 16 - WB-VAR-08
+  ---
+  duration_ms: 0.0728
+  type: 'test'
+  ...
+# Subtest: WB-VAR-09
+ok 17 - WB-VAR-09
+  ---
+  duration_ms: 0.1394
+  type: 'test'
+  ...
+# Subtest: WB-VAR-10
+ok 18 - WB-VAR-10
+  ---
+  duration_ms: 0.0641
+  type: 'test'
+  ...
+# Subtest: WB-VAR-11
+ok 19 - WB-VAR-11
+  ---
+  duration_ms: 0.0632
+  type: 'test'
+  ...
+# Subtest: WB-VAR-12
+ok 20 - WB-VAR-12
+  ---
+  duration_ms: 0.0556
+  type: 'test'
+  ...
+# Subtest: WB-VAR-13
+ok 21 - WB-VAR-13
+  ---
+  duration_ms: 0.0523
+  type: 'test'
+  ...
+# Subtest: WB-QUOTE-01
+ok 22 - WB-QUOTE-01
+  ---
+  duration_ms: 0.2386
+  type: 'test'
+  ...
+# Subtest: WB-QUOTE-02
+ok 23 - WB-QUOTE-02
+  ---
+  duration_ms: 15.4646
+  type: 'test'
+  ...
+# Subtest: WB-QUOTE-03
+ok 24 - WB-QUOTE-03
+  ---
+  duration_ms: 0.7349
+  type: 'test'
+  ...
+# Subtest: WB-QUOTE-04
+ok 25 - WB-QUOTE-04
+  ---
+  duration_ms: 0.19
+  type: 'test'
+  ...
+# Subtest: WB-QUOTE-05
+ok 26 - WB-QUOTE-05
+  ---
+  duration_ms: 0.2191
+  type: 'test'
+  ...
+# Subtest: WB-QUOTE-06
+not ok 27 - WB-QUOTE-06
+  ---
+  duration_ms: 0.2344
+  type: 'test'
+  location: 'D:\\Duong\\Kiểm thử phần mềm\\Cuối Kỳ\\Cong-cu\\whitebox.test.cjs:38:1'
+  failureType: 'testCodeFailure'
+  error: 'Tổng tiền vượt giới hạn đơn hàng. Vui lòng giảm số lượng.'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    quote (C:\Users\Admin\AppData\Local\Temp\techzone-mutation-dBGJdY\M08\src\utils\checkout.js:20:37)
+    TestContext.<anonymous> (D:\Duong\Kiểm thử phần mềm\Cuối Kỳ\Cong-cu\whitebox.test.cjs:38:36)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1306:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+    Test.postRun (node:internal/test_runner/test:1447:19)
+    Test.run (node:internal/test_runner/test:1372:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+  ...
+# Subtest: WB-QUOTE-07
+ok 28 - WB-QUOTE-07
+  ---
+  duration_ms: 0.2257
+  type: 'test'
+  ...
+1..28
+# tests 28
+# suites 0
+# pass 27
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 110.4225

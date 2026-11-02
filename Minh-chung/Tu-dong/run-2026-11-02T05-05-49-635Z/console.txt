@@ -1,0 +1,19 @@
+PBT-01 PASS runs=1000 seed=20261102
+PBT-02 PASS runs=1000 seed=20261102
+PBT-03 PASS runs=1000 seed=20261102
+PBT-04 PASS runs=1000 seed=20261102
+PBT-05 PASS runs=1000 seed=20261102
+PBT-06 PASS runs=1000 seed=20261102
+PBT-07 PASS runs=1000 seed=20261102
+FUZZ-01 PASS runs=1000 seed=20261102
+FUZZ-02 PASS runs=1000 seed=20261102
+FUZZ-03 PASS runs=1000 seed=20261102
+STATIC_ANALYSIS files=5 errors=0 warnings=5 fix=false
+src/utils/cart-validation.js:undefined:undefined null File ignored because outside of base path.
+src/utils/checkout.js:undefined:undefined null File ignored because outside of base path.
+src/services/cart-service.js:undefined:undefined null File ignored because outside of base path.
+src/utils/catalog-query.js:undefined:undefined null File ignored because outside of base path.
+src/utils/account-validation.js:undefined:undefined null File ignored because outside of base path.
+GENERATIVE_SUMMARY 10/10 properties; requested 1000 runs each
+ORIGINAL_SOURCE_UNCHANGED true
+EVIDENCE D:\Duong\Kiểm thử phần mềm\Cuối Kỳ\Minh-chung\Tu-dong\run-2026-11-02T05-05-49-635Z

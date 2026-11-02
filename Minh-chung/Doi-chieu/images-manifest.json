@@ -1,0 +1,188 @@
+[
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 014642.png",
+    "copy": "Minh-chung/Doi-chieu/catalog-list.png",
+    "exists": true,
+    "sha256": "35e3461d8cae163215a64ab9450e684e44aa4dc79caecb36ccb7a19a9a306615"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 014752.png",
+    "copy": "Minh-chung/Doi-chieu/variant-black.png",
+    "exists": true,
+    "sha256": "e36c54e795d259dc4228a2905171945db8c1277c33994f5cd59790f8dba83438"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 014815.png",
+    "copy": "Minh-chung/Doi-chieu/variant-white.png",
+    "exists": true,
+    "sha256": "d4dad10bf5314cb6dbeeec42073eb3978acb17f7acc91f01a101e79aed715513"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 014855.png",
+    "copy": "Minh-chung/Doi-chieu/search-empty.png",
+    "exists": true,
+    "sha256": "42fc4a7d94bb1fb168a923bfece3a47f6c76a029158bc11c5e715915de723c0f"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 020636.png",
+    "copy": "Minh-chung/Doi-chieu/register-success.png",
+    "exists": true,
+    "sha256": "23d3c112a07ca4adc773db02a02c73beb451dc4b7d034260c865b604fa96affc"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 020721.png",
+    "copy": "Minh-chung/Doi-chieu/login-error.png",
+    "exists": true,
+    "sha256": "d5e450bd62eb3e04398b3b095d31549e753954f64123db2b1dbe423f24e03280"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 020813.png",
+    "copy": "Minh-chung/Doi-chieu/cart-empty.png",
+    "exists": true,
+    "sha256": "0011777fac18618a0f27ecfbddcb2b78dc07d8439bc392e13b56fec1b9c0a70b"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 020942.png",
+    "copy": "Minh-chung/Doi-chieu/guest-cart-login.png",
+    "exists": true,
+    "sha256": "8913a20ef40c1f6181df2212fd0351c31b0186169861ab8eb3d87c1c2ab9b66a"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 022129.png",
+    "copy": "Minh-chung/Doi-chieu/cart-qty1.png",
+    "exists": true,
+    "sha256": "853aa0760b333293e537030bcb078694595ea74a5853458eb898639a18df12bd"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 022201.png",
+    "copy": "Minh-chung/Doi-chieu/cart-qty2.png",
+    "exists": true,
+    "sha256": "7316ba1c08a2e052bb38b925a25b387f99b8d083c8f5ae1c6718f73d5a52b545"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 022229.png",
+    "copy": "Minh-chung/Doi-chieu/cart-qty3.png",
+    "exists": true,
+    "sha256": "d65f04a92bf25845d97a609126f5500ad9a37fe72ae5c5ee19ac38cdd717e9dc"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 022309.png",
+    "copy": "Minh-chung/Doi-chieu/cart-two-lines.png",
+    "exists": true,
+    "sha256": "b928385f9852f2c0f0506bdeaaa8c5694497d583b08654f84948b7977977922e"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 022337.png",
+    "copy": "Minh-chung/Doi-chieu/cart-delete.png",
+    "exists": true,
+    "sha256": "efd94159f20983de8e9825ec99ff0888f7e4696f20983f9c9feeaeb1611ae144"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 022713.png",
+    "copy": "Minh-chung/Doi-chieu/checkout-default-address.png",
+    "exists": true,
+    "sha256": "bdf3424acc5bf0f0c52b688844c86a98894a013b7921e01b3c573817158a962f"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 022739.png",
+    "copy": "Minh-chung/Doi-chieu/checkout-second-address.png",
+    "exists": true,
+    "sha256": "e17236f66a35ca089a522c25707ec7b4634381d83d221b18f0f0fe773611403d"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 022848.png",
+    "copy": "Minh-chung/Doi-chieu/cod-success.png",
+    "exists": true,
+    "sha256": "ae08d06cf510e57a48cef83fab2ed8111a7c275925e88119d50b19f3fd017a9b"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 023608.png",
+    "copy": "Minh-chung/Doi-chieu/admin-denied.png",
+    "exists": true,
+    "sha256": "e98605ccd1d1f1e0ecc4c831f255836cdfa89fd7c4acb061914700aae0c4be60"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 023912.png",
+    "copy": "Minh-chung/Doi-chieu/order-pending.png",
+    "exists": true,
+    "sha256": "b8b31885cb264ed9c3e3239f871aa8c1f7557abd6ac1224493fcbbba955aa409"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 023931.png",
+    "copy": "Minh-chung/Doi-chieu/order-confirmed.png",
+    "exists": true,
+    "sha256": "1582de8f137ccc24c9164d29eb9dfa60ac55aacfeb29ccec505a5b91a69cee8a"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 023955.png",
+    "copy": "Minh-chung/Doi-chieu/order-shipping.png",
+    "exists": true,
+    "sha256": "eebb6e160273626baec2acb59d5c022e109d6bc309b4dfafb87644890149143c"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 024012.png",
+    "copy": "Minh-chung/Doi-chieu/order-delivered-unpaid.png",
+    "exists": true,
+    "sha256": "6176fc37d5db71273fc5f88bb37dfc3c2694d24c26ef986c0006a182b268f015"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 024035.png",
+    "copy": "Minh-chung/Doi-chieu/order-paid.png",
+    "exists": true,
+    "sha256": "f8be9f4a30427381055c126244d53edd56d65fde9a506ce438e2ab25a0adf546"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 024255.png",
+    "copy": "Minh-chung/Doi-chieu/cancel-before.png",
+    "exists": true,
+    "sha256": "d3e02faf6b7123bdd663414eceba612213f4383cb2886a8c0eb4256eca1b7d6b"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 024330.png",
+    "copy": "Minh-chung/Doi-chieu/cancel-after.png",
+    "exists": true,
+    "sha256": "df9a4aeb90cb0e044e73cb488e7f837969456e47248b694afbb17780891ffc56"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 024908.png",
+    "copy": "Minh-chung/Doi-chieu/auto-before.png",
+    "exists": true,
+    "sha256": "ddd6a7b5b47462a101c13fa1e03d41748e6032a82cc44a9e8fcac5121816fd4f"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 025002.png",
+    "copy": "Minh-chung/Doi-chieu/auto-after.png",
+    "exists": true,
+    "sha256": "74865213a592de916e76454d1af2f4c8f7ba0890069173de63dbc933a542deb8"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 025044.png",
+    "copy": "Minh-chung/Doi-chieu/auto-terminal.png",
+    "exists": true,
+    "sha256": "507599fb39cdc0895bf521316d5f37386716bba402a00f7764664e3a186aee9f"
+  },
+  {
+    "source": "C:\\Users\\Admin\\Pictures\\Screenshots\\Screenshot 2026-11-02 025114.png",
+    "copy": "Minh-chung/Doi-chieu/auto-control.png",
+    "exists": true,
+    "sha256": "202f14971392454cc4c6b7c499f8c01f8e8c53fe71b7e11a716ccc34f17a5b25"
+  },
+  {
+    "source": "C:\\Users\\Admin\\AppData\\Local\\Temp\\codex-clipboard-5b9c7c2f-64b2-41b3-a2b6-796d06e4676c.png",
+    "copy": "Minh-chung/Doi-chieu/responsive-catalog.png",
+    "exists": true,
+    "sha256": "76526ac97f4bd3019d6a5eac5f622a715f8ae7aeddb02718f9a9b99dd2fcf610"
+  },
+  {
+    "source": "C:\\Users\\Admin\\AppData\\Local\\Temp\\codex-clipboard-dd69c90d-6f9c-4fc6-a976-fd4f507f913d.png",
+    "copy": "Minh-chung/Doi-chieu/responsive-search.png",
+    "exists": true,
+    "sha256": "d3fad52b81a798acbac59b686fddb703e775b34e7152684a166179857ea2d280"
+  },
+  {
+    "source": "C:\\Users\\Admin\\AppData\\Local\\Temp\\codex-clipboard-7163d0d1-49be-4914-bb31-0c4d0313f507.png",
+    "copy": "Minh-chung/Doi-chieu/responsive-filter.png",
+    "exists": true,
+    "sha256": "757e5d2047a0e2978dc2ebccfedea0d105cd5d6e81e11a9c280b5e1f70fe2899"
+  }
+]

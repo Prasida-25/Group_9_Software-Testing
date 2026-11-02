@@ -1,0 +1,8 @@
+SEL-01 PASS Đăng nhập đúng và mở giỏ trống cleanup=PASS
+SEL-02 PASS Đăng nhập sai hiển thị lỗi chung cleanup=PASS
+SEL-03 PASS Tìm kiếm bằng ô tìm trên giao diện cleanup=NOT_APPLICABLE
+SEL-04 PASS Thêm sản phẩm vào giỏ cleanup=PASS
+SEL-05 PASS Cập nhật số lượng và giữ sau tải lại cleanup=PASS
+SEL-06 PASS Đăng xuất và không truy cập được giỏ cleanup=PASS
+SELENIUM_SUMMARY 6/6; stock unchanged=true
+EVIDENCE D:\Duong\Kiểm thử phần mềm\Cuối Kỳ\Minh-chung\Selenium\run-2026-11-02T06-03-06-765Z

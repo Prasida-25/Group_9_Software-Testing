@@ -1,0 +1,206 @@
+TAP version 13
+# Subtest: WB-INT-01
+ok 1 - WB-INT-01
+  ---
+  duration_ms: 1.3496
+  type: 'test'
+  ...
+# Subtest: WB-INT-02
+ok 2 - WB-INT-02
+  ---
+  duration_ms: 0.1821
+  type: 'test'
+  ...
+# Subtest: WB-INT-03
+ok 3 - WB-INT-03
+  ---
+  duration_ms: 0.1487
+  type: 'test'
+  ...
+# Subtest: WB-INT-04
+ok 4 - WB-INT-04
+  ---
+  duration_ms: 0.1297
+  type: 'test'
+  ...
+# Subtest: WB-INT-05
+ok 5 - WB-INT-05
+  ---
+  duration_ms: 0.1559
+  type: 'test'
+  ...
+# Subtest: WB-INT-06
+ok 6 - WB-INT-06
+  ---
+  duration_ms: 0.0949
+  type: 'test'
+  ...
+# Subtest: WB-INT-07
+ok 7 - WB-INT-07
+  ---
+  duration_ms: 0.0973
+  type: 'test'
+  ...
+# Subtest: WB-INT-08
+ok 8 - WB-INT-08
+  ---
+  duration_ms: 0.1028
+  type: 'test'
+  ...
+# Subtest: WB-VAR-01
+ok 9 - WB-VAR-01
+  ---
+  duration_ms: 0.2052
+  type: 'test'
+  ...
+# Subtest: WB-VAR-02
+not ok 10 - WB-VAR-02
+  ---
+  duration_ms: 1.6058
+  type: 'test'
+  location: 'D:\\Duong\\Kiểm thử phần mềm\\Cuối Kỳ\\Cong-cu\\whitebox.test.cjs:26:3'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + ''
+    - 'Biến thể chưa có giá bán hợp lệ.'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'Biến thể chưa có giá bán hợp lệ.'
+  actual: ''
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (D:\Duong\Kiểm thử phần mềm\Cuối Kỳ\Cong-cu\whitebox.test.cjs:28:9)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1306:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+    Test.postRun (node:internal/test_runner/test:1447:19)
+    Test.run (node:internal/test_runner/test:1372:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+  ...
+# Subtest: WB-VAR-03
+ok 11 - WB-VAR-03
+  ---
+  duration_ms: 0.1919
+  type: 'test'
+  ...
+# Subtest: WB-VAR-04
+ok 12 - WB-VAR-04
+  ---
+  duration_ms: 0.1947
+  type: 'test'
+  ...
+# Subtest: WB-VAR-05
+ok 13 - WB-VAR-05
+  ---
+  duration_ms: 0.0643
+  type: 'test'
+  ...
+# Subtest: WB-VAR-06
+ok 14 - WB-VAR-06
+  ---
+  duration_ms: 0.0628
+  type: 'test'
+  ...
+# Subtest: WB-VAR-07
+ok 15 - WB-VAR-07
+  ---
+  duration_ms: 0.0805
+  type: 'test'
+  ...
+# Subtest: WB-VAR-08
+ok 16 - WB-VAR-08
+  ---
+  duration_ms: 0.0596
+  type: 'test'
+  ...
+# Subtest: WB-VAR-09
+ok 17 - WB-VAR-09
+  ---
+  duration_ms: 0.0631
+  type: 'test'
+  ...
+# Subtest: WB-VAR-10
+ok 18 - WB-VAR-10
+  ---
+  duration_ms: 0.0508
+  type: 'test'
+  ...
+# Subtest: WB-VAR-11
+ok 19 - WB-VAR-11
+  ---
+  duration_ms: 0.0449
+  type: 'test'
+  ...
+# Subtest: WB-VAR-12
+ok 20 - WB-VAR-12
+  ---
+  duration_ms: 0.0484
+  type: 'test'
+  ...
+# Subtest: WB-VAR-13
+ok 21 - WB-VAR-13
+  ---
+  duration_ms: 0.04
+  type: 'test'
+  ...
+# Subtest: WB-QUOTE-01
+ok 22 - WB-QUOTE-01
+  ---
+  duration_ms: 0.1889
+  type: 'test'
+  ...
+# Subtest: WB-QUOTE-02
+ok 23 - WB-QUOTE-02
+  ---
+  duration_ms: 18.9157
+  type: 'test'
+  ...
+# Subtest: WB-QUOTE-03
+ok 24 - WB-QUOTE-03
+  ---
+  duration_ms: 0.7968
+  type: 'test'
+  ...
+# Subtest: WB-QUOTE-04
+ok 25 - WB-QUOTE-04
+  ---
+  duration_ms: 0.2275
+  type: 'test'
+  ...
+# Subtest: WB-QUOTE-05
+ok 26 - WB-QUOTE-05
+  ---
+  duration_ms: 0.2593
+  type: 'test'
+  ...
+# Subtest: WB-QUOTE-06
+ok 27 - WB-QUOTE-06
+  ---
+  duration_ms: 0.2622
+  type: 'test'
+  ...
+# Subtest: WB-QUOTE-07
+ok 28 - WB-QUOTE-07
+  ---
+  duration_ms: 0.2616
+  type: 'test'
+  ...
+# Subtest: WB-VAR-14 | quantity âm phải bị từ chối
+ok 29 - WB-VAR-14 | quantity âm phải bị từ chối
+  ---
+  duration_ms: 0.0656
+  type: 'test'
+  ...
+1..29
+# tests 29
+# suites 0
+# pass 28
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 118.4015

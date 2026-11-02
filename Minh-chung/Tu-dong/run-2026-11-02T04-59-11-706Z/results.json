@@ -1,0 +1,157 @@
+{
+  "node": "v24.16.0",
+  "fastCheck": "4.10.2",
+  "eslint": "10.14.0",
+  "seed": 20261102,
+  "numRuns": 1000,
+  "started": "2026-11-02T04:59:11.707Z",
+  "checks": [
+    {
+      "id": "PBT-01",
+      "kind": "property",
+      "description": "Subtotal, phí và tổng theo yêu cầu; input không bị sửa",
+      "passed": true,
+      "numRuns": 1000,
+      "numSkips": 0,
+      "numShrinks": 0,
+      "seed": 20261102,
+      "counterexample": null,
+      "counterexamplePath": null
+    },
+    {
+      "id": "PBT-02",
+      "kind": "metamorphic",
+      "description": "Đảo thứ tự dòng không đổi tiền hàng/phí/tổng",
+      "passed": true,
+      "numRuns": 1000,
+      "numSkips": 0,
+      "numShrinks": 0,
+      "seed": 20261102,
+      "counterexample": null,
+      "counterexamplePath": null
+    },
+    {
+      "id": "PBT-03",
+      "kind": "metamorphic",
+      "description": "Tăng quantity hợp lệ tăng subtotal đúng đơn giá, không khẳng định total luôn tăng",
+      "passed": true,
+      "numRuns": 1000,
+      "numSkips": 0,
+      "numShrinks": 0,
+      "seed": 20261102,
+      "counterexample": null,
+      "counterexamplePath": null
+    },
+    {
+      "id": "PBT-04",
+      "kind": "metamorphic",
+      "description": "Tách quantity thành hai dòng giữ nguyên tiền hàng/phí/tổng",
+      "passed": true,
+      "numRuns": 1000,
+      "numSkips": 0,
+      "numShrinks": 0,
+      "seed": 20261102,
+      "counterexample": null,
+      "counterexamplePath": null
+    },
+    {
+      "id": "PBT-05",
+      "kind": "property",
+      "description": "quantity trong1..99 và không vượt kho được validator chấp nhận",
+      "passed": true,
+      "numRuns": 1000,
+      "numSkips": 0,
+      "numShrinks": 0,
+      "seed": 20261102,
+      "counterexample": null,
+      "counterexamplePath": null
+    },
+    {
+      "id": "PBT-06",
+      "kind": "property",
+      "description": "quantity lớn hơn kho phải bị từ chối tại variantProblem",
+      "passed": true,
+      "numRuns": 1000,
+      "numSkips": 0,
+      "numShrinks": 0,
+      "seed": 20261102,
+      "counterexample": null,
+      "counterexamplePath": null
+    },
+    {
+      "id": "PBT-07",
+      "kind": "property",
+      "description": "Từ khóa toàn khoảng trắng được chuẩn hóa thành rỗng, không phải query sai",
+      "passed": true,
+      "numRuns": 1000,
+      "numSkips": 0,
+      "numShrinks": 0,
+      "seed": 20261102,
+      "counterexample": null,
+      "counterexamplePath": null
+    },
+    {
+      "id": "FUZZ-01",
+      "kind": "generative-negative",
+      "description": "Đầu vào quantity sai phải trả lỗi nghiệp vụ422, không bỏ lọt",
+      "passed": true,
+      "numRuns": 1000,
+      "numSkips": 0,
+      "numShrinks": 0,
+      "seed": 20261102,
+      "counterexample": null,
+      "counterexamplePath": null
+    },
+    {
+      "id": "FUZZ-02",
+      "kind": "generative-negative",
+      "description": "Đầu vào ID sai phải trả lỗi nghiệp vụ422",
+      "passed": true,
+      "numRuns": 1000,
+      "numSkips": 0,
+      "numShrinks": 0,
+      "seed": 20261102,
+      "counterexample": null,
+      "counterexamplePath": null
+    },
+    {
+      "id": "FUZZ-03",
+      "kind": "generative-negative",
+      "description": "Query ngoài hợp đồng phải bị từ chối400",
+      "passed": true,
+      "numRuns": 1000,
+      "numSkips": 0,
+      "numShrinks": 0,
+      "seed": 20261102,
+      "counterexample": null,
+      "counterexamplePath": null
+    }
+  ],
+  "static": {
+    "files": 5,
+    "errorCount": 0,
+    "warningCount": 3,
+    "rules": {
+      "no-undef": "error",
+      "no-unreachable": "error",
+      "no-dupe-args": "error",
+      "no-dupe-keys": "error",
+      "no-constant-condition": "warn",
+      "no-unused-vars": [
+        "warn",
+        {
+          "args": "none",
+          "caughtErrors": "none"
+        }
+      ],
+      "eqeqeq": "warn",
+      "no-eval": "error",
+      "no-implied-eval": "error",
+      "no-control-regex": "warn"
+    }
+  },
+  "originalSourceUnchanged": true,
+  "finished": "2026-11-02T04:59:13.664Z",
+  "successful": 10,
+  "total": 10
+}

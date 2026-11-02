@@ -1,0 +1,563 @@
+{
+  "info": {
+    "_postman_id": "80c34687-4c6e-469b-8bc9-d4e38d6861ca",
+    "name": "TechZone HTTP đợt 1 — session và validation",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "14 request. Chỉ chạy instance test đã xác minh. Cookie jar giữ session. Không gửi đơn hoặc sửa giỏ hợp lệ trong đợt này; PM-10/11 gửi dữ liệu để kiểm tra từ chối. Tắt tự theo redirect. Kết quả Postman chưa chạy khi tạo collection."
+  },
+  "variable": [
+    {
+      "key": "csrf_token",
+      "value": "",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "PM-01 Khách chưa đăng nhập mở giỏ",
+      "protocolProfileBehavior": {
+        "followRedirects": false
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url}}/cart"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "if (pm.variables.get('base_url') !== 'http://127.0.0.1:56327') { throw new Error('Chỉ chạy URL ứng dụng test đã xác nhận; nếu đổi cổng cần xác minh lại môi trường.'); }"
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 303', function () { pm.response.to.have.status(303); });",
+              "pm.test('Chuyển về login để vào giỏ', function () { pm.expect(pm.response.headers.get('Location')).to.equal('/login?returnTo=%2Fcart'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "PM-02 Khách chưa đăng nhập xem preview",
+      "protocolProfileBehavior": {
+        "followRedirects": false
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url}}/cart/preview"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "if (pm.variables.get('base_url') !== 'http://127.0.0.1:56327') { throw new Error('Chỉ chạy URL ứng dụng test đã xác nhận; nếu đổi cổng cần xác minh lại môi trường.'); }"
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 401', function () { pm.response.to.have.status(401); });",
+              "pm.test('JSON yêu cầu đăng nhập', function () { pm.expect(pm.response.json().message).to.include('đăng nhập'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "PM-03 Catalog fixture",
+      "protocolProfileBehavior": {
+        "followRedirects": false
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url}}/products?category_id={{category_id}}"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "if (pm.variables.get('base_url') !== 'http://127.0.0.1:56327') { throw new Error('Chỉ chạy URL ứng dụng test đã xác nhận; nếu đổi cổng cần xác minh lại môi trường.'); }"
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', function () { pm.response.to.have.status(200); });",
+              "pm.test('HTML có hai sản phẩm fixture', function () { const body=pm.response.text(); pm.expect(body).to.include('Tai nghe UI Test'); pm.expect(body).to.include('Chuot UI Test'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "PM-04 Khoảng giá sai",
+      "protocolProfileBehavior": {
+        "followRedirects": false
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url}}/products?min_price=200000&max_price=100000"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "if (pm.variables.get('base_url') !== 'http://127.0.0.1:56327') { throw new Error('Chỉ chạy URL ứng dụng test đã xác nhận; nếu đổi cổng cần xác minh lại môi trường.'); }"
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 400', function () { pm.response.to.have.status(400); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "PM-05 Mở login và lấy CSRF",
+      "protocolProfileBehavior": {
+        "followRedirects": false
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url}}/login"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "if (pm.variables.get('base_url') !== 'http://127.0.0.1:56327') { throw new Error('Chỉ chạy URL ứng dụng test đã xác nhận; nếu đổi cổng cần xác minh lại môi trường.'); }"
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', function () { pm.response.to.have.status(200); });",
+              "if (pm.response.code === 200 || pm.response.code === 401 || pm.response.code === 422) {\n  const match = pm.response.text().match(/name=\"_csrf\"\\s+value=\"([^\"]+)\"/);\n  pm.test('Form có CSRF', function () { pm.expect(match).not.to.equal(null); });\n  if (match) pm.collectionVariables.set('csrf_token', match[1]);\n}"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "PM-06 Đăng nhập sai mật khẩu",
+      "protocolProfileBehavior": {
+        "followRedirects": false
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": "{{base_url}}/login",
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "_csrf",
+              "value": "{{csrf_token}}",
+              "type": "text"
+            },
+            {
+              "key": "phone",
+              "value": "{{test_phone}}",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "{{test_password}}-wrong",
+              "type": "text"
+            },
+            {
+              "key": "returnTo",
+              "value": "/cart",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "if (pm.variables.get('base_url') !== 'http://127.0.0.1:56327') { throw new Error('Chỉ chạy URL ứng dụng test đã xác nhận; nếu đổi cổng cần xác minh lại môi trường.'); }",
+              "if (!pm.collectionVariables.get('csrf_token')) { throw new Error('Chạy GET lấy CSRF trước.'); }",
+              "if (!pm.environment.get('test_password')) { throw new Error('Nhập mật khẩu tài khoản test trong environment local, không đưa vào collection.'); }"
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 401', function () { pm.response.to.have.status(401); });",
+              "if (pm.response.code === 200 || pm.response.code === 401 || pm.response.code === 422) {\n  const match = pm.response.text().match(/name=\"_csrf\"\\s+value=\"([^\"]+)\"/);\n  pm.test('Form có CSRF', function () { pm.expect(match).not.to.equal(null); });\n  if (match) pm.collectionVariables.set('csrf_token', match[1]);\n}\npm.test('Thông báo lỗi chung', function () { pm.expect(pm.response.text()).to.include('Số điện thoại hoặc mật khẩu không đúng.'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "PM-07 Đăng nhập khách test",
+      "protocolProfileBehavior": {
+        "followRedirects": false
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": "{{base_url}}/login",
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "_csrf",
+              "value": "{{csrf_token}}",
+              "type": "text"
+            },
+            {
+              "key": "phone",
+              "value": "{{test_phone}}",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "{{test_password}}",
+              "type": "text"
+            },
+            {
+              "key": "returnTo",
+              "value": "/cart",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "if (pm.variables.get('base_url') !== 'http://127.0.0.1:56327') { throw new Error('Chỉ chạy URL ứng dụng test đã xác nhận; nếu đổi cổng cần xác minh lại môi trường.'); }",
+              "if (!pm.collectionVariables.get('csrf_token')) { throw new Error('Chạy GET lấy CSRF trước.'); }",
+              "if (!pm.environment.get('test_password')) { throw new Error('Nhập mật khẩu tài khoản test trong environment local, không đưa vào collection.'); }"
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 303', function () { pm.response.to.have.status(303); });",
+              "pm.test('Đăng nhập về giỏ', function () { pm.expect(pm.response.headers.get('Location')).to.equal('/cart'); });\npm.collectionVariables.unset('csrf_token');"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "PM-08 Mở giỏ và lấy CSRF phiên mới",
+      "protocolProfileBehavior": {
+        "followRedirects": false
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url}}/cart"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "if (pm.variables.get('base_url') !== 'http://127.0.0.1:56327') { throw new Error('Chỉ chạy URL ứng dụng test đã xác nhận; nếu đổi cổng cần xác minh lại môi trường.'); }"
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', function () { pm.response.to.have.status(200); });",
+              "pm.test('Trang giỏ', function () { pm.expect(pm.response.text()).to.include('Giỏ hàng'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "PM-09 Mở sản phẩm lấy CSRF sau login",
+      "protocolProfileBehavior": {
+        "followRedirects": false
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url}}/products/{{product_id}}"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "if (pm.variables.get('base_url') !== 'http://127.0.0.1:56327') { throw new Error('Chỉ chạy URL ứng dụng test đã xác nhận; nếu đổi cổng cần xác minh lại môi trường.'); }"
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', function () { pm.response.to.have.status(200); });",
+              "if (pm.response.code === 200 || pm.response.code === 401 || pm.response.code === 422) {\n  const match = pm.response.text().match(/name=\"_csrf\"\\s+value=\"([^\"]+)\"/);\n  pm.test('Form có CSRF', function () { pm.expect(match).not.to.equal(null); });\n  if (match) pm.collectionVariables.set('csrf_token', match[1]);\n}"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "PM-10 Quantity 0 bị từ chối",
+      "protocolProfileBehavior": {
+        "followRedirects": false
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": "{{base_url}}/cart/items",
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "_csrf",
+              "value": "{{csrf_token}}",
+              "type": "text"
+            },
+            {
+              "key": "variant_id",
+              "value": "{{variant_id}}",
+              "type": "text"
+            },
+            {
+              "key": "quantity",
+              "value": "0",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "if (pm.variables.get('base_url') !== 'http://127.0.0.1:56327') { throw new Error('Chỉ chạy URL ứng dụng test đã xác nhận; nếu đổi cổng cần xác minh lại môi trường.'); }",
+              "if (!pm.collectionVariables.get('csrf_token')) { throw new Error('Chạy GET lấy CSRF trước.'); }"
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 422', function () { pm.response.to.have.status(422); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "PM-11 Thiếu CSRF bị từ chối",
+      "protocolProfileBehavior": {
+        "followRedirects": false
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": "{{base_url}}/cart/items",
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "variant_id",
+              "value": "{{variant_id}}",
+              "type": "text"
+            },
+            {
+              "key": "quantity",
+              "value": "1",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "if (pm.variables.get('base_url') !== 'http://127.0.0.1:56327') { throw new Error('Chỉ chạy URL ứng dụng test đã xác nhận; nếu đổi cổng cần xác minh lại môi trường.'); }"
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 403', function () { pm.response.to.have.status(403); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "PM-12 Khách không được quản trị",
+      "protocolProfileBehavior": {
+        "followRedirects": false
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url}}/admin/orders"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "if (pm.variables.get('base_url') !== 'http://127.0.0.1:56327') { throw new Error('Chỉ chạy URL ứng dụng test đã xác nhận; nếu đổi cổng cần xác minh lại môi trường.'); }"
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 403', function () { pm.response.to.have.status(403); });",
+              "pm.test('Từ chối quyền admin', function () { pm.expect(pm.response.text()).to.include('không có quyền'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "PM-13 Đăng xuất",
+      "protocolProfileBehavior": {
+        "followRedirects": false
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": "{{base_url}}/logout",
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "_csrf",
+              "value": "{{csrf_token}}",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "if (pm.variables.get('base_url') !== 'http://127.0.0.1:56327') { throw new Error('Chỉ chạy URL ứng dụng test đã xác nhận; nếu đổi cổng cần xác minh lại môi trường.'); }",
+              "if (!pm.collectionVariables.get('csrf_token')) { throw new Error('Chạy GET lấy CSRF trước.'); }"
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 303', function () { pm.response.to.have.status(303); });",
+              "pm.test('Đăng xuất về login', function () { pm.expect(pm.response.headers.get('Location')).to.equal('/login?loggedout=1'); });\npm.collectionVariables.unset('csrf_token');"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "PM-14 Sau logout không được mở giỏ",
+      "protocolProfileBehavior": {
+        "followRedirects": false
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url}}/cart"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "if (pm.variables.get('base_url') !== 'http://127.0.0.1:56327') { throw new Error('Chỉ chạy URL ứng dụng test đã xác nhận; nếu đổi cổng cần xác minh lại môi trường.'); }"
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 303', function () { pm.response.to.have.status(303); });",
+              "pm.test('Chuyển về login để vào giỏ', function () { pm.expect(pm.response.headers.get('Location')).to.equal('/login?returnTo=%2Fcart'); });"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

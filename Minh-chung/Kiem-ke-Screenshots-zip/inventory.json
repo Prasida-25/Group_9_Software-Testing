@@ -1,0 +1,916 @@
+[
+  {
+    "id": "ZIP-001",
+    "zip_entry": "Screenshot 2026-11-02 024330.png",
+    "sha256": "df9a4aeb90cb0e044e73cb488e7f837969456e47248b694afbb17780891ffc56",
+    "size": [
+      1840,
+      774
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/cancel-after.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-001.png"
+  },
+  {
+    "id": "ZIP-002",
+    "zip_entry": "Screenshot 2026-11-02 024255.png",
+    "sha256": "d3e02faf6b7123bdd663414eceba612213f4383cb2886a8c0eb4256eca1b7d6b",
+    "size": [
+      1845,
+      700
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/cancel-before.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-002.png"
+  },
+  {
+    "id": "ZIP-003",
+    "zip_entry": "Screenshot 2026-11-02 024035.png",
+    "sha256": "f8be9f4a30427381055c126244d53edd56d65fde9a506ce438e2ab25a0adf546",
+    "size": [
+      1837,
+      772
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/order-paid.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-003.png"
+  },
+  {
+    "id": "ZIP-004",
+    "zip_entry": "Screenshot 2026-11-02 024012.png",
+    "sha256": "6176fc37d5db71273fc5f88bb37dfc3c2694d24c26ef986c0006a182b268f015",
+    "size": [
+      1833,
+      768
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/order-delivered-unpaid.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-004.png"
+  },
+  {
+    "id": "ZIP-005",
+    "zip_entry": "Screenshot 2026-11-02 023955.png",
+    "sha256": "eebb6e160273626baec2acb59d5c022e109d6bc309b4dfafb87644890149143c",
+    "size": [
+      1843,
+      774
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/order-shipping.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-005.png"
+  },
+  {
+    "id": "ZIP-006",
+    "zip_entry": "Screenshot 2026-11-02 023931.png",
+    "sha256": "1582de8f137ccc24c9164d29eb9dfa60ac55aacfeb29ccec505a5b91a69cee8a",
+    "size": [
+      1819,
+      771
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/order-confirmed.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-006.png"
+  },
+  {
+    "id": "ZIP-007",
+    "zip_entry": "Screenshot 2026-11-02 023912.png",
+    "sha256": "b8b31885cb264ed9c3e3239f871aa8c1f7557abd6ac1224493fcbbba955aa409",
+    "size": [
+      1822,
+      705
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/order-pending.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-007.png"
+  },
+  {
+    "id": "ZIP-008",
+    "zip_entry": "Screenshot 2026-11-02 023608.png",
+    "sha256": "e98605ccd1d1f1e0ecc4c831f255836cdfa89fd7c4acb061914700aae0c4be60",
+    "size": [
+      1843,
+      828
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/admin-denied.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-008.png"
+  },
+  {
+    "id": "ZIP-009",
+    "zip_entry": "Screenshot 2026-11-02 023423.png",
+    "sha256": "139b593ecde2ffcca8a49b34569d84d4aafa46778271760c19fe46d2d914ced1",
+    "size": [
+      1807,
+      696
+    ],
+    "matching_evidence": [],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-009.png"
+  },
+  {
+    "id": "ZIP-010",
+    "zip_entry": "Screenshot 2026-10-19 023154.png",
+    "sha256": "84ddbd430fc92f17721894cfe00d303b8c7b8511b9aa843902f0033fe6e09e6d",
+    "size": [
+      1836,
+      857
+    ],
+    "matching_evidence": [],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-010.png"
+  },
+  {
+    "id": "ZIP-011",
+    "zip_entry": "Screenshot 2026-11-02 022848.png",
+    "sha256": "ae08d06cf510e57a48cef83fab2ed8111a7c275925e88119d50b19f3fd017a9b",
+    "size": [
+      1462,
+      718
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/cod-success.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-011.png"
+  },
+  {
+    "id": "ZIP-012",
+    "zip_entry": "Screenshot 2026-11-02 022739.png",
+    "sha256": "e17236f66a35ca089a522c25707ec7b4634381d83d221b18f0f0fe773611403d",
+    "size": [
+      922,
+      739
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/checkout-second-address.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-012.png"
+  },
+  {
+    "id": "ZIP-013",
+    "zip_entry": "Screenshot 2026-11-02 022713.png",
+    "sha256": "bdf3424acc5bf0f0c52b688844c86a98894a013b7921e01b3c573817158a962f",
+    "size": [
+      963,
+      742
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/checkout-default-address.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-013.png"
+  },
+  {
+    "id": "ZIP-014",
+    "zip_entry": "Screenshot 2026-11-02 022337.png",
+    "sha256": "efd94159f20983de8e9825ec99ff0888f7e4696f20983f9c9feeaeb1611ae144",
+    "size": [
+      1807,
+      768
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/cart-delete.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-014.png"
+  },
+  {
+    "id": "ZIP-015",
+    "zip_entry": "Screenshot 2026-11-02 022309.png",
+    "sha256": "b928385f9852f2c0f0506bdeaaa8c5694497d583b08654f84948b7977977922e",
+    "size": [
+      1816,
+      841
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/cart-two-lines.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-015.png"
+  },
+  {
+    "id": "ZIP-016",
+    "zip_entry": "Screenshot 2026-11-02 022229.png",
+    "sha256": "d65f04a92bf25845d97a609126f5500ad9a37fe72ae5c5ee19ac38cdd717e9dc",
+    "size": [
+      1807,
+      766
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/cart-qty3.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-016.png"
+  },
+  {
+    "id": "ZIP-017",
+    "zip_entry": "Screenshot 2026-11-02 022201.png",
+    "sha256": "7316ba1c08a2e052bb38b925a25b387f99b8d083c8f5ae1c6718f73d5a52b545",
+    "size": [
+      1806,
+      762
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/cart-qty2.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-017.png"
+  },
+  {
+    "id": "ZIP-018",
+    "zip_entry": "Screenshot 2026-11-02 022129.png",
+    "sha256": "853aa0760b333293e537030bcb078694595ea74a5853458eb898639a18df12bd",
+    "size": [
+      1807,
+      763
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/cart-qty1.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-018.png"
+  },
+  {
+    "id": "ZIP-019",
+    "zip_entry": "Screenshot 2026-11-02 020942.png",
+    "sha256": "8913a20ef40c1f6181df2212fd0351c31b0186169861ab8eb3d87c1c2ab9b66a",
+    "size": [
+      1528,
+      760
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/guest-cart-login.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-019.png"
+  },
+  {
+    "id": "ZIP-020",
+    "zip_entry": "Screenshot 2026-11-02 020813.png",
+    "sha256": "0011777fac18618a0f27ecfbddcb2b78dc07d8439bc392e13b56fec1b9c0a70b",
+    "size": [
+      1813,
+      676
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/cart-empty.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-020.png"
+  },
+  {
+    "id": "ZIP-021",
+    "zip_entry": "Screenshot 2026-11-02 020721.png",
+    "sha256": "d5e450bd62eb3e04398b3b095d31549e753954f64123db2b1dbe423f24e03280",
+    "size": [
+      1837,
+      766
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/login-error.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-021.png"
+  },
+  {
+    "id": "ZIP-022",
+    "zip_entry": "Screenshot 2026-11-02 020636.png",
+    "sha256": "23d3c112a07ca4adc773db02a02c73beb451dc4b7d034260c865b604fa96affc",
+    "size": [
+      1837,
+      757
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/register-success.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-022.png"
+  },
+  {
+    "id": "ZIP-023",
+    "zip_entry": "Screenshot 2026-11-02 014855.png",
+    "sha256": "42fc4a7d94bb1fb168a923bfece3a47f6c76a029158bc11c5e715915de723c0f",
+    "size": [
+      1813,
+      766
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/search-empty.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-023.png"
+  },
+  {
+    "id": "ZIP-024",
+    "zip_entry": "Screenshot 2026-11-02 014815.png",
+    "sha256": "d4dad10bf5314cb6dbeeec42073eb3978acb17f7acc91f01a101e79aed715513",
+    "size": [
+      1809,
+      759
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/variant-white.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-024.png"
+  },
+  {
+    "id": "ZIP-025",
+    "zip_entry": "Screenshot 2026-11-02 014752.png",
+    "sha256": "e36c54e795d259dc4228a2905171945db8c1277c33994f5cd59790f8dba83438",
+    "size": [
+      1810,
+      754
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/variant-black.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-025.png"
+  },
+  {
+    "id": "ZIP-026",
+    "zip_entry": "Screenshot 2026-11-02 014642.png",
+    "sha256": "35e3461d8cae163215a64ab9450e684e44aa4dc79caecb36ccb7a19a9a306615",
+    "size": [
+      1810,
+      760
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/catalog-list.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-026.png"
+  },
+  {
+    "id": "ZIP-027",
+    "zip_entry": "Screenshot 2026-11-02 011716.png",
+    "sha256": "728742a7e0384d3b6bbc9944a318a01ca8d54f27fc7ef8ceba6ba7bff65bd72e",
+    "size": [
+      895,
+      813
+    ],
+    "matching_evidence": [],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-027.png"
+  },
+  {
+    "id": "ZIP-028",
+    "zip_entry": "Screenshot 2026-11-02 011526.png",
+    "sha256": "2c84849884fdf7b845bef620d5d5a333b007548301bcf3eb69f46c25649f2a66",
+    "size": [
+      1026,
+      496
+    ],
+    "matching_evidence": [],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-028.png"
+  },
+  {
+    "id": "ZIP-029",
+    "zip_entry": "Screenshot 2026-11-02 210856.png",
+    "sha256": "66a1e297f8a9224cf22c03663b1c094c1334361fc4526e4e8adfdd5939d3370c",
+    "size": [
+      1918,
+      625
+    ],
+    "matching_evidence": [
+      "Minh-chung/JMeter/JM-5users-statistics.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-029.png"
+  },
+  {
+    "id": "ZIP-030",
+    "zip_entry": "Screenshot 2026-11-02 210746.png",
+    "sha256": "0cd1d920d92c7dc267b13667a49aaac49969b42f9de22ebd3fb321ef7a43e342",
+    "size": [
+      1918,
+      828
+    ],
+    "matching_evidence": [
+      "Minh-chung/JMeter/JM-5users-overview.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-030.png"
+  },
+  {
+    "id": "ZIP-031",
+    "zip_entry": "Screenshot 2026-11-02 210701.png",
+    "sha256": "3f604636bc9aed6646b0e240f1fa2dcd945711d702d58064b5c21104568f841e",
+    "size": [
+      1918,
+      639
+    ],
+    "matching_evidence": [
+      "Minh-chung/JMeter/JM-1user-statistics.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-031.png"
+  },
+  {
+    "id": "ZIP-032",
+    "zip_entry": "Screenshot 2026-11-02 210543.png",
+    "sha256": "e6f163d1bf226e2efefa505d23700738841db79deecd6205036845d6462338fe",
+    "size": [
+      1918,
+      826
+    ],
+    "matching_evidence": [
+      "Minh-chung/JMeter/JM-1user-overview.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-032.png"
+  },
+  {
+    "id": "ZIP-033",
+    "zip_entry": "Screenshot 2026-11-02 190445.png",
+    "sha256": "913c9a58473b89066dea8089c12ed8b3bc734ecb664e55534515c17ccc7b9307",
+    "size": [
+      1918,
+      777
+    ],
+    "matching_evidence": [
+      "Minh-chung/JMeter/JM-terminal.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-033.png"
+  },
+  {
+    "id": "ZIP-034",
+    "zip_entry": "Screenshot 2026-11-02 185311.png",
+    "sha256": "6aa0f57812e6f3743f720ae098b3387b5b477f9adf5189060cbd5e4d1dad259d",
+    "size": [
+      1918,
+      1078
+    ],
+    "matching_evidence": [],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-034.png"
+  },
+  {
+    "id": "ZIP-035",
+    "zip_entry": "Screenshot 2026-11-02 184106.png",
+    "sha256": "7854a726852e3da9fee407cac6d788fb1434f50472b4b105820d34669ac3e110",
+    "size": [
+      1918,
+      1078
+    ],
+    "matching_evidence": [],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-035.png"
+  },
+  {
+    "id": "ZIP-036",
+    "zip_entry": "Screenshot 2026-11-02 183255.png",
+    "sha256": "d4732d14169ec419be88376eda532ca95ef27fe7e5c9e18236d35b238b5d1047",
+    "size": [
+      1920,
+      1080
+    ],
+    "matching_evidence": [],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-036.png"
+  },
+  {
+    "id": "ZIP-037",
+    "zip_entry": "Screenshot 2026-11-02 180445.png",
+    "sha256": "36e7fbe37947bd2c29b5bcce63b867a52c366c5fbc7899c2fb31cc3955861b57",
+    "size": [
+      1257,
+      952
+    ],
+    "matching_evidence": [],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-037.png"
+  },
+  {
+    "id": "ZIP-038",
+    "zip_entry": "Screenshot 2026-11-02 180424.png",
+    "sha256": "545e50e8735a0193beb491033d11fdfc3c59840d7376ca48021e8d807595d569",
+    "size": [
+      1255,
+      949
+    ],
+    "matching_evidence": [],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-038.png"
+  },
+  {
+    "id": "ZIP-039",
+    "zip_entry": "Screenshot 2026-11-02 180139.png",
+    "sha256": "757e5d2047a0e2978dc2ebccfedea0d105cd5d6e81e11a9c280b5e1f70fe2899",
+    "size": [
+      1249,
+      951
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/responsive-filter.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-039.png"
+  },
+  {
+    "id": "ZIP-040",
+    "zip_entry": "Screenshot 2026-11-02 180007.png",
+    "sha256": "d3fad52b81a798acbac59b686fddb703e775b34e7152684a166179857ea2d280",
+    "size": [
+      1252,
+      949
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/responsive-search.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-040.png"
+  },
+  {
+    "id": "ZIP-041",
+    "zip_entry": "Screenshot 2026-11-02 175857.png",
+    "sha256": "76526ac97f4bd3019d6a5eac5f622a715f8ae7aeddb02718f9a9b99dd2fcf610",
+    "size": [
+      1251,
+      948
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/responsive-catalog.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-041.png"
+  },
+  {
+    "id": "ZIP-042",
+    "zip_entry": "Screenshot 2026-11-02 174101.png",
+    "sha256": "d4806c6f31fd43a555fd0de9c7995fbe982a90b8a12dd89488c1ef510e344940",
+    "size": [
+      1918,
+      1078
+    ],
+    "matching_evidence": [],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-042.png"
+  },
+  {
+    "id": "ZIP-043",
+    "zip_entry": "Screenshot 2026-11-02 173554.png",
+    "sha256": "721eabbdad021ed5d0ee5ad036f4a5f6ed1014ee41413a9c51956725b3b42291",
+    "size": [
+      1302,
+      922
+    ],
+    "matching_evidence": [],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-043.png"
+  },
+  {
+    "id": "ZIP-044",
+    "zip_entry": "Screenshot 2026-11-02 173541.png",
+    "sha256": "c27eb7c10c146a57c4594ddf39c77910139ce47877f0984a302424f874c3b84b",
+    "size": [
+      1300,
+      807
+    ],
+    "matching_evidence": [],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-044.png"
+  },
+  {
+    "id": "ZIP-045",
+    "zip_entry": "Screenshot 2026-11-02 173516.png",
+    "sha256": "783620a16a2cecdd2c86a938966952f167e602f017b42405a9fbc5f3e2828e10",
+    "size": [
+      1918,
+      1078
+    ],
+    "matching_evidence": [],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-045.png"
+  },
+  {
+    "id": "ZIP-046",
+    "zip_entry": "Screenshot 2026-11-02 173042.png",
+    "sha256": "aaeaf539592793167184fd4ea201ebfc87106088564908d2f502e9b811ab0abd",
+    "size": [
+      1255,
+      951
+    ],
+    "matching_evidence": [],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-046.png"
+  },
+  {
+    "id": "ZIP-047",
+    "zip_entry": "Screenshot 2026-11-02 173027.png",
+    "sha256": "1cc8c3adb793935ccdf66ff9304f2b379d62a70f5adeefc7989fcbcb5761bfb0",
+    "size": [
+      1254,
+      790
+    ],
+    "matching_evidence": [],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-047.png"
+  },
+  {
+    "id": "ZIP-048",
+    "zip_entry": "Screenshot 2026-11-02 172925.png",
+    "sha256": "ccdfb407c67a5416251df55895132697efbf13294f524db1795c44ad72c9baca",
+    "size": [
+      1918,
+      1078
+    ],
+    "matching_evidence": [],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-048.png"
+  },
+  {
+    "id": "ZIP-049",
+    "zip_entry": "Screenshot 2026-11-02 130731.png",
+    "sha256": "dac49da52896ff41df35f7e31dfccefb16805478e8c6b085ed0cd5baf046c589",
+    "size": [
+      1152,
+      553
+    ],
+    "matching_evidence": [],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-049.png"
+  },
+  {
+    "id": "ZIP-050",
+    "zip_entry": "Screenshot 2026-11-02 125029.png",
+    "sha256": "b93fc60548c05b5a47c413eb645268e69c01d9e13743d638d567f1facae79125",
+    "size": [
+      1920,
+      1080
+    ],
+    "matching_evidence": [
+      "Minh-chung/Postman/PM-14-gio-sau-logout.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-050.png"
+  },
+  {
+    "id": "ZIP-051",
+    "zip_entry": "Screenshot 2026-11-02 125017.png",
+    "sha256": "bb550fc74c21fa533737e1970b8c1d4070d99f9f2949ca0f76dd0b93924e0a15",
+    "size": [
+      1920,
+      1080
+    ],
+    "matching_evidence": [
+      "Minh-chung/Postman/PM-13-dang-xuat.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-051.png"
+  },
+  {
+    "id": "ZIP-052",
+    "zip_entry": "Screenshot 2026-11-02 125003.png",
+    "sha256": "0e32f22e468b52bab789b033e233363666c105b2cf9c44a33712874b38603650",
+    "size": [
+      1920,
+      1080
+    ],
+    "matching_evidence": [
+      "Minh-chung/Postman/PM-12-tu-choi-admin.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-052.png"
+  },
+  {
+    "id": "ZIP-053",
+    "zip_entry": "Screenshot 2026-11-02 124659.png",
+    "sha256": "ec1a2df56adc6a7d1fd9caff9cb41c780361d501656349d03d898d59f0bc8d13",
+    "size": [
+      1918,
+      1078
+    ],
+    "matching_evidence": [
+      "Minh-chung/Postman/PM-11-thieu-CSRF.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-053.png"
+  },
+  {
+    "id": "ZIP-054",
+    "zip_entry": "Screenshot 2026-11-02 124647.png",
+    "sha256": "a37ed1dcb1fd2012e7a7d537b399980dffa6674d2533dcfbdaa15f493736c98b",
+    "size": [
+      1918,
+      1078
+    ],
+    "matching_evidence": [
+      "Minh-chung/Postman/PM-10-quantity-0.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-054.png"
+  },
+  {
+    "id": "ZIP-055",
+    "zip_entry": "Screenshot 2026-11-02 124450.png",
+    "sha256": "ffd2a2642d4124df46c270062b279a9cbcccc6e94fb3747ac0040b5063c10bb4",
+    "size": [
+      1918,
+      1078
+    ],
+    "matching_evidence": [
+      "Minh-chung/Postman/PM-09-CSRF-phien-moi.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-055.png"
+  },
+  {
+    "id": "ZIP-056",
+    "zip_entry": "Screenshot 2026-11-02 124436.png",
+    "sha256": "895bbc018fccf6e8adb8f9602cd449a46aae95f5d4664f4ae9201586855b90aa",
+    "size": [
+      1918,
+      1078
+    ],
+    "matching_evidence": [
+      "Minh-chung/Postman/PM-08-gio-sau-login.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-056.png"
+  },
+  {
+    "id": "ZIP-057",
+    "zip_entry": "Screenshot 2026-11-02 124229.png",
+    "sha256": "6fd3e335952adcac8ecacc6e773bb8503268891d93b4594de47f75ac40bfacd8",
+    "size": [
+      1918,
+      1078
+    ],
+    "matching_evidence": [
+      "Minh-chung/Postman/PM-07-dang-nhap-dung.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-057.png"
+  },
+  {
+    "id": "ZIP-058",
+    "zip_entry": "Screenshot 2026-11-02 124011.png",
+    "sha256": "e5941c267eea8d4c9d5da5cb85f0a819a881b215b46c74ec8dd2e1acb0a65acc",
+    "size": [
+      1918,
+      1078
+    ],
+    "matching_evidence": [
+      "Minh-chung/Postman/PM-06-dang-nhap-sai.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-058.png"
+  },
+  {
+    "id": "ZIP-059",
+    "zip_entry": "Screenshot 2026-11-02 123736.png",
+    "sha256": "4227201352bd49278b4bfeaed7fe068c645819b4826244ee61d53e56292e2bc3",
+    "size": [
+      1918,
+      1078
+    ],
+    "matching_evidence": [
+      "Minh-chung/Postman/PM-05-login-co-CSRF.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-059.png"
+  },
+  {
+    "id": "ZIP-060",
+    "zip_entry": "Screenshot 2026-11-02 123428.png",
+    "sha256": "836379bcfe26e1ca7c9154d4881dd0507ad74374a60777ff95b691a38f9c1d87",
+    "size": [
+      1918,
+      1078
+    ],
+    "matching_evidence": [
+      "Minh-chung/Postman/PM-04-khoang-gia-sai-400.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-060.png"
+  },
+  {
+    "id": "ZIP-061",
+    "zip_entry": "Screenshot 2026-11-02 123412.png",
+    "sha256": "c58b6da643bc9a8c7cfdcabf51f94c0cd1fbf73a6e8e351326251bee4851623f",
+    "size": [
+      1918,
+      1078
+    ],
+    "matching_evidence": [
+      "Minh-chung/Postman/PM-03-catalog-200.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-061.png"
+  },
+  {
+    "id": "ZIP-062",
+    "zip_entry": "Screenshot 2026-11-02 123241.png",
+    "sha256": "a21578594c4313457acee2b013b2384bfeb14a4ec746f6d4d99f48d6341e7267",
+    "size": [
+      1918,
+      1078
+    ],
+    "matching_evidence": [
+      "Minh-chung/Postman/PM-02-preview-401.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-062.png"
+  },
+  {
+    "id": "ZIP-063",
+    "zip_entry": "Screenshot 2026-11-02 123231.png",
+    "sha256": "fdf8510e14c76cee77313c604b0759df0a14ccc9105b60a035abd66a96983fb3",
+    "size": [
+      1918,
+      1078
+    ],
+    "matching_evidence": [
+      "Minh-chung/Postman/PM-01-khach-redirect.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-063.png"
+  },
+  {
+    "id": "ZIP-064",
+    "zip_entry": "Screenshot 2026-11-02 120607.png",
+    "sha256": "8d367daaad5d7ec4ecf402a9ec04e4f8186812b4b45e72c0f41f5a2710b26614",
+    "size": [
+      1186,
+      552
+    ],
+    "matching_evidence": [],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-064.png"
+  },
+  {
+    "id": "ZIP-065",
+    "zip_entry": "Screenshot 2026-11-02 115330.png",
+    "sha256": "7ee52f23cbff69a4e1a6b5f808acf5aaeda561df18ab67f9f24faecb5a1b392f",
+    "size": [
+      1918,
+      693
+    ],
+    "matching_evidence": [],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-065.png"
+  },
+  {
+    "id": "ZIP-066",
+    "zip_entry": "Screenshot 2026-11-02 115037.png",
+    "sha256": "7432bb067f8ded3531b5f3b046a99eba4e274d989628b60578b609238d1d332b",
+    "size": [
+      1176,
+      199
+    ],
+    "matching_evidence": [],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-066.png"
+  },
+  {
+    "id": "ZIP-067",
+    "zip_entry": "Screenshot 2026-11-02 031252.png",
+    "sha256": "4bbe6dc2a32594aa8a685eda48dedc8d7feceda3dc0f5347c5f8ec60d9a8654c",
+    "size": [
+      1188,
+      394
+    ],
+    "matching_evidence": [],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-067.png"
+  },
+  {
+    "id": "ZIP-068",
+    "zip_entry": "Screenshot 2026-11-02 031036.png",
+    "sha256": "4e753cf4d1196f8d3afca4bb7651ab65151dd753a78e7e75792823fc444405aa",
+    "size": [
+      1176,
+      370
+    ],
+    "matching_evidence": [],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-068.png"
+  },
+  {
+    "id": "ZIP-069",
+    "zip_entry": "Screenshot 2026-11-02 030656.png",
+    "sha256": "fac92347c0f8f966c400da5ef670fc2db356674f094e9816a6920fed0dc3be28",
+    "size": [
+      1179,
+      769
+    ],
+    "matching_evidence": [],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-069.png"
+  },
+  {
+    "id": "ZIP-070",
+    "zip_entry": "Screenshot 2026-11-02 030632.png",
+    "sha256": "c457d459e5d4b52e67c95eb2d01af1a9a031a47b414eb26fa31d081966ae39a3",
+    "size": [
+      871,
+      682
+    ],
+    "matching_evidence": [],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-070.png"
+  },
+  {
+    "id": "ZIP-071",
+    "zip_entry": "Screenshot 2026-11-02 025114.png",
+    "sha256": "202f14971392454cc4c6b7c499f8c01f8e8c53fe71b7e11a716ccc34f17a5b25",
+    "size": [
+      1840,
+      697
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/auto-control.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-071.png"
+  },
+  {
+    "id": "ZIP-072",
+    "zip_entry": "Screenshot 2026-11-02 025044.png",
+    "sha256": "507599fb39cdc0895bf521316d5f37386716bba402a00f7764664e3a186aee9f",
+    "size": [
+      1201,
+      288
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/auto-terminal.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-072.png"
+  },
+  {
+    "id": "ZIP-073",
+    "zip_entry": "Screenshot 2026-11-02 025002.png",
+    "sha256": "74865213a592de916e76454d1af2f4c8f7ba0890069173de63dbc933a542deb8",
+    "size": [
+      1842,
+      691
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/auto-after.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-073.png"
+  },
+  {
+    "id": "ZIP-074",
+    "zip_entry": "Screenshot 2026-11-02 024908.png",
+    "sha256": "ddd6a7b5b47462a101c13fa1e03d41748e6032a82cc44a9e8fcac5121816fd4f",
+    "size": [
+      1837,
+      633
+    ],
+    "matching_evidence": [
+      "Minh-chung/Doi-chieu/auto-before.png"
+    ],
+    "copy": "Minh-chung/Kiem-ke-Screenshots-zip/ZIP-074.png"
+  }
+]

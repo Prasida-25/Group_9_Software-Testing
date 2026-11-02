@@ -1,0 +1,350 @@
+[
+  {
+    "file": "LH-CAT-D-01.html",
+    "url": "http://127.0.0.1:56327/products?category_id=462",
+    "fetchTime": "2026-11-02T10:41:27.321Z",
+    "device": "desktop",
+    "version": "13.5.0",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": true
+    },
+    "runtimeError": null,
+    "warnings": [],
+    "scores": {
+      "performance": 89.0,
+      "accessibility": 91.0,
+      "best-practices": 100,
+      "seo": 91.0
+    },
+    "metrics": {
+      "first-contentful-paint": 1454.1056402102236,
+      "largest-contentful-paint": 1534.1056402102236,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0.002049845886951185
+    },
+    "sha256": "a9c829fb64f27b18a19784fa957f6890e1583d2fdd04a891cc062a2f12027826"
+  },
+  {
+    "file": "LH-CAT-D-02.html",
+    "url": "http://127.0.0.1:56327/products?category_id=462",
+    "fetchTime": "2026-11-02T10:42:05.048Z",
+    "device": "desktop",
+    "version": "13.5.0",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": true
+    },
+    "runtimeError": null,
+    "warnings": [],
+    "scores": {
+      "performance": 89.0,
+      "accessibility": 91.0,
+      "best-practices": 100,
+      "seo": 91.0
+    },
+    "metrics": {
+      "first-contentful-paint": 1452.2846882667395,
+      "largest-contentful-paint": 1532.2846882667395,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0.002049845886951185
+    },
+    "sha256": "bd87152d50ff78870c5739ec5215f7ccf03768b4465c7ab3fe7027e0e15432c2"
+  },
+  {
+    "file": "LH-CAT-D-03.html",
+    "url": "http://127.0.0.1:56327/products?category_id=462",
+    "fetchTime": "2026-11-02T10:42:25.785Z",
+    "device": "desktop",
+    "version": "13.5.0",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": true
+    },
+    "runtimeError": null,
+    "warnings": [],
+    "scores": {
+      "performance": 89.0,
+      "accessibility": 91.0,
+      "best-practices": 100,
+      "seo": 91.0
+    },
+    "metrics": {
+      "first-contentful-paint": 1452.4679999999998,
+      "largest-contentful-paint": 1532.4679999999998,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0.002049845886951185
+    },
+    "sha256": "4322833ed6c06d14dd2d6032dfc6e3df9954362bfef88d44daf496f72a4ed08f"
+  },
+  {
+    "file": "LH-CAT-M-01.html",
+    "url": "http://127.0.0.1:56327/products?category_id=462",
+    "fetchTime": "2026-11-02T10:29:30.807Z",
+    "device": "mobile",
+    "version": "13.5.0",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": true
+    },
+    "runtimeError": null,
+    "warnings": [],
+    "scores": {
+      "performance": 57.99999999999999,
+      "accessibility": 91.0,
+      "best-practices": 100,
+      "seo": 91.0
+    },
+    "metrics": {
+      "first-contentful-paint": 7959.552006527316,
+      "largest-contentful-paint": 8259.552006527316,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0.0002943797458712256
+    },
+    "sha256": "66a02cac6771680ea5dea0ecbb3441ac64a4e0a4801a6a19edc1674aa845fc77"
+  },
+  {
+    "file": "LH-CAT-M-02.html",
+    "url": "http://127.0.0.1:56327/products?category_id=462",
+    "fetchTime": "2026-11-02T10:35:22.411Z",
+    "device": "mobile",
+    "version": "13.5.0",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": true
+    },
+    "runtimeError": null,
+    "warnings": [],
+    "scores": {
+      "performance": 57.99999999999999,
+      "accessibility": 91.0,
+      "best-practices": 100,
+      "seo": 91.0
+    },
+    "metrics": {
+      "first-contentful-paint": 7958.13,
+      "largest-contentful-paint": 8258.130000000001,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0.0003271208002840686
+    },
+    "sha256": "9d43e7d57756dde114680f7b634acc455d59dde47d327cf9ce905f0e3bc1e5ab"
+  },
+  {
+    "file": "LH-CAT-M-03.html",
+    "url": "http://127.0.0.1:56327/products?category_id=462",
+    "fetchTime": "2026-11-02T10:38:39.999Z",
+    "device": "mobile",
+    "version": "13.5.0",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": true
+    },
+    "runtimeError": null,
+    "warnings": [],
+    "scores": {
+      "performance": 57.99999999999999,
+      "accessibility": 91.0,
+      "best-practices": 100,
+      "seo": 91.0
+    },
+    "metrics": {
+      "first-contentful-paint": 7959.696676233518,
+      "largest-contentful-paint": 8259.696676233518,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0.0003271208002840686
+    },
+    "sha256": "e3aa00706f5cf6e2a4b87d251515827af337ea61d6d25aa0ca587c1264eb1aec"
+  },
+  {
+    "file": "LH-DETAIL-D-01.html",
+    "url": "http://127.0.0.1:56327/products/545?variant=1012",
+    "fetchTime": "2026-11-02T10:52:59.243Z",
+    "device": "desktop",
+    "version": "13.5.0",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": true
+    },
+    "runtimeError": null,
+    "warnings": [],
+    "scores": {
+      "performance": 89.0,
+      "accessibility": 93.0,
+      "best-practices": 100,
+      "seo": 91.0
+    },
+    "metrics": {
+      "first-contentful-paint": 1451.9879999999998,
+      "largest-contentful-paint": 1531.988,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0.0005042035963679321
+    },
+    "sha256": "979f6406fdac90c29266d1b47c020b792a69164c96b470eee2b9f08b42d1867f"
+  },
+  {
+    "file": "LH-DETAIL-D-02.html",
+    "url": "http://127.0.0.1:56327/products/545?variant=1012",
+    "fetchTime": "2026-11-02T10:53:45.228Z",
+    "device": "desktop",
+    "version": "13.5.0",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": true
+    },
+    "runtimeError": null,
+    "warnings": [],
+    "scores": {
+      "performance": 89.0,
+      "accessibility": 93.0,
+      "best-practices": 100,
+      "seo": 91.0
+    },
+    "metrics": {
+      "first-contentful-paint": 1451.804,
+      "largest-contentful-paint": 1551.804,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0.009648618757779785
+    },
+    "sha256": "9f2aa084f72f273ceeac75dcaadcebd16dc81c2eabba8a6fdf5648f6d0ba440f"
+  },
+  {
+    "file": "LH-DETAIL-D-03.html",
+    "url": "http://127.0.0.1:56327/products/545?variant=1012",
+    "fetchTime": "2026-11-02T10:55:43.792Z",
+    "device": "desktop",
+    "version": "13.5.0",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": true
+    },
+    "runtimeError": null,
+    "warnings": [],
+    "scores": {
+      "performance": 89.0,
+      "accessibility": 93.0,
+      "best-practices": 100,
+      "seo": 91.0
+    },
+    "metrics": {
+      "first-contentful-paint": 1452.5282520803753,
+      "largest-contentful-paint": 1532.5282520803753,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0.009648618757779785
+    },
+    "sha256": "56fcdd0bb3364139a9a20f01dbfc3bb832a7013d50bcc3832bd09683ec6efd43"
+  },
+  {
+    "file": "LH-DETAIL-M-01.html",
+    "url": "http://127.0.0.1:56327/products/545?variant=1012",
+    "fetchTime": "2026-11-02T10:50:48.959Z",
+    "device": "mobile",
+    "version": "13.5.0",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": true
+    },
+    "runtimeError": null,
+    "warnings": [],
+    "scores": {
+      "performance": 57.99999999999999,
+      "accessibility": 93.0,
+      "best-practices": 100,
+      "seo": 91.0
+    },
+    "metrics": {
+      "first-contentful-paint": 7960.049999999999,
+      "largest-contentful-paint": 8260.05,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0.0005684329805496892
+    },
+    "sha256": "032a36bf87aa41609c0d6aed75e66e65e1774ab0124485b668344c1add28875c"
+  },
+  {
+    "file": "LH-DETAIL-M-02.html",
+    "url": "http://127.0.0.1:56327/products/545?variant=1012",
+    "fetchTime": "2026-11-02T10:51:21.943Z",
+    "device": "mobile",
+    "version": "13.5.0",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": true
+    },
+    "runtimeError": null,
+    "warnings": [],
+    "scores": {
+      "performance": 57.99999999999999,
+      "accessibility": 93.0,
+      "best-practices": 100,
+      "seo": 91.0
+    },
+    "metrics": {
+      "first-contentful-paint": 7958.607,
+      "largest-contentful-paint": 8258.607,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0.000590030177387484
+    },
+    "sha256": "7b9ef6422bd4b633da7748641d657a3883bff7d36fa85332e22a86fc84461c9a"
+  },
+  {
+    "file": "LH-DETAIL-M-03.html",
+    "url": "http://127.0.0.1:56327/products/545?variant=1012",
+    "fetchTime": "2026-11-02T10:51:44.985Z",
+    "device": "mobile",
+    "version": "13.5.0",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": true
+    },
+    "runtimeError": null,
+    "warnings": [],
+    "scores": {
+      "performance": 57.99999999999999,
+      "accessibility": 93.0,
+      "best-practices": 100,
+      "seo": 91.0
+    },
+    "metrics": {
+      "first-contentful-paint": 7958.637739067016,
+      "largest-contentful-paint": 8258.637739067017,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0.0005684329805496892
+    },
+    "sha256": "ef2b965071b946e154fb7296c1e4c1961d0fe82a94ee166e2cf3b3a4c0a466ae"
+  }
+]

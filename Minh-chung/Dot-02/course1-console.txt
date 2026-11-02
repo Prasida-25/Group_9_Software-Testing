@@ -1,0 +1,18 @@
+✔ C1-01 | unit | tiền hàng 200000.00, phí 30000.00 (12.3035ms)
+✔ C1-02 | unit | tiền hàng 300000.00, phí 0.00 (0.3109ms)
+✔ C1-03 | unit | tiền hàng 400000.00, phí 0.00 (0.3155ms)
+✔ C1-04 | unit | cộng nhiều dòng và nhân số lượng (0.324ms)
+✔ C1-05 | unit | từ chối giỏ trống (0.5554ms)
+✔ C1-06 | unit | từ chối số lượng vượt kho (0.1309ms)
+✔ C1-07 | unit | không làm mất phần lẻ khi tính tiền (0.3034ms)
+✔ C1-08 | integration mock | gộp cùng biến thể, không trừ kho khi thêm giỏ (1.638ms)
+✔ C1-09 | integration mock | bỏ qua giá và user_id giả từ client (0.4507ms)
+✔ C1-10 | integration mock | người khác không xóa được dòng giỏ (0.5189ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 170.2315

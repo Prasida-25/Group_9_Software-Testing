@@ -1,0 +1,75 @@
+{
+  "checkedAt": "2026-11-01T19:49:24.236Z",
+  "database": "techshop_test",
+  "scope": "Only tracked order IDs, not other expired test orders",
+  "before": {
+    "orders": [
+      {
+        "order_id": 411,
+        "status": "pending",
+        "payment_status": "unpaid",
+        "expired": 1
+      },
+      {
+        "order_id": 412,
+        "status": "pending",
+        "payment_status": "unpaid",
+        "expired": 0
+      }
+    ],
+    "stock": 2
+  },
+  "first": {
+    "selected": 1,
+    "cancelled": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "afterFirst": {
+    "orders": [
+      {
+        "order_id": 411,
+        "status": "cancelled",
+        "payment_status": "unpaid",
+        "expired": 1
+      },
+      {
+        "order_id": 412,
+        "status": "pending",
+        "payment_status": "unpaid",
+        "expired": 0
+      }
+    ],
+    "stock": 3
+  },
+  "second": {
+    "selected": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "failed": 0
+  },
+  "afterSecond": {
+    "orders": [
+      {
+        "order_id": 411,
+        "status": "cancelled",
+        "payment_status": "unpaid",
+        "expired": 1
+      },
+      {
+        "order_id": 412,
+        "status": "pending",
+        "payment_status": "unpaid",
+        "expired": 0
+      }
+    ],
+    "stock": 3
+  },
+  "passed": true,
+  "limits": [
+    "Scoped SQL selection for fixture IDs only",
+    "Direct expireBatch calls; 60-second scheduler not tested",
+    "Ages 71h and 73h; exact 72h boundary not tested",
+    "Not a concurrent admin/auto cancellation test"
+  ]
+}

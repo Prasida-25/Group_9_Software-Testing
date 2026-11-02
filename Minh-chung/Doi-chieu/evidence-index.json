@@ -1,0 +1,86 @@
+[
+  {
+    "id": "MEM",
+    "path": "Minh-chung/Dot-02/memory-summary.txt",
+    "bytes": 9150,
+    "sha256": "938a8a87c580302d3c3edb8e91db25510bfa27ab3e11abb587d1183dc1b17ca4"
+  },
+  {
+    "id": "SQL",
+    "path": "Minh-chung/Dot-02/mysql-results.json",
+    "bytes": 127798,
+    "sha256": "58f15652726a0a6e6eab517dd2ccf862c7e6e45ee8a7e4bba32c44bde316cda0"
+  },
+  {
+    "id": "PM",
+    "path": "Ket-qua-Postman-dot-01.md",
+    "bytes": 8918,
+    "sha256": "b617d08c35824c42eaf7877cf8c0defd5a8974cf9611852663e2dee56110e8d5"
+  },
+  {
+    "id": "SEL",
+    "path": "Minh-chung/Selenium/run-2026-11-02T06-07-10-115Z/results.json",
+    "bytes": 2074,
+    "sha256": "3464c21358f7d97ff234e4b95d36a81f7e72cb28a2d6390841634ea5c4f8b2ff"
+  },
+  {
+    "id": "WB",
+    "path": "Minh-chung/Hop-trang/whitebox-run-01.tap",
+    "bytes": 3658,
+    "sha256": "a20a6432a135b0e4b1e21a02c1c2a0f7fd5080c11fb38e0df6a452bd75005cf0"
+  },
+  {
+    "id": "CUC",
+    "path": "Ket-qua-Cucumber.md",
+    "bytes": 7105,
+    "sha256": "68e0e9ae359eb1660ef4e0fc99bf48f7c31828784e301407aa6e51e28df1288e"
+  },
+  {
+    "id": "PBT",
+    "path": "Minh-chung/Tu-dong/run-2026-11-02T05-05-49-635Z/results.json",
+    "bytes": 4176,
+    "sha256": "bacbfb1d90b3a8d3a47113c1df2fc944dabcb16aac2b7b4a922fcd47a3bc031a"
+  },
+  {
+    "id": "MUT",
+    "path": "Minh-chung/Mutation/techzone-mutation-Bft61B/results.json",
+    "bytes": 4060,
+    "sha256": "d6d337fd03f692ed9d6c6e09e95b7a86f53cd2195f207ce85586d83a21fd028a"
+  },
+  {
+    "id": "CANCEL",
+    "path": "Minh-chung/UI/cancel-result.json",
+    "bytes": 691,
+    "sha256": "a64d2eeb2e5ebfbbb881c4b970addbe2dcfbdf5a10d835fc8822dd466d060b09"
+  },
+  {
+    "id": "AUTO",
+    "path": "Minh-chung/UI/auto-result-1793562564259.json",
+    "bytes": 1533,
+    "sha256": "8054f097a3679c8a4dc062e7aab3796b0085dba0f64b0fa22fb706af5ad6c5d5"
+  },
+  {
+    "id": "JM1",
+    "path": "Jmeter/TechZone-JMeter-20261102-190049/1user.jtl",
+    "bytes": 4695,
+    "sha256": "1b51963dc92b680364a17d77e2953940313d5af0e9f21acbceea11d4c4ccccd3"
+  },
+  {
+    "id": "JM5",
+    "path": "Jmeter/TechZone-JMeter-20261102-190049/5users.jtl",
+    "bytes": 22813,
+    "sha256": "68bd3fc7253a33c0c7de2fc2abe5a95481d0eeccd18720b7c66673806dc80cd2"
+  },
+  {
+    "id": "PM-RAW",
+    "path": "Minh-chung/Postman/postman-manual-results.json",
+    "bytes": 8321,
+    "sha256": "11573eae0582fe25480a8d0611123860f5df5e5da8463553c78e75ae48866390"
+  },
+  {
+    "id": "CUC-RAW",
+    "path": "Minh-chung/Cucumber/run-2026-11-02T04-50-24-862Z/console.txt",
+    "bytes": 159,
+    "sha256": "3f114037c8123445ea026d611616fe86c1df441dd96bd6aad4a37694197d0aee"
+  }
+]

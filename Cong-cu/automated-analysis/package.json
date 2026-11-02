@@ -1,0 +1,7 @@
+{
+  "name": "techzone-automated-analysis",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": { "test": "node run.cjs" },
+  "devDependencies": { "fast-check": "4.10.2", "eslint": "10.14.0" }
+}

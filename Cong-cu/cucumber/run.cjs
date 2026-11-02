@@ -1,0 +1,10 @@
+const path=require('node:path');const fs=require('node:fs');const {spawnSync}=require('node:child_process');
+const parent=path.join(__dirname,'..','..','Minh-chung','Cucumber');fs.mkdirSync(parent,{recursive:true});
+const output=path.join(parent,'run-'+new Date().toISOString().replace(/[:.]/g,'-'));fs.mkdirSync(output);
+const packageFile=require.resolve('@cucumber/cucumber/package.json');
+const cli=path.join(path.dirname(packageFile),require(packageFile).bin['cucumber-js']);
+const reportPath=name=>path.relative(__dirname,path.join(output,name)).replaceAll('\\','/');
+const child=spawnSync(process.execPath,[cli,'features/**/*.feature','--require','features/step_definitions/*.cjs','--format','progress','--format','html:'+reportPath('report.html'),'--format','json:'+reportPath('report.json')],{cwd:__dirname,encoding:'utf8',windowsHide:true});
+const log=(child.stdout||'')+(child.stderr||'');fs.writeFileSync(path.join(output,'console.txt'),log);process.stdout.write(log);
+fs.writeFileSync(path.join(parent,'latest.json'),JSON.stringify({output,node:process.version,exit:child.status},null,2));
+console.log('CUCUMBER_EVIDENCE '+output);process.exitCode=child.status??1;

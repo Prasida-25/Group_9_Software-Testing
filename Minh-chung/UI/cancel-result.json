@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-11-01T19:44:13.649Z",
+  "database": "techshop_test",
+  "order": {
+    "order_id": 410,
+    "status": "cancelled",
+    "payment_status": "unpaid",
+    "payment_method": "cod",
+    "total_amount": "130000.00"
+  },
+  "variant": {
+    "variant_id": 1014,
+    "stock": 4
+  },
+  "stockBeforePlacement": 4,
+  "stockAfterPlacement": 2,
+  "expectedStockAfterCancellation": 4,
+  "stockRestorationPassed": true,
+  "orderCancellationPassed": true,
+  "priorOrder": {
+    "order_id": 409,
+    "status": "delivered",
+    "payment_status": "paid"
+  },
+  "limitation": "Read-only verification after one manual cancellation; does not prove repeated or concurrent cancellation safety."
+}

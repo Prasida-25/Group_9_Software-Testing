@@ -1,0 +1,87 @@
+{
+  "rules": {
+    "no-undef": "error",
+    "no-unreachable": "error",
+    "no-dupe-args": "error",
+    "no-dupe-keys": "error",
+    "no-constant-condition": "warn",
+    "no-unused-vars": [
+      "warn",
+      {
+        "args": "none",
+        "caughtErrors": "none"
+      }
+    ],
+    "eqeqeq": "warn",
+    "no-eval": "error",
+    "no-implied-eval": "error",
+    "no-control-regex": "warn"
+  },
+  "results": [
+    {
+      "source": "src/utils/cart-validation.js",
+      "errorCount": 0,
+      "warningCount": 1,
+      "messages": [
+        {
+          "ruleId": null,
+          "fatal": false,
+          "severity": 1,
+          "message": "File ignored because outside of base path."
+        }
+      ]
+    },
+    {
+      "source": "src/utils/checkout.js",
+      "errorCount": 0,
+      "warningCount": 1,
+      "messages": [
+        {
+          "ruleId": null,
+          "fatal": false,
+          "severity": 1,
+          "message": "File ignored because outside of base path."
+        }
+      ]
+    },
+    {
+      "source": "src/services/cart-service.js",
+      "errorCount": 0,
+      "warningCount": 1,
+      "messages": [
+        {
+          "ruleId": null,
+          "fatal": false,
+          "severity": 1,
+          "message": "File ignored because outside of base path."
+        }
+      ]
+    },
+    {
+      "source": "src/utils/catalog-query.js",
+      "errorCount": 0,
+      "warningCount": 1,
+      "messages": [
+        {
+          "ruleId": null,
+          "fatal": false,
+          "severity": 1,
+          "message": "File ignored because outside of base path."
+        }
+      ]
+    },
+    {
+      "source": "src/utils/account-validation.js",
+      "errorCount": 0,
+      "warningCount": 1,
+      "messages": [
+        {
+          "ruleId": null,
+          "fatal": false,
+          "severity": 1,
+          "message": "File ignored because outside of base path."
+        }
+      ]
+    }
+  ]
+}
