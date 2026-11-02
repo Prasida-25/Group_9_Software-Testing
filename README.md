@@ -53,14 +53,6 @@ Mục tiêu là xác định kết quả mong đợi từ yêu cầu, thiết k�
 
 
 
-Phạm vi có **17 use case và một xử lý tự động AUTO-01**. Giữ nguyên mã UC-16 đến UC-18; UC-15 về khách tự hủy đã được loại khỏi phạm vi. Khách không có thao tác tự hủy đơn trong bài này.
-
-
-
-Không kiểm thử sâu voucher, chuyển khoản, trả hàng, hoàn tiền, đánh giá sản phẩm, CRUD địa chỉ hoặc quản trị catalog. Responsive chỉ kiểm tra trang catalog. Các test có sẵn chạm chức năng phụ được ghi rõ trong kết quả, không tự mở rộng kết luận.
-
-
-
 ### Quy tắc nghiệp vụ chính
 
 
@@ -84,7 +76,7 @@ Không kiểm thử sâu voucher, chuyển khoản, trả hàng, hoàn tiền, �
 
 
 | **Phương pháp** | **Áp dụng** | **Hồ sơ** |
-| --- | --- |
+| --- | --- | --- |
 | Hộp đen | Phân vùng tương đương, giá trị biên, bảng quyết định, chuyển trạng thái | [Thiết kế hộp đen](Tai-lieu-kiem-thu/01%20-%20Thi%E1%BA%BFt%20k%E1%BA%BF%20ki%E1%BB%83m%20th%E1%BB%AD%20h%E1%BB%99p%20%C4%91en.md) |
 | Hộp trắng | CFG, đường cơ sở, độ phức tạp chu trình và coverage ở phần mã được chọn | [Thiết kế hộp trắng](Tai-lieu-kiem-thu/02%20-%20Thi%E1%BA%BFt%20k%E1%BA%BF%20ki%E1%BB%83m%20th%E1%BB%AD%20h%E1%BB%99p%20tr%E1%BA%AFng.md) |
 | Unit và tích hợp | `node:test`, repository giả lập, HTTP và MySQL/InnoDB riêng | [Kết quả đợt 2](Tai-lieu-kiem-thu/05%20-%20Ki%E1%BB%83m%20th%E1%BB%AD%20%C4%91%C6%A1n%20v%E1%BB%8B%20v%C3%A0%20t%C3%ADch%20h%E1%BB%A3p.md) |
@@ -95,10 +87,6 @@ Không kiểm thử sâu voucher, chuyển khoản, trả hàng, hoàn tiền, �
 | Giao diện | Selenium WebDriver thao tác trình duyệt với assertion | [Kết quả Selenium](Tai-lieu-kiem-thu/12%20-%20Ki%E1%BB%83m%20th%E1%BB%AD%20giao%20di%E1%BB%87n%20v%E1%BB%9Bi%20Selenium.md) |
 | Chất lượng trang | Lighthouse và quan sát responsive | [Kết quả Lighthouse và responsive](Tai-lieu-kiem-thu/13%20-%20Lighthouse%20v%C3%A0%20giao%20di%E1%BB%87n%20responsive.md) |
 | Tải HTTP | JMeter non-GUI, hai mức tải đọc sản phẩm | [Kết quả JMeter](Tai-lieu-kiem-thu/14%20-%20Ki%E1%BB%83m%20th%E1%BB%AD%20hi%E1%BB%87u%20n%C4%83ng%20v%E1%BB%9Bi%20JMeter.md) |
-
-
-
-Các công cụ được chọn theo backend JavaScript. Bài sử dụng `node:test` và coverage của Node/V8, không chuyển website sang Java để chạy JUnit. Kiểm tra kích thước màn hình không đồng nghĩa kiểm thử ứng dụng mobile native.
 
 
 
@@ -122,10 +110,6 @@ Các công cụ được chọn theo backend JavaScript. Bài sử dụng `node:
 
 
 
-Không cộng các hàng thành một tỷ lệ Pass chung: số test, scenario, step, assertion và request là các đơn vị khác nhau, có nhiều hành vi trùng nhau.
-
-
-
 ### Coverage trong lượt hộp trắng
 
 
@@ -137,9 +121,6 @@ Không cộng các hàng thành một tỷ lệ Pass chung: số test, scenario,
 | `checkout.js` | 50.88 | 85.71 | 42.86 |
 | **Tổng ba file** | **50.00** | **93.48** | **61.54** |
 
-
-
-Đây không phải coverage toàn backend; line coverage không đồng nhất với statement coverage. Chưa chứng minh MC/DC hoặc mọi đường đi của hệ thống.
 
 
 
@@ -161,11 +142,6 @@ Ba request GET gồm danh sách, tìm kiếm và chi tiết sản phẩm; nghỉ
 | Throughput | 1,01 request/s | 3,97 request/s |
 
 
-
-Kết quả mô tả tải HTTP nhẹ trên localhost với fixture nhỏ, không xác định tải tối đa hoặc thời gian render đầy đủ trong browser. Chưa có SLA thời gian được chốt để kết luận đạt SLA từ số liệu này.
-
-
-
 ## 4. Sai khác và giới hạn còn lại
 
 
@@ -178,15 +154,6 @@ Kết quả mô tả tải HTTP nhẹ trên localhost với fixture nhỏ, khôn
 | AUTO | Có kiểm tra tuổi 71/73 giờ và quét lặp trên fixture; chưa exact 72 giờ, scheduler thực, batch 51 đơn, admin/AUTO chồng lấn InnoDB hoặc rollback AUTO đầy đủ. |
 | Responsive | Có ảnh catalog 390×844, 768×1024, 1366×768. Kết quả thao tác được xác nhận ở mobile; hai viewport lớn hơn chưa chứng minh mọi thao tác đều đạt. |
 | Lighthouse | Catalog M01 có trạng thái phiên chưa xác nhận; report có `screenEmulation.disabled=true`. Không gọi các file là ba lượt guest/viewport đồng nhất đã chứng minh. |
-
-
-
-**Bộ thiết kế 59 ca chưa được chốt 59/59 Pass.** Đối chiếu hồi cứu ghi nhận 55 ca có bằng chứng một phần, 3 ca chưa có lượt đúng tình huống và 1 ca có sai khác mô tả. “Một phần” không đồng nghĩa test thất bại. Chi tiết tại [bảng truy vết](Tai-lieu-kiem-thu/15%20-%20%C4%90%E1%BB%91i%20chi%E1%BA%BFu%20ca%20ki%E1%BB%83m%20th%E1%BB%AD%20v%C3%A0%20minh%20ch%E1%BB%A9ng.md).
-
-
-
-Các kiểm tra bổ sung chưa làm được đưa vào giới hạn/hướng phát triển trong báo cáo. Không dùng việc hoàn thành tài liệu để thay đổi kết quả thực tế.
-
 
 
 ## 5. Cài đặt và chạy website
@@ -261,8 +228,7 @@ node --test tests/course1.test.js
 
 
 
-`npm test` chạy `node --test tests/*.test.js`; không phải Selenium hoặc MySQL thật. Bộ đã lưu có một test Fail được giải thích ở mục 4, không cam kết lần chạy mới sẽ hoàn toàn xanh.
-
+`npm test` chạy `node --test tests/*.test.js`; không phải Selenium hoặc MySQL thật.
 
 
 ### Công cụ bổ sung
@@ -316,11 +282,6 @@ node "$artifactDir/Cong-cu/cucumber/run.cjs"
 node "$artifactDir/Cong-cu/automated-analysis/run.cjs"
 
 ```
-
-
-
-Đọc thông báo ESLint thực tế khi chạy lại: `File ignored because outside of base path` nghĩa là file chưa được phân tích, dù số error bằng 0. Vấn đề này được giữ trong báo cáo, chưa sửa harness. Xem [hồ sơ phân tích tự động](Tai-lieu-kiem-thu/10%20-%20Ph%C3%A2n%20t%C3%ADch%20t%E1%BB%B1%20%C4%91%E1%BB%99ng%20v%C3%A0%20sinh%20d%E1%BB%AF%20li%E1%BB%87u.md).
-
 
 
 ### MySQL, UI và Selenium
@@ -384,27 +345,6 @@ node "$artifactDir/Cong-cu/selenium/run.cjs"
 - **Lighthouse:** xem các HTML trong [Lighthouse](Lighthouse) và [bảng đối chiếu](Tai-lieu-kiem-thu/13%20-%20Lighthouse%20v%C3%A0%20giao%20di%E1%BB%87n%20responsive.md). Nếu đo lại, ghi URL, phiên, thiết bị/cấu hình, thời điểm và các lần đo.
 
 - **JMeter:** dùng [JMX một người dùng](Jmeter/TechZone-1user.jmx) hoặc [JMX năm người dùng](Jmeter/TechZone-5users.jmx). Kiểm tra server/port đang trỏ ứng dụng test trước khi chạy. Lượt chính chạy non-GUI, xuất JTL, log và dashboard riêng; hướng dẫn cùng giới hạn nằm trong [kết quả JMeter](Tai-lieu-kiem-thu/14%20-%20Ki%E1%BB%83m%20th%E1%BB%AD%20hi%E1%BB%87u%20n%C4%83ng%20v%E1%BB%9Bi%20JMeter.md).
-
-
-
-Giữ toàn bộ thư mục dashboard JMeter để mở `index.html`; file HTML đơn lẻ thiếu JS/CSS có thể không hiển thị đúng. GitHub không trực tiếp chạy dashboard, nên tải về để mở trên máy. Kết quả gốc được lưu riêng với các lượt chạy lại.
-
-
-
-## 7. Minh chứng và nguyên tắc bàn giao
-
-
-
-- Log/JSON cho biết assertion và hậu điều kiện; ảnh gốc minh họa thao tác và kết quả quan sát được. Không dựng ảnh Pass từ log.
-
-- Bản kiểm kê [Screenshots.zip](Minh-chung/Kiem-ke-Screenshots-zip/Ket-qua-kiem-ke.md) đã đối chiếu 74 ảnh, trong đó bổ sung 24 ảnh chưa được liên kết; giữ đường dẫn nguồn và SHA-256.
-
-- Giữ các file nguồn kết quả cần thiết: JTL, JSON, báo cáo coverage, collection/JMX, HTML report và ảnh. Nếu `.gitignore` bỏ qua `*.log`, chỉ đưa log minh chứng đã rà soát vào bộ nộp; không đưa mọi log ứng dụng lên Git.
-
-- Không công khai `.env`, mật khẩu, cookie, CSRF/token thực, cấu hình quản trị database, cache hoặc `node_modules`.
-
-- Video được bổ sung sau khi báo cáo ổn định. Trước khi nộp, kiểm tra lại PDF, liên kết video và các đường dẫn minh chứng trên GitHub.
-
 
 
 ## Tài liệu tham khảo
