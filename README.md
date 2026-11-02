@@ -15,6 +15,7 @@ Bài tập lớn học phần **Đánh giá và kiểm định chất lượng p
 
 
 | **Mã sinh viên** | **Họ và tên**     | **Lớp**   |
+|------------------|-------------------|-----------|
 |     23010832     |  Trịnh Tùng Dương | K17_CNTT9 |
 
 
