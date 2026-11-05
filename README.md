@@ -32,7 +32,7 @@ Bài tập lớn học phần **Đánh giá và kiểm định chất lượng p
 
 - [Minh chứng](Minh-chung/)
 
-
+- [Video thuyết trình] (https://drive.google.com/file/d/1AIXMtaNf5sFW5HK18qm4DkLOa656RUt2/view?usp=sharing)
 
 ## 1. Mục tiêu và phạm vi
 
